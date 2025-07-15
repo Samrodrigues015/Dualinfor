@@ -1,60 +1,68 @@
 <?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package Multimac_Theme
- */
-
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
+    <section class="error-404 not-found">
+        <div class="page-content">
+            <div class="error-404-container">
+                
+                <!-- Título principal -->
+                <h1 class="page-title">Esta página não foi encontrada.</h1>
+                
+                <!-- Subtítulo explicativo -->
+                <p class="error-subtitle">
+                    O conteúdo que procuras pode ter sido removido, alterado
+                    ou estar temporariamente indisponível.
+                </p>
+                
+                <!-- Texto de apoio -->
+                <p class="error-support">
+                    Mas não te preocupes — estamos aqui para te ajudar a
+                    encontrar o que precisas.
+                </p>
+                
+                <!-- Ilustração com a imagem fornecida -->
+                <div class="error-illustration">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-404/404.png" 
+                         alt="Ilustração de documentos perdidos ou danificados" 
+                         class="error-image" />
+                </div>
+                
+                <!-- Seção de ações -->
+                <div class="error-actions">
+                    <h3>O que podes fazer:</h3>
+                    <ul class="action-list">
+                        <li>
+                            Voltar à <a href="<?php echo site_url(); ?>">
+                                página inicial
+                            </a>
+                        </li>
+                        <li>
+                            Consultar as nossas
+                            <a href="<?php echo esc_url(home_url('/pagina-servico-e-solucoes')); ?>">
+                                soluções tecnológicas
+                            </a>
+                        </li>
+                        <li>
+                            Falar directamente com a nossa 
+                            <a href="<?php echo esc_url(home_url('/pagina-suporte-tecnico')); ?>">
+                                equipa de suporte
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Texto final -->
+                <p class="error-footer">
+                    Na Dualinfor, acreditamos que cada desafio tem solução — e esta página perdida
+                    não é excepção.
+                    <br>Se precisares de ajuda, estamos sempre disponíveis.
+                </p>
+                
+            </div>
+        </div><!-- .page-content -->
+    </section><!-- .error-404 -->
+</main><!-- #primary -->
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'multimac-theme' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'multimac-theme' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'multimac-theme' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$multimac_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'multimac-theme' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$multimac_theme_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
-
-<?php
-get_footer();
+<?php get_footer(); ?>

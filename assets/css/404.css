@@ -1,0 +1,125 @@
+/* Error 404 Styles */
+.error-404-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-404 .page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.error-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.error-support {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+.error-illustration {
+  margin: 40px 0 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.error-actions h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.action-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.action-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.action-list li::before {
+  content: "• ";
+  color: #9a2686;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.action-list a {
+  color: #333;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.action-list a:hover {
+  color: #9a2686;
+}
+
+.error-footer {
+  font-size: 0.95rem;
+  color: #888;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* Error 404 Responsividade */
+@media (max-width: 768px) {
+  .error-404-container {
+    padding: 40px 15px;
+  }
+
+  .error-404 .page-title {
+    font-size: 2rem;
+  }
+
+  .error-subtitle,
+  .error-support {
+    font-size: 1rem;
+  }
+
+  .error-illustration {
+    margin: 30px 0 40px 0;
+  }
+
+  .error-image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-404 .page-title {
+    font-size: 1.8rem;
+  }
+
+  .error-image {
+    max-width: 250px;
+  }
+}
