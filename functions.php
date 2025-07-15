@@ -150,6 +150,9 @@ function dualinfor_enqueue_assets()
 	wp_enqueue_style('dualinfor-header-style', get_template_directory_uri() . '/assets/css/header.css', array(), $theme_version);
 	wp_enqueue_style('dualinfor-footer-style', get_template_directory_uri() . '/assets/css/footer.css', array(), $theme_version);
 	// Estilos do card section
+	wp_enqueue_style('dualinfor-card-style', get_template_directory_uri() . '/assets/css/card.css', array(), $theme_version);
+	// Estilos da pagina Energias Renováveis
+	//wp_enqueue_style('dualinfor-pagina-energiarenovaveis-style', get_template_directory_uri() . '/assets/css/energiarenovaveis.css', array(), $theme_version);
 
 
 	// JavaScript
