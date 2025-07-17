@@ -6,7 +6,7 @@
 
 get_header();
 ?>
-
+ 
 <?php
 get_template_part('template-parts/produtos-hero-section', null, array(
   'title' => 'Energias renováveis Dualinfor: Sustentabilidade e eficiência ao serviço da sua empresa',
@@ -29,7 +29,7 @@ get_template_part('template-parts/produtos-hero-section', null, array(
 ));
 
 ?>
- 
+
 <?php
 get_template_part('template-parts/produtos-benefits-section', null, array(
   'title' => 'Porquê Escolher as Soluções Dualinfor em Energias Renováveis?',

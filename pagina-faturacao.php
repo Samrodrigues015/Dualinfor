@@ -30,4 +30,65 @@ get_template_part('template-parts/produtos-hero-section', null, array(
 
 ?>
 
+<?php
+get_template_part('template-parts/produtos-benefits-section', null, array(
+  'title' => 'Porquê escolher o software de faturação e P.O.S da Dualinfor?',
+  'subtitle' => 'Criámos soluções que se adaptam a diferentes setores e tamanhos de negócios, oferecendo funcionalidades avançadas que otimizam as operações e melhoram a experiência do cliente.',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/icone1.svg',
+      'title' => 'Faturação Simples e Rápida',
+      'items' => array(
+        'Processamento de transações em segundos.',
+        'Funcionalidades intuitivas para reduzir erros no ponto de venda.'
+      )
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/icone2.svg',
+      'title' => 'Gestão de Inventário em Tempo Real',
+      'items' => array(
+        'Controle o stock do seu negócio e receba alertas para reposições.',
+        'Relatórios detalhados que facilitam a tomada de decisões.'
+      )
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/icone3.svg',
+      'title' => 'Personalização de Funcionalidades',
+      'items' => array(
+        'Configure o software de acordo com as necessidades específicas do seu setor.',
+        'Adicione módulos como gestão de mesas, entrega ao domicílio ou cartões de fidelização.'
+      )
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/icone4.svg',
+      'title' => 'Relatórios Financeiros Detalhados',
+      'items' => array(
+        'Geração automática de relatórios de vendas, margens de lucro e desempenho da equipa.',
+        'Exportação direta para ferramentas de contabilidade.'
+      )
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/icone5.svg',
+      'title' => 'Conformidade Legal',
+      'items' => 'Totalmente certificado para garantir conformidade com as normas fiscais e legislação portuguesa.'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/icone6.svg',
+      'title' => 'Facilidade de Integração',
+      'items' => 'Integra-se com sistemas de pagamento, plataformas de e-commerce e aplicações de gestão empresarial.'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/icone7.svg',
+      'title' => 'Suporte Técnico Dedicado',
+      'items' => 'Assistência personalizada durante a implementação e suporte contínuo para assegurar o máximo desempenho.'
+    )
+  ),
+  'cta' => array(
+    'label' => 'Peça um Orçamento Personalizado',
+    'icon' => '<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" transform="rotate(-90 12 12)"/></svg>'
+  )
+));
+?>
+
+
 <?php get_footer(); ?>
