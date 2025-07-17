@@ -94,4 +94,28 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-features-section', null, array(
+  'title' => 'Funcionalidades que fazem a diferença na Gestão Documental',
+  'description' => 'Os digitalizadores Dualinfor estão equipados com as mais recentes tecnologias para garantir qualidade, rapidez e simplicidade em todas as tarefas de digitalização.',
+  'col1_title' => 'Funcionalidade',
+  'col2_title' => 'Descrição',
+  'col1_items' => [
+    'Velocidade',
+    'Resolução',
+    'Alimentação',
+    'Conectividade',
+    'Software Integrados'
+  ],
+  'col2_items' => [
+    'Até 60 páginas por minuto, com digitalização frente e verso simultânea.',
+    'Resolução de até 1200 dpi para imagens nítidas e detalhadas.',
+    'Capacidade de processar até 100 folhas por vez com alimentação automática.',
+    'USB, Wi-Fi, Ethernet, integração com cloud e sistemas empresariais.',
+    'Ferramentas para OCR (Reconhecimento Óptico de Caracteres) e PDFs pesquisáveis.'
+  ]
+));
+?>
+
+
 <?php get_footer(); ?>

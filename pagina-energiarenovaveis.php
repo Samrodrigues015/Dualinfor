@@ -93,5 +93,31 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-features-section', null, array(
+  'title' => 'Tecnologia inovadora para um futuro sustentável',
+  'description' => 'As nossas soluções em energias renováveis combinam tecnologia de ponta e eficiência para garantir um impacto positivo.',
+  'col1_title' => 'Funcionalidade',
+  'col2_title' => 'Descrição',
+  'col1_items' => [
+    'Painéis Solares Fotovoltaicos',
+    'Armazenamento de Energia',
+    'Monitorização Inteligente',
+    'Eficiência Energética',
+    'Variedade de Estilos',
+    'Soluções Modulares'
+  ],
+  'col2_items' => [
+    'Alta eficiência na captação e conversão de energia solar.',
+    'Sistemas de baterias para aproveitar energia excedente.',
+    'Plataforma com relatórios em tempo real.',
+    'Soluções para reduzir perdas energéticas.',
+    'Estilo adaptado ao ambiente empresarial.',
+    'Componentes facilmente escaláveis.'
+  ]
+));
+?>
+
+
 
 <?php get_footer(); ?>

@@ -1,0 +1,153 @@
+.products-features-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+.section-title-features {
+  margin-bottom: 40px;
+}
+
+.section-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-layout-desktop {
+  display: none;
+}
+
+.section-scroll-table {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-scroll-wrapper {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
+}
+
+.section-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.section-scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.section-table-column {
+  flex: 0 0 80%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+}
+
+.section-table-header {
+  background-color: #f0e2ee;
+  padding: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+  font-size: 1.1rem;
+}
+
+.descricao .section-table-header {
+  background-color: #d0d3e2;
+}
+
+.section-table-list {
+  list-style: none;
+  padding: 16px;
+}
+
+.section-table-list li {
+  margin-bottom: 24px;
+  /* espaço maior */
+  font-size: 0.95rem;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.4;
+  color: #333;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  /* linha em baixo */
+}
+
+.section-table-list li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.check-icon {
+  display: inline-block;
+  background-color: #9a2686;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  margin-right: 10px;
+  min-width: 22px;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .section-scroll-table {
+    display: none;
+  }
+
+  .section-layout-desktop {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .section-text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-title-features {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .section-description {
+    margin: 0;
+  }
+
+  .section-columns-wrapper {
+    display: flex;
+    gap: 24px;
+  }
+
+  .section-table-column {
+    flex: 1;
+    min-width: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .section-table-column {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+}

@@ -153,6 +153,8 @@ function dualinfor_enqueue_assets()
 	wp_enqueue_style('dualinfor-card-style', get_template_directory_uri() . '/assets/css/card.css', array(), $theme_version);
 	// Estilo da seção de benefícios
 	wp_enqueue_style('dualinfor-benefits-style', get_template_directory_uri() . '/assets/css/benefits-section.css', array(), $theme_version);
+	// Estilo da seção de features
+	wp_enqueue_style('dualinfor-features-style', get_template_directory_uri() . '/assets/css/features-section.css', array(), $theme_version);
 
 
 	// JavaScript
