@@ -21,7 +21,7 @@
         <div class="section-main-title">
           <?php echo esc_html($args['title']); ?>
         </div>
-        <p class="section-description">
+        <p class="section-description-features">
           <?php echo esc_html($args['description']); ?>
         </p>
       </div>
@@ -54,11 +54,11 @@
 
   <!-- MOBILE -->
   <div class="section-scroll-table">
-    <div class="section-title">
+    <div class="section-title-features">
       <div class="section-main-title">
         <?php echo esc_html($args['title']); ?>
       </div>
-      <p class="section-description">
+      <p class="section-description-features">
         <?php echo esc_html($args['description']); ?>
       </p>
     </div>

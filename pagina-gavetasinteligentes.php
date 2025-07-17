@@ -97,4 +97,30 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-features-section', null, array(
+  'title' => 'Funcionalidades que fazem a diferença na gestão de numerário',
+  'description' => 'As Gavetas Inteligentes de Dinheiro da Dualinfor integram tecnologia de ponta para garantir uma gestão eficaz, segura e simples do numerário no ponto de venda.',
+  'col1_title' => 'Funcionalidade',
+  'col2_title' => 'Descrição',
+  'col1_items' => [
+    'Contagem Automática',
+    'Monitorização Remota',
+    'Fecho Seguro',
+    'Integração POS',
+    'Relatórios Detalhados',
+    'Alarme Integrado'
+  ],
+  'col2_items' => [
+    'Contagem instantânea de moedas e notas com precisão absoluta.',
+    'Acesso em tempo real a transações e relatórios financeiros.',
+    'Sistemas de bloqueio automático para prevenir acessos não autorizados.',
+    'Compatível com todos os sistemas de ponto de venda modernos.',
+    'Geração automática de relatórios de reconciliação e discrepâncias.',
+    'Notificações de segurança em caso de tentativa de abertura não autorizada.'
+  ]
+));
+?>
+
+
 <?php get_footer(); ?>

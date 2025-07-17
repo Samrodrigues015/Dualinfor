@@ -90,5 +90,29 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-features-section', null, array(
+  'title' => 'Funcionalidades que simplificam a gestão e aumentam a eficiência',
+  'description' => 'O Software de Faturação e P.O.S da Dualinfor inclui as mais recentes inovações tecnológicas, garantindo que a sua empresa opera com a máxima eficiência.',
+  'col1_title' => 'Funcionalidade',
+  'col2_title' => 'Descrição',
+  'col1_items' => [
+    'Gestão de Vendas',
+    'Gestão de Inventário',
+    'Relatórios Personalizáveis',
+    'Conectividade Cloud',
+    'Integração Multicanal',
+    'Gestão de Clientes'
+  ],
+  'col2_items' => [
+    'Processamento rápido de transações com múltiplos métodos de pagamento.',
+    'Monitorização automática de stocks com alertas em tempo real.',
+    'Relatórios automáticos com métricas como vendas diárias e margens de lucro.',
+    'Aceda aos dados do seu negócio em qualquer lugar, em tempo real.',
+    'Compatível com lojas físicas, e-commerce e aplicações móveis.',
+    'Ferramentas para fidelização e análise de comportamento do consumidor.'
+  ]
+));
+?>
 
 <?php get_footer(); ?>

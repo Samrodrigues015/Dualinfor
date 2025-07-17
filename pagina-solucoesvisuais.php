@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Página Soluções Visuais
  * Description: Página personalizada para Página soluções visuais da Dualinfor.
@@ -78,5 +79,27 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-features-section', null, array(
+  'title' => 'Funcionalidades que potenciam a sua comunicação visual',
+  'description' => 'As Soluções Visuais da Dualinfor integram as mais recentes inovações tecnológicas para oferecer qualidade e eficiência em todas as aplicações.',
+  'col1_title' => 'Funcionalidade',
+  'col2_title' => 'Descrição',
+  'col1_items' => [
+    'Resolução 4K Ultra HD',
+    'Conectividade Avançada',
+    'Monitores Tácteis',
+    'Sistemas Modulares',
+    'Sinalética Dinâmica'
+  ],
+  'col2_items' => [
+    'Imagens nítidas e detalhadas para captar a atenção do público.',
+    'Wi-Fi, HDMI, USB e integração com plataformas de cloud para gestão de conteúdos.',
+    'Interação fácil e intuitiva para experiências imersivas.',
+    'Videowalls configuráveis para adaptar-se a qualquer espaço.',
+    'Possibilidade de personalizar e agendar conteúdos visuais para máxima relevância.'
+  ]
+));
+?>
 
 <?php get_footer(); ?>

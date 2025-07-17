@@ -85,4 +85,29 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ?>
 
 
+<?php
+get_template_part('template-parts/produtos-features-section', null, array(
+  'title' => 'Funcionalidades que fazem a diferença nas operações Empresariais',
+  'description' => 'As nossas soluções combinam a mais recente tecnologia com configurações personalizadas para garantir que a sua infraestrutura está sempre no topo.',
+  'col1_title' => 'Funcionalidade',
+  'col2_title' => 'Descrição',
+  'col1_items' => [
+    'Velocidade de Rede',
+    'Gestão Centralizada',
+    'Compatibilidade IoT',
+    'Segurança Avançada',
+    'Escalabilidade Modular',
+    'Conectividade Cloud'
+  ],
+  'col2_items' => [
+    'Até 10 Gbps com suporte para alta densidade de dispositivos.',
+    'Ferramentas que permitem monitorizar e ajustar redes em tempo real.',
+    'Suporte para dispositivos IoT para empresas que utilizam soluções inteligentes.',
+    'Firewalls, deteção de intrusões e monitorização constante de vulnerabilidades.',
+    'Redes estruturadas que se adaptam ao crescimento da sua empresa.',
+    'Integração com serviços de cloud como Microsoft Azure e Google Cloud.'
+  ]
+));
+?>
+
 <?php get_footer(); ?>

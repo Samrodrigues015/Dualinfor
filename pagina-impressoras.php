@@ -99,5 +99,7 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ));
 ?>
 
+<?php get_template_part('template-parts/impressora-epson-block'); ?>
+
 
 <?php get_footer(); ?>
