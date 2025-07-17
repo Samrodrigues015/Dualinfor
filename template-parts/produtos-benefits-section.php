@@ -60,9 +60,6 @@
           <?php endif; ?>
         </div>
       <?php endforeach; ?>
-    </div>
-
-    <div class="section-grid-bottom">
       <?php foreach ($bottom_cards as $card) : ?>
         <div class="section-card">
           <div class="section-card-icon">
@@ -92,6 +89,13 @@
         </div>
       <?php endif; ?>
     </div>
-    
+    <?php if ($has_cta && $total_cards >= 7) : ?>
+  <div class="mobile-btn">
+    <button>
+      <a href="#"><?php echo esc_html($args['cta']['label']); ?></a>
+    </button>
+  </div>
+<?php endif; ?>
+
   </div>
 </div>

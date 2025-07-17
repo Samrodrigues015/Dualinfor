@@ -37,12 +37,6 @@
   margin-bottom: 24px;
 }
 
-.section-grid-bottom {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
 .section-card {
   background-color: #241d22;
   border: 2px solid #9a2686;
@@ -81,7 +75,7 @@
 
 .section-card-list {
   list-style: none;
-  color: #ffffff;
+  color: #cccccc;
 }
 
 .section-card-list li {
@@ -105,7 +99,7 @@
   background-color: #2f1e2c;
   border: 2px solid #9a2686;
   border-radius: 16px;
-  padding: 20px;
+  padding: 32px 24px;
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -114,8 +108,6 @@
   justify-content: center;
   align-items: flex-start;
   min-height: 200px;
-  width: auto;
-  height: auto;
 }
 
 .section-cta-card:hover {
@@ -150,13 +142,13 @@
   fill: white;
 }
 
+.mobile-btn {
+  display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .section-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .section-grid-bottom {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -170,10 +162,19 @@
     padding: 40px 16px;
   }
 
-  .section-grid,
-  .section-grid-bottom {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .section-grid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 20px;
+  }
+
+  .section-grid::-webkit-scrollbar {
+    display: none;
+    /* esconde scroll em mobile */
   }
 
   .section-title {
@@ -188,24 +189,47 @@
 
   .section-card {
     padding: 24px 20px;
+    min-width: 320px;
+    height: auto;
   }
+  .section-card-list p {
+  text-align: center;
 }
 
-@media (max-width: 480px) {
-  .section-title {
-    font-size: 1.75rem;
+  .section-cta-card {
+    display: none;
   }
 
-  .section-subtitle {
+  .mobile-btn {
+    display: flex;
+    justify-content: center;
+    margin: 24px auto 0;
+    margin-bottom: 40px;
+  }
+
+  .mobile-btn button {
+    background-color: transparent;
+    border: 2px solid #9a2686;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-btn button:hover {
+    background-color: #2f1e2c;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(154, 38, 134, 0.3);
+  }
+
+  .mobile-btn button a {
+    text-decoration: none;
+    color: #ffffff;
     font-size: 1rem;
-    text-align: center;
+    font-weight: 600;
   }
 
-  .section-card-title {
-    font-size: 1.125rem;
-  }
-
-  .section-cta-title {
-    font-size: 1.25rem;
+  .mobile-btn button:hover a {
+    color: #ffffff;
   }
 }
