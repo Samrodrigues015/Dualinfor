@@ -1,0 +1,113 @@
+.form-wrapper {
+  background: linear-gradient(180deg, #9a2686 0%, #353791 100%);
+  border-radius: 40px 40px 0 0;
+  padding: 80px 60px;
+  max-width: 1300px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  color: white;
+  gap: 60px;
+}
+
+.form-left h2 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.form-left p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.form-left p:last-child {
+  font-style: italic;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: white;
+}
+
+input,
+select,
+textarea {
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  box-shadow: inset 0 0 0 2px #ddd;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 18px;
+  padding-right: 40px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  background: #fff;
+  color: #9a2686;
+  font-weight: 700;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #f1f1f1;
+}
+
+@media (max-width: 1024px) {
+  .form-wrapper {
+    grid-template-columns: 1fr;
+    padding: 60px 40px;
+  }
+
+  .form-left h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-wrapper {
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+
+  .form-left h2 {
+    font-size: 28px;
+  }
+
+  .form-left p {
+    font-size: 16px;
+  }
+}

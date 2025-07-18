@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Página Redes e Computing
  * Description: Página personalizada para página Redes e Computing da Dualinfor.
@@ -183,7 +184,7 @@ get_template_part('template-parts/testemunhos-section', null, array(
 get_template_part('template-parts/produtos-solutions-section', null, array(
   'title' => 'Como as Redes Estruturadas & Computing podem transformar o seu negócio',
   'subtitle' => 'Independente do setor em que atua, as nossas soluções são projetadas para simplificar a gestão, aumentar a eficiência e garantir resultados tangíveis.',
-  'image' => get_template_directory_uri() . '/assets/img/img-redes/tecnologia.png', 
+  'image' => get_template_directory_uri() . '/assets/img/img-redes/tecnologia.png',
   'image_position' => 'right',
   'cards' => array(
     array(
@@ -226,9 +227,9 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
 get_template_part('template-parts/produtos-complementary-section', null, array(
   'title' => 'Soluções que complementam o software de faturação e P.O.S',
   'image' => get_template_directory_uri() . '/assets/img/img-gavetasinteligentes/gavetasinteligenteshero.png',
-  'image_position' => 'right', 
+  'image_position' => 'right',
   'cta_text' => 'Invista no Futuro da Sua Empresa com as Energias Renováveis Dualinfor',
-  'cta_color' => '#293992', 
+  'cta_color' => '#293992',
   'button_text' => 'Peça um Orçamento Personalizado',
   'services' => array(
     array(
@@ -243,6 +244,23 @@ get_template_part('template-parts/produtos-complementary-section', null, array(
       'title' => 'Videovigilância',
       'description' => 'Garanta segurança nas transações e no ambiente de trabalho.',
     ),
+  )
+));
+?>
+
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber como o Software de Faturação e P.O.S Dualinfor pode transformar o seu negócio?',
+    'Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Número de Estações de POS Necessárias.',
+      'placeholder' => 'Ex: 15'
+    )
   )
 ));
 ?>

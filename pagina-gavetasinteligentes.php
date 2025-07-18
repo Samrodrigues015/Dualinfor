@@ -258,4 +258,20 @@ get_template_part('template-parts/produtos-complementary-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber como as Gavetas Inteligentes de Dinheiro da Dualinfor podem transformar a gestão do numerário no seu negócio?',
+    'Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Número de Monitores/Videowalls Necessários.',
+      'placeholder' => 'Ex: 15'
+    )
+  )
+));
+?>
 <?php get_footer(); ?>

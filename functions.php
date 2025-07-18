@@ -161,6 +161,8 @@ function dualinfor_enqueue_assets()
 	wp_enqueue_style('dualinfor-solutions-style', get_template_directory_uri() . '/assets/css/solutions-section.css', array(), $theme_version);
 	// Estilo da seção de Complementar
 	wp_enqueue_style('dualinfor-complementary-style', get_template_directory_uri() . '/assets/css/complementary-section.css', array(), $theme_version);
+	// Estilo da seção de Formulário
+	wp_enqueue_style('dualinfor-formulario-style', get_template_directory_uri() . '/assets/css/formulario.css', array(), $theme_version);
 
 	// JavaScript
 	wp_enqueue_script('dualinfor-main-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), $theme_version, true);

@@ -253,4 +253,20 @@ get_template_part('template-parts/produtos-complementary-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber qual o digitalizador ideal para a sua empresa? Preencha o formulário abaixo e receba uma solução personalizada para as suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Volume Médio de Documentos',
+      'placeholder' => 'Ex: 15'
+    )
+  )
+));
+?>
+
 <?php get_footer(); ?>
