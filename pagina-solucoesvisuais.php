@@ -213,5 +213,29 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-complementary-section', null, array(
+  'title' => 'Soluções que complementam as soluções visuais',
+  'image' => get_template_directory_uri() . '/assets/img/img-solucoesvisuais/monitor.png',
+  'image_position' => 'right', 
+  'cta_text' => 'Peça um Orçamento Personalizado',
+  'cta_color' => '#293992', 
+  'button_text' => 'Peça um Orçamento Personalizado',
+  'services' => array(
+    array(
+      'title' => 'Redes Estruturadas & Computing',
+      'description' => 'Conectividade perfeita para suportar sistemas visuais.',
+    ),
+    array(
+      'title' => 'Impressoras e Multifunções',
+      'description' => 'Produção de materiais visuais complementares.',
+    ),
+    array(
+      'title' => 'Sinalética Digital (Xopvision)',
+      'description' => 'Gestão de conteúdos dinâmicos em tempo real.',
+    ),
+  )
+));
+?>
 
 <?php get_footer(); ?>

@@ -228,5 +228,29 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-complementary-section', null, array(
+  'title' => 'Soluções complementares que potenciam a Gestão Documental',
+  'image' => get_template_directory_uri() . '/assets/img/img-digitalizadores/impressora.png',
+  'image_position' => 'right', 
+  'cta_text' => 'Peça um Orçamento Personalizado',
+  'cta_color' => '#293992', 
+  'button_text' => 'Peça um Orçamento Personalizado',
+  'services' => array(
+    array(
+      'title' => 'Soluções de Videovigilância',
+      'description' => 'Segurança para documentos físicos e espaços de trabalho.',
+    ),
+    array(
+      'title' => 'Impressoras e Multifunções',
+      'description' => 'Complemento ideal para impressão e digitalização integrada.',
+    ),
+    array(
+      'title' => 'Soluções Documentais MPS',
+      'description' => 'Gestão de impressão e fluxos de trabalho.',
+    ),
+  )
+));
+?>
 
 <?php get_footer(); ?>

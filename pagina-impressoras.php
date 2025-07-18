@@ -170,4 +170,29 @@ get_template_part('template-parts/testemunhos-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-complementary-section', null, array(
+  'title' => 'Soluções complementares para potenciar o seu negócio',
+  'image' => get_template_directory_uri() . '/assets/img/img-impressoras/cameravigilancia.png',
+  'image_position' => 'right', 
+  'cta_text' => 'Invista no Futuro da Sua Empresa com as Energias Renováveis Dualinfor',
+  'cta_color' => '#293992', 
+  'button_text' => 'Peça um Orçamento Personalizado',
+  'services' => array(
+    array(
+      'title' => 'Gaveta Inteligente de Dinheiro',
+      'description' => 'Segurança e eficiência na gestão de numerário',
+    ),
+    array(
+      'title' => 'Soluções de Videovigilância',
+      'description' => 'Proteja o seu espaço e ativos.',
+    ),
+    array(
+      'title' => 'Software de Faturação e POS',
+      'description' => 'Simplifique a gestão de vendas.',
+    ),
+  )
+));
+?>
+
 <?php get_footer(); ?>

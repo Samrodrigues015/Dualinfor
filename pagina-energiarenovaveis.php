@@ -192,38 +192,63 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
   'title' => 'Soluções adaptadas a todos os setores empresariais',
   'subtitle' => 'Seja qual for o tamanho ou setor da sua empresa, as soluções de energias renováveis da Dualinfor garantem eficiência energética e sustentabilidade.',
   'image' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/galpao.png',
-  'reverse' => false, 
- 'cards' => array(
-  array(
-    'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconetv.svg',
-    'title' => 'Indústria e Logística',
-    'list' => array(
-      'Reduza os custos operacionais ao alimentar instalações industriais com energia solar.',
-      'Monitorize o consumo energético para evitar desperdícios.',
+  'reverse' => false,
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconetv.svg',
+      'title' => 'Indústria e Logística',
+      'list' => array(
+        'Reduza os custos operacionais ao alimentar instalações industriais com energia solar.',
+        'Monitorize o consumo energético para evitar desperdícios.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconepme.svg',
+      'title' => 'Pequenas e Médias Empresas (PME)',
+      'list' => array(
+        'Instalações de baixo custo e rápidas para empresas em crescimento.',
+        'Aproveite incentivos fiscais para investir em sustentabilidade.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconeinstituicoes.svg',
+      'title' => 'Instituições Públicas',
+      'list' => array(
+        'Modernize edifícios e reduza custos em escolas, hospitais e outros serviços públicos.',
+        'Aumente a eficiência e alinhe-se com metas governamentais de energia limpa.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconemala.svg',
+      'title' => 'Hotelaria e Turismo',
+      'list' => 'Geração de energia renovável para reduzir custos e atrair clientes que valorizam sustentabilidade.',
     ),
   ),
-  array(
-    'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconepme.svg',
-    'title' => 'Pequenas e Médias Empresas (PME)',
-    'list' => array(
-      'Instalações de baixo custo e rápidas para empresas em crescimento.',
-      'Aproveite incentivos fiscais para investir em sustentabilidade.',
+));
+?>
+
+<?php
+get_template_part('template-parts/produtos-complementary-section', null, array(
+  'title' => 'Soluções complementares para melhorar a eficiência energética',
+  'image' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/imagempc.png',
+  'image_position' => 'right', // ou 'left'
+  'cta_text' => 'Invista no Futuro da Sua Empresa com as Energias Renováveis Dualinfor',
+  'cta_color' => '#293992', // podes usar qualquer cor aqui, como '#9A2686'
+  'button_text' => 'Peça Orçamento Personalizado',
+  'services' => array(
+    array(
+      'title' => 'Redes Estruturadas & Computing',
+      'description' => 'Conectividade para suportar sistemas de monitorização de energia.',
     ),
-  ),
-  array(
-    'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconeinstituicoes.svg',
-    'title' => 'Instituições Públicas',
-    'list' => array(
-      'Modernize edifícios e reduza custos em escolas, hospitais e outros serviços públicos.',
-      'Aumente a eficiência e alinhe-se com metas governamentais de energia limpa.',
+    array(
+      'title' => 'Impressoras e Multifunções',
+      'description' => 'Equipamentos energeticamente eficientes.',
     ),
-  ),
-  array(
-    'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconemala.svg',
-    'title' => 'Hotelaria e Turismo',
-    'list' => 'Geração de energia renovável para reduzir custos e atrair clientes que valorizam sustentabilidade.',
-  ),
-),
+    array(
+      'title' => 'Videovigilância',
+      'description' => 'Monitorização de segurança alimentada por energia renovável.',
+    ),
+  )
 ));
 ?>
 

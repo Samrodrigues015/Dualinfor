@@ -222,4 +222,29 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-complementary-section', null, array(
+  'title' => 'Soluções que complementam o software de faturação e P.O.S',
+  'image' => get_template_directory_uri() . '/assets/img/img-gavetasinteligentes/gavetasinteligenteshero.png',
+  'image_position' => 'right', 
+  'cta_text' => 'Invista no Futuro da Sua Empresa com as Energias Renováveis Dualinfor',
+  'cta_color' => '#293992', 
+  'button_text' => 'Peça um Orçamento Personalizado',
+  'services' => array(
+    array(
+      'title' => 'Gaveta Inteligente de Dinheiro',
+      'description' => 'Otimize a gestão de numerário no ponto de venda.',
+    ),
+    array(
+      'title' => 'Redes Estruturadas & Computing',
+      'description' => 'Conectividade robusta para suportar sistemas POS.',
+    ),
+    array(
+      'title' => 'Videovigilância',
+      'description' => 'Garanta segurança nas transações e no ambiente de trabalho.',
+    ),
+  )
+));
+?>
+
 <?php get_footer(); ?>

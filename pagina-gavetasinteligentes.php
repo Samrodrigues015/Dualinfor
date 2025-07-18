@@ -233,5 +233,29 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-complementary-section', null, array(
+  'title' => 'Soluções complementares que potenciam a gestão do seu negócio',
+  'image' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/imagempc.png',
+  'image_position' => 'right', 
+  'cta_text' => 'Peça um Orçamento Personalizado',
+  'cta_color' => '#293992', 
+  'button_text' => 'Peça um Orçamento Personalizado',
+  'services' => array(
+    array(
+      'title' => 'Software de Faturação e P.O.S',
+      'description' => 'Equipamentos energeticamente eficientes.',
+    ),
+    array(
+      'title' => 'Redes Estruturadas & Computing',
+      'description' => 'Conectividade segura e escalável.',
+    ),
+    array(
+      'title' => 'Videovigilância',
+      'description' => 'Monitorização de segurança para o ponto de venda.',
+    ),
+  )
+));
+?>
 
 <?php get_footer(); ?>
