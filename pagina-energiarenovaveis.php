@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Página Energias Renováveis
  * Description: Página personalizada para as soluções de energias renováveis da Dualinfor.
@@ -118,6 +119,113 @@ get_template_part('template-parts/produtos-features-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/testemunhos-section', null, array(
+  'title' => 'O que dizem os nossos clientes?',
+  'testemunhos' => array(
+    array(
+      'nome' => 'Ana Rodrigues',
+      'cargo' => 'Diretora de Operações, Thyssenkrupp',
+      'mensagem' => 'Graças à Dualinfor, reduzimos os custos operacionais em 30% com soluções de impressão personalizadas.'
+    ),
+    array(
+      'nome' => 'Inês Costa',
+      'cargo' => 'Diretora de Marketing, Empresa XYZ',
+      'mensagem' => 'Com as soluções Unibind Peleman da Dualinfor, melhorámos a apresentação das nossas propostas comerciais. O impacto visual fez toda a diferença para os nossos clientes.'
+    ),
+    array(
+      'nome' => 'Carlos Ferreira',
+      'cargo' => 'Diretor Técnico, Indústria Y',
+      'mensagem' => 'Investimento que valeu a pena! A poupança energética é notável e o acompanhamento pós-instalação é exemplar.'
+    ),
+    array(
+      'nome' => 'Joana Mendes',
+      'cargo' => 'Diretora de TI, Empresa XYZ',
+      'mensagem' => 'A Dualinfor ajudou-nos a implementar um sistema robusto de cibersegurança. Desde então, evitámos vários incidentes e operamos com total confiança.'
+    ),
+    array(
+      'nome' => 'Nome do Cliente',
+      'cargo' => 'Cargo da empresa',
+      'mensagem' => 'Com as soluções Lexmark da Dualinfor, conseguimos reduzir os custos de impressão em 30% e aumentar a segurança dos nossos documentos.'
+    ),
+    array(
+      'nome' => 'José Silva',
+      'cargo' => 'Diretor de Operações, Indústria X',
+      'mensagem' => 'Com a instalação de painéis solares pela Dualinfor, reduzimos a nossa fatura energética em 40%. A equipa foi excelente na implementação e acompanhamento do projeto.'
+    ),
+    array(
+      'nome' => 'Paulo Oliveira',
+      'cargo' => 'Gerente de Supermercado Fresco & Bom',
+      'mensagem' => 'Com as Gavetas Inteligentes de Dinheiro da Dualinfor, conseguimos reduzir os erros no fecho de caixa em 80%.'
+    ),
+    array(
+      'nome' => 'João Moreira',
+      'cargo' => 'Proprietário de Restaurante XYZ',
+      'mensagem' => 'Desde que implementámos o Software P.O.S da Dualinfor, a gestão do nosso restaurante tornou-se mais eficiente.'
+    ),
+    array(
+      'nome' => 'Maria Santos',
+      'cargo' => 'Gerente de Loja, XYZ Lda',
+      'mensagem' => 'Desde que implementámos o Software P.O.S da Dualinfor, a gestão do nosso restaurante tornou-se mais eficiente.'
+    ),
+    array(
+      'nome' => 'Rui Martins',
+      'cargo' => 'Diretor de TI, Empresa XYZ',
+      'mensagem' => 'Com as soluções de Redes Estruturadas da Dualinfor, conseguimos melhorar significativamente a conectividade entre os nossos escritórios.'
+    ),
+    array(
+      'nome' => 'Pedro Oliveira',
+      'cargo' => 'Gestor de Operações, Empresa XYZ',
+      'mensagem' => 'Desde que adquirimos os digitalizadores da Dualinfor, reduzimos o tempo de processamento de documentos em 50%.'
+    ),
+    array(
+      'nome' => 'Ana Costa',
+      'cargo' => 'Gerente de Escritório, XYZ Lda',
+      'mensagem' => 'Com as impressoras Epson da Dualinfor, reduzimos os custos em 30% e aumentámos a produtividade da nossa equipa.'
+    ),
+  ),
+));
+?>
+
+<?php
+get_template_part('template-parts/produtos-solutions-section', null, array(
+  'title' => 'Soluções adaptadas a todos<br>os setores empresariais',
+  'subtitle' => 'Seja qual for o tamanho ou setor da sua empresa, as soluções de energias renováveis da Dualinfor garantem eficiência energética e sustentabilidade.',
+  'image' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/galpao.png',
+  'reverse' => false, // ou true para imagem à esquerda
+ 'cards' => array(
+  array(
+    'icon' => 'industria',
+    'title' => 'Indústria e Logística',
+    'list' => array(
+      'Reduza os custos operacionais ao alimentar instalações industriais com energia solar.',
+      'Monitorize o consumo energético para evitar desperdícios.',
+    ),
+  ),
+  array(
+    'icon' => 'pme',
+    'title' => 'Pequenas e Médias Empresas (PME)',
+    'list' => array(
+      'Instalações de baixo custo e rápidas para empresas em crescimento.',
+      'Aproveite incentivos fiscais para investir em sustentabilidade.',
+    ),
+  ),
+  array(
+    'icon' => 'publicas',
+    'title' => 'Instituições Públicas',
+    'list' => array(
+      'Modernize edifícios e reduza custos em escolas, hospitais e outros serviços públicos.',
+      'Aumente a eficiência e alinhe-se com metas governamentais de energia limpa.',
+    ),
+  ),
+  array(
+    'icon' => 'hotelaria',
+    'title' => 'Hotelaria e Turismo',
+    'list' => 'Geração de energia renovável para reduzir custos e atrair clientes que valorizam sustentabilidade.',
+  ),
+),
+));
+?>
 
 
 <?php get_footer(); ?>

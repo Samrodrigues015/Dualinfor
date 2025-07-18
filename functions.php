@@ -155,7 +155,10 @@ function dualinfor_enqueue_assets()
 	wp_enqueue_style('dualinfor-benefits-style', get_template_directory_uri() . '/assets/css/benefits-section.css', array(), $theme_version);
 	// Estilo da seção de features
 	wp_enqueue_style('dualinfor-features-style', get_template_directory_uri() . '/assets/css/features-section.css', array(), $theme_version);
-
+	// Estilo da seção de Testemunhos
+	wp_enqueue_style('dualinfor-testemunhos-style', get_template_directory_uri() . '/assets/css/section-testemunhos.css', array(), $theme_version);
+	// Estilo da seção de Soluções
+	wp_enqueue_style('dualinfor-solutions-style', get_template_directory_uri() . '/assets/css/solutions-section.css', array(), $theme_version);
 
 	// JavaScript
 	wp_enqueue_script('dualinfor-main-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), $theme_version, true);
