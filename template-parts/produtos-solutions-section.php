@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Part: Secção de Soluções Empresariais com imagem e cards
  * Uso: get_template_part('template-parts/section-solution', null, [...]);
@@ -14,7 +15,7 @@
 $title = $args['title'] ?? '';
 $subtitle = $args['subtitle'] ?? '';
 $image_position = $args['image_position'] ?? 'right';
-$image_src = $args['image_src'] ?? '';
+$image = $args['image'] ?? '';
 $cards = $args['cards'] ?? [];
 
 $reverse = $image_position === 'left' ? 'flex-row-reverse' : '';
@@ -34,9 +35,16 @@ $reverse = $image_position === 'left' ? 'flex-row-reverse' : '';
         <div class="section-solution-card">
           <?php if (!empty($card['icon'])) : ?>
             <div class="section-solution-card-icon">
-              <?php echo $card['icon']; ?>
+              <?php
+              if (strpos($card['icon'], '<svg') !== false) {
+                echo $card['icon'];
+              } else {
+                echo '<img src="' . esc_url($card['icon']) . '" alt="Ícone" />';
+              }
+              ?>
             </div>
           <?php endif; ?>
+
 
           <h3 class="section-solution-card-title"><?php echo esc_html($card['title'] ?? ''); ?></h3>
 
@@ -59,9 +67,9 @@ $reverse = $image_position === 'left' ? 'flex-row-reverse' : '';
       <?php endforeach; ?>
     </div>
 
-    <?php if (!empty($image_src)) : ?>
+    <?php if (!empty($image)) : ?>
       <div class="section-solution-image">
-        <img src="<?php echo esc_url($image_src); ?>" alt="Imagem ilustrativa">
+        <img src="<?php echo esc_url($image); ?>" alt="Imagem ilustrativa">
       </div>
     <?php endif; ?>
   </div>

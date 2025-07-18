@@ -170,4 +170,48 @@ get_template_part('template-parts/testemunhos-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-solutions-section', null, array(
+  'title' => 'Adapte as nossas soluções visuais ao seu negócio',
+  'subtitle' => 'Desde a criação de uma experiência de compra memorável até à apresentação de informações de forma clara e eficiente, as Soluções Visuais da Dualinfor adaptam-se às necessidades do seu setor.',
+  'image' => get_template_directory_uri() . '/assets/img/img-solucoesvisuais/imageloja.png',
+  'image_position' => 'left',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/iconeloja.svg',
+      'title' => 'Retalho',
+      'list' => array(
+        'Exiba promoções e novidades de forma dinâmica para captar a atenção dos clientes.',
+        'Videowalls para vitrinas ou áreas de destaque.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/iconecruz.svg',
+      'title' => 'Saúde',
+      'list' => array(
+        'Utilização de sinalética digital para orientar pacientes e partilhar informações importantes.',
+        'Monitores em salas de espera para melhorar a experiência do cliente.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-solucoesvisuais/iconeeducacao.svg',
+      'title' => 'Educação',
+      'list' => array(
+        'Apresentação de conteúdos educativos em monitores interativos para envolver alunos e professores.',
+        'Criação de ambientes colaborativos em salas de aula.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconemala.svg',
+      'title' => 'Hotelaria e Restauração',
+      'list' => array(
+        'Digital signage para apresentar menus digitais e promoções.',
+        'Monitores para exibição de eventos ou atrações locais.',
+      ),
+    ),
+  ),
+));
+?>
+
+
 <?php get_footer(); ?>

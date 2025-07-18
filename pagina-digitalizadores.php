@@ -185,5 +185,48 @@ get_template_part('template-parts/testemunhos-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-solutions-section', null, array(
+  'title' => 'Digitalizadores adaptados a todas as necessidades empresariais',
+  'subtitle' => 'Desde a digitalização de arquivos históricos até à organização de registos médicos, os digitalizadores da Dualinfor são ferramentas versáteis e essenciais para qualquer setor.',
+  'image' => get_template_directory_uri() . '/assets/img/img-digitalizadores/epson.png', 
+  'image_position' => 'left',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconeinstituicoes.svg',
+      'title' => 'Administração Pública',
+      'list' => array(
+        'Digitalize e organize processos administrativos para fácil consulta.',
+        'Arquivos protegidos contra perdas e danos.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-solucoesvisuais/iconeeducacao.svg',
+      'title' => 'Educação',
+      'list' => array(
+        'Transforme materiais físicos em digitais para partilha com alunos e docentes.',
+        'Crie arquivos pesquisáveis para acesso rápido.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/iconecruz.svg',
+      'title' => 'Saúde',
+      'list' => array(
+        'Digitalize registos médicos com segurança e confidencialidade.',
+        'Reduza o espaço ocupado por documentos físicos.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconepme.svg',
+      'title' => 'PME e Escritórios',
+      'list' => array(
+        'Organize contratos e faturas com eficiência.',
+        'Envie documentos digitalizados diretamente para e-mails ou cloud.',
+      ),
+    ),
+  ),
+));
+?>
+
 
 <?php get_footer(); ?>

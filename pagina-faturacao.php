@@ -183,4 +183,48 @@ get_template_part('template-parts/testemunhos-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-solutions-section', null, array(
+  'title' => 'Como o software P.O.S Dualinfor transforma negócios de todos os setores',
+  'subtitle' => 'Seja qual for o tamanho ou setor do seu negócio, o nosso Software de Faturação e P.O.S adapta-se para garantir máxima eficiência.',
+  'image' => get_template_directory_uri() . '/assets/img/img-faturacao/mulherfaturacao.png', 
+  'image_position' => 'right',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-gavetasinteligentes/iconerestaurante.svg',
+      'title' => 'Restaurantes e Cafés',
+      'list' => array(
+        'Gestão de mesas, pedidos e entrega ao domicílio.',
+        'Faturação rápida para reduzir tempos de espera.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/iconeloja.svg',
+      'title' => 'Lojas de Retalho',
+      'list' => array(
+        'Controle de inventário e promoções em tempo real.',
+        'Integração com sistemas de e-commerce para vendas online.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/iconecruz.svg',
+      'title' => 'Farmácias e Saúde',
+      'list' => array(
+        'Gerir produtos sensíveis e acompanhar o stock de medicamentos.',
+        'Ferramentas para emissão de faturas compatíveis com o sistema nacional de saúde.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconepme.svg',
+      'title' => 'Pequenos Negócios e PME',
+      'list' => array(
+        'Sistema acessível e escalável para acompanhar o crescimento do negócio.',
+        'Relatórios financeiros simples para decisões rápidas.',
+      ),
+    ),
+  ),
+));
+?>
+
+
 <?php get_footer(); ?>

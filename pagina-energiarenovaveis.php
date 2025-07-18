@@ -189,13 +189,13 @@ get_template_part('template-parts/testemunhos-section', null, array(
 
 <?php
 get_template_part('template-parts/produtos-solutions-section', null, array(
-  'title' => 'Soluções adaptadas a todos<br>os setores empresariais',
+  'title' => 'Soluções adaptadas a todos os setores empresariais',
   'subtitle' => 'Seja qual for o tamanho ou setor da sua empresa, as soluções de energias renováveis da Dualinfor garantem eficiência energética e sustentabilidade.',
   'image' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/galpao.png',
-  'reverse' => false, // ou true para imagem à esquerda
+  'reverse' => false, 
  'cards' => array(
   array(
-    'icon' => 'industria',
+    'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconetv.svg',
     'title' => 'Indústria e Logística',
     'list' => array(
       'Reduza os custos operacionais ao alimentar instalações industriais com energia solar.',
@@ -203,7 +203,7 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
     ),
   ),
   array(
-    'icon' => 'pme',
+    'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconepme.svg',
     'title' => 'Pequenas e Médias Empresas (PME)',
     'list' => array(
       'Instalações de baixo custo e rápidas para empresas em crescimento.',
@@ -211,7 +211,7 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
     ),
   ),
   array(
-    'icon' => 'publicas',
+    'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconeinstituicoes.svg',
     'title' => 'Instituições Públicas',
     'list' => array(
       'Modernize edifícios e reduza custos em escolas, hospitais e outros serviços públicos.',
@@ -219,7 +219,7 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
     ),
   ),
   array(
-    'icon' => 'hotelaria',
+    'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconemala.svg',
     'title' => 'Hotelaria e Turismo',
     'list' => 'Geração de energia renovável para reduzir custos e atrair clientes que valorizam sustentabilidade.',
   ),

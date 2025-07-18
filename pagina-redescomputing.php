@@ -178,4 +178,48 @@ get_template_part('template-parts/testemunhos-section', null, array(
 ));
 ?>
 
+
+<?php
+get_template_part('template-parts/produtos-solutions-section', null, array(
+  'title' => 'Como as Redes Estruturadas & Computing podem transformar o seu negócio',
+  'subtitle' => 'Independente do setor em que atua, as nossas soluções são projetadas para simplificar a gestão, aumentar a eficiência e garantir resultados tangíveis.',
+  'image' => get_template_directory_uri() . '/assets/img/img-redes/tecnologia.png', 
+  'image_position' => 'right',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconetv.svg',
+      'title' => 'Corporativo e Escritórios',
+      'list' => array(
+        'Infraestruturas que garantem conectividade estável para equipas grandes e dispersas.',
+        'Redes centralizadas que facilitam a gestão de dados e dispositivos.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-solucoesvisuais/iconeeducacao.svg',
+      'title' => 'Educação',
+      'list' => array(
+        'Suporte para redes de alta densidade, essenciais para instituições de ensino digital.',
+        'Integração com plataformas de e-learning.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/iconecruz.svg',
+      'title' => 'Saúde',
+      'list' => array(
+        'Redes seguras para o processamento de dados confidenciais, como registos médicos.',
+        'Conectividade ininterrupta para operações críticas.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-faturacao/iconeloja.svg',
+      'title' => 'Logística e Indústria',
+      'list' => array(
+        'Gestão de dispositivos IoT para controlo e monitorização de operações em tempo real.',
+        'Redes resistentes para ambientes industriais exigentes.',
+      ),
+    ),
+  ),
+));
+?>
+
 <?php get_footer(); ?>

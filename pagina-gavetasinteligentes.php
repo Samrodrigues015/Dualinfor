@@ -190,4 +190,48 @@ get_template_part('template-parts/testemunhos-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-solutions-section', null, array(
+  'title' => 'Adapte as gavetas inteligentes ao seu negócio',
+  'subtitle' => 'Seja qual for o tamanho ou setor do seu negócio, as nossas soluções adaptam-se para oferecer segurança e eficiência no manuseamento de numerário.',
+  'image' => get_template_directory_uri() . '/assets/img/img-gavetasinteligentes/impressorapreta.png',
+  'image_position' => 'left',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-gavetasinteligentes/iconechaveiro.svg',
+      'title' => 'Supermercados e Grandes Retalhistas',
+      'list' => array(
+        'Automatize o fecho de caixa em horários de maior fluxo.',
+        'Reduza discrepâncias financeiras e otimize a gestão.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-gavetasinteligentes/iconerestaurante.svg',
+      'title' => 'Restauração e Cafés',
+      'list' => array(
+        'Velocidade e precisão no processamento de pagamentos.',
+        'Design compacto que se adapta a balcões pequenos.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconepme.svg',
+      'title' => 'Pequenas Empresas e PME',
+      'list' => array(
+        'Ferramentas acessíveis para garantir controlo total do numerário.',
+        'Relatórios que ajudam na tomada de decisões financeiras.',
+      ),
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconeinstituicoes.svg',
+      'title' => 'Instituições Públicas e Serviços',
+      'list' => array(
+        'Segurança adicional no manuseamento de numerário em contextos sensíveis.',
+        'Conformidade com normas legais e fiscais.',
+      ),
+    ),
+  ),
+));
+?>
+
+
 <?php get_footer(); ?>

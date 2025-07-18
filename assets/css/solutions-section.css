@@ -1,160 +1,175 @@
 .section-solution-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
 
-        .section-solution-header {
-            margin-bottom: 40px;
-        }
+.section-solution-header {
+  margin-bottom: 40px;
+}
 
-        .section-solution-title {
-            font-size: 48px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
+.section-solution-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  max-width: 60%;
+}
 
-        .section-solution-subtitle {
-            font-size: 18px;
-            color: #666;
-            max-width: 600px;
-            line-height: 1.6;
-        }
+.section-solution-subtitle {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  line-height: 1.6;
+}
 
-        .section-solution-content {
-            display: grid;
-            grid-template-columns: 1fr 400px;
-            gap: 40px;
-            align-items: start;
-        }
+.section-solution-content {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+  justify-content: space-between;
+}
 
-        .section-solution-cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
+.section-solution-content.flex-row-reverse {
+  flex-direction: row-reverse;
+}
 
-        .section-solution-card {
-            background: white;
-            border: 2px solid #9A2686;
-            border-radius: 16px;
-            padding: 30px;
-            position: relative;
-        }
+.section-solution-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
-        .section-solution-card-icon {
-            width: 40px;
-            height: 40px;
-            margin-bottom: 20px;
-        }
+.section-solution-card {
+  background: #f6f6f6;
+  border: 2px solid #9a2686;
+  border-radius: 16px;
+  padding: 30px;
+  position: relative;
+}
 
-        .section-solution-card-icon svg {
-            width: 100%;
-            height: 100%;
-            stroke: #9A2686;
-            fill: none;
-            stroke-width: 2;
-        }
+.section-solution-card-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
 
-        .section-solution-card-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 20px;
-            line-height: 1.3;
-        }
+.section-solution-card-icon svg,
+.section-solution-card-icon img {
+  width: 100%;
+  height: 100%;
+  stroke: #9a2686;
+  fill: none;
+  stroke-width: 2;
+}
 
-        .section-solution-card-list {
-            list-style: none;
-        }
+.section-solution-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
 
-        .section-solution-card-list li {
-            color: #555;
-            font-size: 16px;
-            margin-bottom: 12px;
-            padding-left: 20px;
-            position: relative;
-            line-height: 1.5;
-        }
+.section-solution-card-list {
+  list-style: none;
+  padding-left: 0;
+}
 
-        .section-solution-card-list li:before {
-            content: "•";
-            color: #9A2686;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
+.section-solution-card-list li {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
 
-        .section-solution-image {
-            height: 100%;
-            /* adapta-se à altura da linha do grid */
-            align-self: stretch;
-            /* estica para igualar a altura da coluna vizinha */
-            border-radius: 16px;
-            overflow: hidden;
-            display: flex;
-        }
+.section-solution-card-list li:before {
+  content: "•";
+  color: #9a2686;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
 
-        .section-solution-image img {
-            width: 100%;
-            height: 720px;
-        }
+.section-solution-image {
+  flex: 0 0 400px;
+  align-self: stretch;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+}
 
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .section-solution-content {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
+.section-solution-image img {
+  width: 100%;
+  height: 100%;
+}
 
-            .section-solution-image {
-                display: none;
-            }
-        }
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .section-solution-content {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-        @media (max-width: 768px) {
-            .section-solution-container {
-                padding: 40px 15px;
-            }
+  .section-solution-image {
+    width: 100%;
+    height: auto;
+  }
 
-            .section-solution-title {
-                font-size: 36px;
-            }
+  .section-solution-image img {
+    height: auto;
+  }
+}
 
-            .section-solution-cards {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
+@media (max-width: 768px) {
+  .section-solution-container {
+    padding: 40px 15px;
+  }
 
-            .section-solution-card {
-                padding: 25px;
-            }
+  .section-solution-title {
+    font-size: 36px;
+  }
 
-            .section-solution-card-title {
-                font-size: 20px;
-            }
-        }
+  .section-solution-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 
-        @media (max-width: 480px) {
-            .section-solution-title {
-                font-size: 28px;
-            }
+  .section-solution-card {
+    padding: 25px;
+  }
 
-            .section-solution-subtitle {
-                font-size: 16px;
-            }
+  .section-solution-card-title {
+    font-size: 20px;
+  }
 
-            .section-solution-card {
-                padding: 20px;
-            }
+  .section-solution-image {
+    display: none;
+  }
+}
 
-            .section-solution-card-title {
-                font-size: 18px;
-            }
+@media (max-width: 480px) {
+  .section-solution-title {
+    font-size: 28px;
+  }
 
-            .section-solution-card-list li {
-                font-size: 14px;
-            }
-        }
+  .section-solution-subtitle {
+    font-size: 16px;
+  }
+
+  .section-solution-card {
+    padding: 20px;
+  }
+
+  .section-solution-card-title {
+    font-size: 18px;
+  }
+
+  .section-solution-card-list li {
+    font-size: 14px;
+  }
+}
