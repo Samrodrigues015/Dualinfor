@@ -213,4 +213,30 @@ get_template_part('template-parts/formulario-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Ainda tem dúvidas? Nós respondemos.',
+  'title_centered' => false, 
+  'image' => get_template_directory_uri() . '/assets/img/img-impressoras/imagefaq.png',
+  'faqs' => array(
+    array(
+      'question' => 'As impressoras Epson são compatíveis com sistemas Mac e Windows?',
+      'answer' => 'Sim, são totalmente compatíveis com ambos os sistemas operativos.',
+    ),
+    array(
+      'question' => 'Posso digitalizar diretamente para serviços na cloud?',
+      'answer' => 'Sim, as nossas impressoras Epson integram-se facilmente com Google Drive, OneDrive e Dropbox.',
+    ),
+    array(
+      'question' => 'Qual é o tempo médio de instalação de um equipamento?',
+      'answer' => 'A instalação é simples e rápida, sendo concluída em menos de 1 hora.',
+    ),
+    array(
+      'question' => 'Oferecem suporte técnico?',
+      'answer' => 'Sim, a Dualinfor disponibiliza suporte técnico especializado, manutenção preventiva e formação para a sua equipa.',
+    ),
+  )
+));
+?>
+
 <?php get_footer(); ?>

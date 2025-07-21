@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Página Faturação
  * Description: Página personalizada para Página Faturação e POS da Dualinfor.
@@ -187,7 +188,7 @@ get_template_part('template-parts/testemunhos-section', null, array(
 get_template_part('template-parts/produtos-solutions-section', null, array(
   'title' => 'Como o software P.O.S Dualinfor transforma negócios de todos os setores',
   'subtitle' => 'Seja qual for o tamanho ou setor do seu negócio, o nosso Software de Faturação e P.O.S adapta-se para garantir máxima eficiência.',
-  'image' => get_template_directory_uri() . '/assets/img/img-faturacao/mulherfaturacao.png', 
+  'image' => get_template_directory_uri() . '/assets/img/img-faturacao/mulherfaturacao.png',
   'image_position' => 'right',
   'cards' => array(
     array(
@@ -230,9 +231,9 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
 get_template_part('template-parts/produtos-complementary-section', null, array(
   'title' => 'Soluções que complementam o software de faturação e P.O.S',
   'image' => get_template_directory_uri() . '/assets/img/img-faturacao/cabos.png',
-  'image_position' => 'right', 
+  'image_position' => 'right',
   'cta_text' => 'Invista no Futuro da Sua Empresa com as Energias Renováveis Dualinfor',
-  'cta_color' => '#293992', 
+  'cta_color' => '#293992',
   'button_text' => 'Peça um Orçamento Personalizado',
   'services' => array(
     array(
@@ -259,7 +260,7 @@ get_template_part('template-parts/formulario-section', null, array(
     'Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
     '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
   ),
-   'fields_overrides' => array(
+  'fields_overrides' => array(
     'area' => array(
       'label' => 'Número de Estações de POS Necessárias.',
       'placeholder' => 'Ex: 15'
@@ -267,5 +268,32 @@ get_template_part('template-parts/formulario-section', null, array(
   )
 ));
 ?>
+
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Resolvemos as suas dúvidas sobre o software de faturação e P.O.S',
+  'title_centered' => false, // coloca true se quiseres o título centrado
+  'image' => get_template_directory_uri() . '/assets/img/img-faturacao/softwarefaturacao.png',
+  'faqs' => array(
+    array(
+      'question' => 'O software é compatível com a legislação fiscal portuguesa?',
+      'answer' => 'Sim, o nosso software é certificado e cumpre todas as normas fiscais em vigor.',
+    ),
+    array(
+      'question' => 'É possível gerir o inventário em múltiplas localizações?',
+      'answer' => 'Sim, o software permite controlar inventários de diferentes lojas ou armazéns.',
+    ),
+    array(
+      'question' => 'O sistema funciona offline?',
+      'answer' => 'Sim, o software armazena dados localmente e sincroniza automaticamente quando a ligação é restaurada.',
+    ),
+    array(
+      'question' => 'Quais os métodos de pagamento compatíveis?',
+      'answer' => 'São compatíveis cartões de crédito, débito, MB Way e pagamentos digitais.',
+    ),
+  )
+));
+?>
+
 
 <?php get_footer(); ?>

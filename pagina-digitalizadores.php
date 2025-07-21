@@ -269,4 +269,30 @@ get_template_part('template-parts/formulario-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre Digitalizadores',
+  'title_centered' => false, 
+  'image' => get_template_directory_uri() . '/assets/img/img-digitalizadores/imagefaq.png',
+  'faqs' => array(
+    array(
+      'question' => 'Os digitalizadores são compatíveis com sistemas Mac e Windows?',
+      'answer' => 'Sim, são compatíveis com ambos os sistemas operativos.',
+    ),
+    array(
+      'question' => 'Posso digitalizar para PDF pesquisável?',
+      'answer' => 'Sim, todos os nossos modelos suportam OCR para criar PDFs pesquisáveis.',
+    ),
+    array(
+      'question' => 'Qual o suporte técnico incluído?',
+      'answer' => 'Oferecemos suporte especializado, manutenção preventiva e formação para equipas.',
+    ),
+    array(
+      'question' => 'É possível digitalizar documentos A3?',
+      'answer' => 'Sim, temos modelos com suporte para formatos A3.',
+    ),
+  )
+));
+?>
+
 <?php get_footer(); ?>

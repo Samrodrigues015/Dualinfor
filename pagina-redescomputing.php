@@ -265,4 +265,30 @@ get_template_part('template-parts/formulario-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre Redes Estruturadas',
+  'title_centered' => false, 
+  'image' => get_template_directory_uri() . '/assets/img/img-redes/tecnico.png',
+  'faqs' => array(
+    array(
+      'question' => 'As redes estruturadas podem ser adaptadas ao crescimento da minha empresa?',
+      'answer' => 'Sim, todas as nossas soluções são escaláveis e permitem expansão conforme as necessidades.',
+    ),
+    array(
+      'question' => 'As redes incluem soluções de segurança?',
+      'answer' => 'Sim, as nossas soluções integram firewalls e monitorização contínua para máxima proteção.',
+    ),
+    array(
+      'question' => 'Qual o tempo de implementação de uma rede estruturada?',
+      'answer' => 'O tempo depende do tamanho e complexidade do projeto, mas garantimos uma execução eficiente.',
+    ),
+    array(
+      'question' => 'Qual o suporte técnico oferecido?',
+      'answer' => 'Oferecemos suporte completo: consultoria, instalação, manutenção e upgrades.',
+    ),
+  )
+));
+?>
+
 <?php get_footer(); ?>

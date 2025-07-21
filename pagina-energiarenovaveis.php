@@ -263,5 +263,31 @@ get_template_part('template-parts/formulario-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre Energias Renováveis',
+  'title_centered' => true, // ou false para alinhar à esquerda
+  'image' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/imagepredio.png',
+  'faqs' => array(
+    array(
+      'question' => 'Qual é o tempo médio de retorno do investimento?',
+      'answer' => 'Sim, são intuitivas e não requerem formação técnica.',
+    ),
+    array(
+      'question' => 'A Dualinfor ajuda com incentivos fiscais?',
+      'answer' => 'Sim, oferecemos apoio na candidatura a incentivos e subsídios disponíveis em Portugal.',
+    ),
+    array(
+      'question' => 'Os sistemas de energia renovável requerem muita manutenção?',
+      'answer' => 'A manutenção é mínima, sendo necessária apenas limpeza periódica e verificação técnica.',
+    ),
+    array(
+      'question' => 'É possível armazenar a energia gerada?',
+      'answer' => 'Sim, utilizamos sistemas de armazenamento que permitem guardar energia para utilização futura.',
+    ),
+  )
+));
+?>
+
 
 <?php get_footer(); ?>

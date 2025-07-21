@@ -154,3 +154,33 @@ document.addEventListener("DOMContentLoaded", () => {
     new ResponsiveNavigation();
   }
 });
+
+// ===== Script do Template parts Doubt Soluçôes FAQ =====
+// Aguarda até que os elementos estejam prontos no DOM
+function waitForElements(selector, callback) {
+  const elements = document.querySelectorAll(selector);
+  if (elements.length > 0) {
+    callback(elements);
+  } else {
+    setTimeout(() => waitForElements(selector, callback), 100);
+  }
+}
+
+// Quando os elementos forem encontrados, aplica o comportamento
+waitForElements('.section-doubt-faq-header', function (headers) {
+  console.log('FAQs encontrados após aguardar:', headers.length);
+
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      const answer = item.querySelector('.section-doubt-faq-answer');
+
+      if (!answer) return;
+
+      const isVisible = answer.style.display === 'block';
+      answer.style.display = isVisible ? 'none' : 'block';
+    });
+  });
+});
+
+

@@ -274,4 +274,34 @@ get_template_part('template-parts/formulario-section', null, array(
   )
 ));
 ?>
+
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Resolvemos as Suas Dúvidas Sobre as Gavetas Inteligentes',
+  'title_centered' => false, 
+  'image' => get_template_directory_uri() . '/assets/img/img-gavetasinteligentes/farmacia.png',
+  'faqs' => array(
+    array(
+      'question' => 'As gavetas são compatíveis com sistemas POS existentes?',
+      'answer' => 'Sim, as nossas gavetas integram-se facilmente com os sistemas POS mais utilizados no mercado.',
+    ),
+    array(
+      'question' => 'É possível aceder remotamente às informações da gaveta?',
+      'answer' => 'Sim, os sistemas incluem monitorização em tempo real através de plataformas digitais.',
+    ),
+    array(
+      'question' => 'Qual o suporte técnico oferecido?',
+      'answer' => 'Oferecemos suporte completo, incluindo instalação, manutenção e formação para a sua equipa.',
+    ),
+    array(
+      'question' => 'É necessária formação para utilizar as gavetas?',
+      'answer' => 'O sistema é intuitivo, mas oferecemos formação inicial para garantir que a equipa utiliza todas as funcionalidades.',
+    ),
+  )
+));
+?>
+
+
+
+
 <?php get_footer(); ?>
