@@ -17,8 +17,10 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
   'btn_primary_link' => '#formulario',
   'btn_secondary_text' => 'Fale com um Especialista Agora',
   'btn_secondary_link' => '#contacto',
-  'align_left' => true
+  'align_left' => true,
+  'layout_type' => 'titulo-botoes-paragrafo'
 ));
 ?>
+
 
 <?php get_footer(); ?>
