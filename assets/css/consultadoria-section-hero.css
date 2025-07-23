@@ -1,0 +1,175 @@
+.section-hero-consultadoria {
+            background-color: #f2f2f2;
+            padding: 0 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-hero-consultadoria-container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .section-hero-consultadoria-content {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-hero-consultadoria-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-hero-consultadoria-subtitle {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-hero-consultadoria-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .section-hero-consultadoria-btn {
+            padding: 8px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            border: 2px solid #9A2686;
+        }
+
+        .section-hero-consultadoria-btn-primary {
+            background-color: #9A2686;
+            color: white;
+        }
+
+        .section-hero-consultadoria-btn-primary:hover {
+            background-color: #7d1f6b;
+            transform: translateY(-2px);
+        }
+
+        .section-hero-consultadoria-btn-secondary {
+            background-color: transparent;
+            color: #9A2686;
+        }
+
+        .section-hero-consultadoria-btn-secondary:hover {
+            background-color: #9A2686;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .section-hero-consultadoria-arrow {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .section-hero-consultadoria-image-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-hero-consultadoria-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .section-hero-consultadoria {
+                padding: 40px 15px;
+                min-height: auto;
+            }
+
+            .section-hero-consultadoria-title {
+                font-size: 2.2rem;
+                margin-bottom: 20px;
+            }
+
+            .section-hero-consultadoria-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 30px;
+            }
+
+            .section-hero-consultadoria-buttons {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+            }
+
+            .section-hero-consultadoria-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+                padding: 18px 25px;
+            }
+
+            .section-hero-consultadoria-content {
+                margin-bottom: 40px;
+            }
+
+            .section-hero-consultadoria-image-container {
+                border-radius: 15px;
+            }
+
+            .section-hero-consultadoria-image {
+                min-height: 250px;
+                object-fit: cover;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-hero-consultadoria-title {
+                font-size: 1.8rem;
+            }
+
+            .section-hero-consultadoria-subtitle {
+                font-size: 1rem;
+            }
+
+            .section-hero-consultadoria-btn {
+                font-size: 0.85rem;
+                padding: 16px 20px;
+            }
+        }
+
+        /* Ensure image loads properly on all devices */
+        @media (max-width: 768px) {
+            .section-hero-consultadoria-image {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+                max-width: 100% !important;
+            }
+        }

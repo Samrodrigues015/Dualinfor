@@ -42,7 +42,7 @@
 
 				<nav class="nav" id="main-navigation" role="navigation" aria-label="Main navigation">
 					<div class="mobile-menu-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-header/logomobile.png" alt="Imagem topo menu mobile">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-header/logodualinfor.png" alt="Imagem topo menu mobile">
 					</div>
 					<div class="nav__container">
 						<ul class="nav__list">

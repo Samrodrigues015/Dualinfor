@@ -172,6 +172,23 @@ get_template_part('template-parts/testemunhos-section', null, array(
 ?>
 
 <?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber como as impressoras e multifunções Epson podem transformar a produtividade da sua empresa?',
+    'Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+    'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Volume Médio de Impressão',
+      'placeholder' => 'Ex: 15'
+    )
+  )
+));
+?>
+
+<?php
 get_template_part('template-parts/produtos-complementary-section', null, array(
   'title' => 'Soluções complementares para potenciar o seu negócio',
   'image' => get_template_directory_uri() . '/assets/img/img-impressoras/cameravigilancia.png',
@@ -196,22 +213,6 @@ get_template_part('template-parts/produtos-complementary-section', null, array(
 ));
 ?>
 
-<?php
-get_template_part('template-parts/formulario-section', null, array(
-  'title' => 'Peça já o seu orçamento personalizado',
-  'paragraphs' => array(
-    'Quer saber como as impressoras e multifunções Epson podem transformar a produtividade da sua empresa?',
-    'Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
-    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
-  ),
-    'fields_overrides' => array(
-    'area' => array(
-      'label' => 'Volume Médio de Impressão',
-      'placeholder' => 'Ex: 15'
-    )
-  )
-));
-?>
 
 <?php
 get_template_part('template-parts/produtos-doubt-section', null, array(
