@@ -20,4 +20,14 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/hero-section-secondary', null, array(
+  'title' => 'Consultoria que resolve problemas e cria oportunidades',
+  'paragraph' => 'Com mais de 25 anos de experiência no mercado, a Dualinfor oferece serviços de consultadoria que ajudam empresas de qualquer dimensão a alcançar maior eficiência, segurança e crescimento sustentável. Da análise à implementação, estamos ao seu lado em cada passo.',
+  'image' => get_template_directory_uri() . '/assets/img/img-consultadoria/reuniao.png',
+  'image_right' => true
+));
+?>
+
+
 <?php get_footer(); ?>

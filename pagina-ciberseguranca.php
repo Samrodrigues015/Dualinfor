@@ -17,7 +17,17 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
   'btn_primary_link' => '#formulario',
   'btn_secondary_text' => 'Fale com um Especialista Agora',
   'btn_secondary_link' => '#contacto',
-  'align_left' => true
+  'align_left' => true,
+  'layout_type' => 'titulo-botoes-paragrafo'
+));
+?>
+
+<?php
+get_template_part('template-parts/hero-section-secondary', null, array(
+  'title' => 'Soluções de cibersegurança que garantem tranquilidade e confiança',
+  'paragraph' => 'Diante dos crescentes riscos cibernéticos, a Dualinfor oferece soluções personalizadas de cibersegurança para proteger dados, mitigar ameaças e garantir a continuidade do seu negócio.',
+  'image' => get_template_directory_uri() . '/assets/img/img-ciberseguranca/herosecondary.png',
+  'image_right' => false
 ));
 ?>
 

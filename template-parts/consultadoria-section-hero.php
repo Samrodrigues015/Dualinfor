@@ -89,7 +89,7 @@ $layout_type_class = $args['layout_type'] === 'titulo-botoes-paragrafo' ? 'titul
 
     <?php if (!empty($args['image'])) : ?>
       <div class="section-hero-consultadoria-image-container">
-        <img src="<?php echo esc_url($args['image']); ?>" alt="" class="section-hero-consultadoria-image" loading="lazy">
+        <img src="<?php echo esc_url($args['image']); ?>" alt="imagem hero" class="section-hero-consultadoria-image" loading="lazy">
       </div>
     <?php endif; ?>
 

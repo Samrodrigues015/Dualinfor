@@ -21,5 +21,14 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/hero-section-secondary', null, array(
+  'title' => 'Simplifique e optimize a gestão de documentos e impressões',
+  'paragraph' => 'As Soluções Documentais MPS da Dualinfor foram desenvolvidas para ajudar as empresas a gerir e otimizar o seu parque de impressão e documentos. Reduza custos, elimine desperdícios e garanta a segurança e a eficiência na gestão documental.',
+  'image' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/herosecondary.png',
+  'image_right' => true
+));
+?>
+
 
 <?php get_footer(); ?>

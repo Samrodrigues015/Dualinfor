@@ -16,7 +16,17 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
   'btn_primary_link' => '#formulario',
   'btn_secondary_text' => 'Fale com um Especialista Agora',
   'btn_secondary_link' => '#contacto',
-  'align_left' => true
+  'align_left' => true,
+  'layout_type' => 'titulo-botoes-paragrafo'
+));
+?>
+
+<?php
+get_template_part('template-parts/hero-section-secondary', null, array(
+  'title' => 'Digital Signage: A solução inovadora para modernizar a comunicação do seu negócio',
+  'paragraph' => 'O Xopvision – Digital Signage é uma plataforma intuitiva para criar e gerir conteúdos digitais, ideal para destacar marcas, informar em tempo real e melhorar a experiência do cliente.',
+  'image' => get_template_directory_uri() . '/assets/img/img-xopvision/herosecondary.png',
+  'image_right' => false
 ));
 ?>
 

@@ -1,0 +1,50 @@
+.section-hero-secundario {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    border-radius: 24px;
+    background-color: #f2f2f2;
+    flex-direction: row;
+  }
+
+  .section-hero-secundario.image-right {
+    flex-direction: row-reverse;
+  }
+
+  .hero-secundario-img,
+  .hero-secundario-text {
+    flex: 1;
+  }
+
+  .hero-secundario-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .hero-secundario-text h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #121212;
+  }
+
+  .hero-secundario-text p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #333;
+  }
+
+  @media (max-width: 900px) {
+    .section-hero-secundario {
+      flex-direction: column !important;
+      padding: 20px;
+      gap: 30px;
+      text-align: center;
+    }
+  }

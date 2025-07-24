@@ -19,4 +19,13 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/hero-section-secondary', null, array(
+  'title' => 'A Solução completa para a Gestão de Bilhética',
+  'paragraph' => 'O Software de Bilhética da Dualinfor foi desenvolvido para responder às necessidades específicas de empresas e instituições que procuram simplificar a gestão de bilhetes, reduzir custos e melhorar a experiência do cliente.',
+  'image' => get_template_directory_uri() . '/assets/img/img-bilhetica/herosecondary.png',
+  'image_right' => true
+));
+?>
+
 <?php get_footer(); ?>

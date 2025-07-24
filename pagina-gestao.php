@@ -16,8 +16,20 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
   'btn_primary_link' => '#formulario',
   'btn_secondary_text' => 'Fale com um Especialista Agora',
   'btn_secondary_link' => '#contacto',
-  'align_left' => true
+  'align_left' => true,
+  'layout_type' => 'titulo-botoes-paragrafo'
 ));
 ?>
+
+<?php
+get_template_part('template-parts/hero-section-secondary', null, array(
+  'title' => 'Organize o atendimento e melhore a satisfação dos seus clientes',
+  'paragraph' => 'A Gestão de Filas de Espera da Dualinfor oferece soluções tecnológicas para organizar e agilizar o atendimento em qualquer tipo de negócio. Com ferramentas inovadoras, garantimos maior eficiência operacional e uma experiência mais positiva para os seus clientes.',
+  'image' => get_template_directory_uri() . '/assets/img/img-gestao/herosecondary.png',
+  'image_right' => false
+));
+?>
+
+
 
 <?php get_footer(); ?>

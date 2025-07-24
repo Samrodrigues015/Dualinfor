@@ -1,6 +1,6 @@
 .section-hero-consultadoria {
   background-color: #f2f2f2;
-  padding: 0 20px;
+  padding: 0 45px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
   margin-bottom: 30px;
   line-height: 1.2;
   max-width: 1000px;
-  margin-left: 20px;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -36,7 +36,7 @@
   margin-top: 40px;
   margin-bottom: 40px;
   line-height: 1.6;
-  max-width: 800px;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -51,7 +51,6 @@
 
 .section-hero-consultadoria-btn {
   padding: 8px 20px;
-  margin-left: 20px;
   border-radius: 50px;
   font-size: 0.8rem;
   font-weight: 600;
@@ -105,6 +104,7 @@
   height: auto;
   display: block;
   object-fit: cover;
+  
 }
 
 /* NOVO LAYOUT: título e botões à esquerda, parágrafo à direita */
@@ -216,6 +216,7 @@
 
   .section-hero-consultadoria-subtitle {
     font-size: 1rem;
+    max-width: 100%;
   }
 
   .section-hero-consultadoria-btn {

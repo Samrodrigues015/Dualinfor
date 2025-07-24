@@ -163,8 +163,14 @@ function dualinfor_enqueue_assets()
 	wp_enqueue_style('dualinfor-complementary-style', get_template_directory_uri() . '/assets/css/complementary-section.css', array(), $theme_version);
 	// Estilo da seção de Soluçôes FAQ
 	wp_enqueue_style('dualinfor-doubt-style', get_template_directory_uri() . '/assets/css/doubt-section.css', array(), $theme_version);
+
 	// Estilo da seção de Hero Consultadoria
 	wp_enqueue_style('dualinfor-consultoria-hero-style', get_template_directory_uri() . '/assets/css/consultadoria-section-hero.css', array(), $theme_version);
+
+// Estilo da seção de Hero Consultadoria parte 2
+wp_enqueue_style('dualinfor-hero-section-secundary-style', get_template_directory_uri() . '/assets/css/hero-section-secondary.css', array(), $theme_version);
+
+
 	// Estilo da seção de Formulário
 	wp_enqueue_style('dualinfor-formulario-style', get_template_directory_uri() . '/assets/css/formulario.css', array(), $theme_version);
 

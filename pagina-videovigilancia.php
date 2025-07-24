@@ -21,4 +21,13 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/hero-section-secondary', null, array(
+  'title' => 'Soluções de videovigilância que garantem Tranquilidade e eficiência operacional',
+  'paragraph' => 'Na Dualinfor, compreendemos que a segurança é uma prioridade. Por isso, oferecemos sistemas de videovigilância de última geração, que vão além da monitorização, ajudando a prevenir incidentes, proteger ativos e assegurar o cumprimento de normas legais.',
+  'image' => get_template_directory_uri() . '/assets/img/img-videovigilancia/herosecondary.png',
+  'image_right' => true
+));
+?>
+
 <?php get_footer(); ?>
