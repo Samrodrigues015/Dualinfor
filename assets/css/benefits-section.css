@@ -129,7 +129,6 @@
   right: 24px;
   width: 40px;
   height: 40px;
-  border: 2px solid white;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -139,7 +138,7 @@
 .section-cta-icon svg {
   width: 20px;
   height: 20px;
-  fill: white;
+  fill: #9a2686;
 }
 
 .mobile-btn {
