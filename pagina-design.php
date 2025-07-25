@@ -112,4 +112,98 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ?>
 
 
+<?php
+get_template_part('template-parts/produtos-features-section', null, array(
+  'title' => 'Funcionalidades que garantem qualidade e impacto visual',
+  'description' => 'Do conceito inicial à entrega do produto final, garantimos um processo criativo que resulta em soluções únicas e profissionais.',
+  'col1_title' => 'Funcionalidade',
+  'col2_title' => 'Descrição',
+  'col1_items' => [
+    'Criação de Logótipos',
+    'Manual de Identidade Visual',
+    'Design Gráfico Promocional',
+    'Design Digital',
+    'Rebranding',
+    'Impressão e Produção'
+  ],
+  'col2_items' => [
+    'Desenvolvimento de logótipos únicos e versáteis para diferentes aplicações.',
+    'Definição de padrões de uso, tipografias, cores e aplicações para consistência.',
+    'Criação de brochuras, folhetos, apresentações e materiais promocionais.',
+    'Banners para redes sociais, websites e e-mails marketing.',
+    'Modernização ou reformulação completa da identidade visual da sua marca.',
+    'Apoio na impressão de materiais com acabamentos de alta qualidade.'
+  ]
+));
+?>
+
+
+<?php
+get_template_part('template-parts/testemunhos-section', null, array(
+  'title' => 'O que dizem os nossos clientes?',
+  'testemunhos' => array(
+    array(
+      'nome' => 'Ana Rodrigues',
+      'cargo' => 'Diretora de Operações, Thyssenkrupp',
+      'mensagem' => 'Graças à Dualinfor, reduzimos os custos operacionais em 30% com soluções de impressão personalizadas.'
+    ),
+    array(
+      'nome' => 'Inês Costa',
+      'cargo' => 'Diretora de Marketing, Empresa XYZ',
+      'mensagem' => 'Com as soluções Unibind Peleman da Dualinfor, melhorámos a apresentação das nossas propostas comerciais. O impacto visual fez toda a diferença para os nossos clientes.'
+    ),
+    array(
+      'nome' => 'Carlos Ferreira',
+      'cargo' => 'Diretor Técnico, Indústria Y',
+      'mensagem' => 'Investimento que valeu a pena! A poupança energética é notável e o acompanhamento pós-instalação é exemplar.'
+    ),
+    array(
+      'nome' => 'Joana Mendes',
+      'cargo' => 'Diretora de TI, Empresa XYZ',
+      'mensagem' => 'A Dualinfor ajudou-nos a implementar um sistema robusto de cibersegurança. Desde então, evitámos vários incidentes e operamos com total confiança.'
+    ),
+    array(
+      'nome' => 'Nome do Cliente',
+      'cargo' => 'Cargo da empresa',
+      'mensagem' => 'Com as soluções Lexmark da Dualinfor, conseguimos reduzir os custos de impressão em 30% e aumentar a segurança dos nossos documentos.'
+    ),
+    array(
+      'nome' => 'José Silva',
+      'cargo' => 'Diretor de Operações, Indústria X',
+      'mensagem' => 'Com a instalação de painéis solares pela Dualinfor, reduzimos a nossa fatura energética em 40%. A equipa foi excelente na implementação e acompanhamento do projeto.'
+    ),
+    array(
+      'nome' => 'Paulo Oliveira',
+      'cargo' => 'Gerente de Supermercado Fresco & Bom',
+      'mensagem' => 'Com as Gavetas Inteligentes de Dinheiro da Dualinfor, conseguimos reduzir os erros no fecho de caixa em 80%.'
+    ),
+    array(
+      'nome' => 'João Moreira',
+      'cargo' => 'Proprietário de Restaurante XYZ',
+      'mensagem' => 'Desde que implementámos o Software P.O.S da Dualinfor, a gestão do nosso restaurante tornou-se mais eficiente.'
+    ),
+    array(
+      'nome' => 'Maria Santos',
+      'cargo' => 'Gerente de Loja, XYZ Lda',
+      'mensagem' => 'Desde que implementámos o Software P.O.S da Dualinfor, a gestão do nosso restaurante tornou-se mais eficiente.'
+    ),
+    array(
+      'nome' => 'Rui Martins',
+      'cargo' => 'Diretor de TI, Empresa XYZ',
+      'mensagem' => 'Com as soluções de Redes Estruturadas da Dualinfor, conseguimos melhorar significativamente a conectividade entre os nossos escritórios.'
+    ),
+    array(
+      'nome' => 'Pedro Oliveira',
+      'cargo' => 'Gestor de Operações, Empresa XYZ',
+      'mensagem' => 'Desde que adquirimos os digitalizadores da Dualinfor, reduzimos o tempo de processamento de documentos em 50%.'
+    ),
+    array(
+      'nome' => 'Ana Costa',
+      'cargo' => 'Gerente de Escritório, XYZ Lda',
+      'mensagem' => 'Com as impressoras Epson da Dualinfor, reduzimos os custos em 30% e aumentámos a produtividade da nossa equipa.'
+    ),
+  ),
+));
+?>
+
 <?php get_footer(); ?>

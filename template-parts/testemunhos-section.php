@@ -49,7 +49,7 @@ $subtitle = $args['subtitle'] ?? '';
         foreach ($testemunhos as $testemunho) :
           $imagem = get_template_directory_uri() . '/assets/img/img-testemunhas/testemunha' . $imagem_index . '.png';
           $imagem_index++;
-          if ($imagem_index > 8) $imagem_index = 1;
+          if ($imagem_index > 13) $imagem_index = 1;
         ?>
           <div class="section-testimonials-card">
             <div class="section-testimonials-avatar">

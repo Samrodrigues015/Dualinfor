@@ -183,6 +183,41 @@ get_template_part('template-parts/testemunhos-section', null, array(
       'cargo' => 'Gerente de Escritório, XYZ Lda',
       'mensagem' => 'Com as impressoras Epson da Dualinfor, reduzimos os custos em 30% e aumentámos a produtividade da nossa equipa.'
     ),
+    array(
+      'nome' => 'Pedro Oliveira',
+      'cargo' => ' Diretor de Operações, Empresa XYZ',
+      'mensagem' => 'Graças à consultadoria da Dualinfor, conseguimos reduzir os custos operacionais em 20% e melhorar significativamente a eficiência dos nossos processos. O acompanhamento da equipa foi fundamental para o sucesso.'
+    ),
+    array(
+      'nome' => 'Sofia Marques',
+      'cargo' => ' Diretora de Marketing, Empresa XYZ',
+      'mensagem' => 'A Dualinfor ajudou-nos a modernizar a identidade visual da nossa empresa. O novo design reforçou a nossa imagem no mercado e contribuiu para atrair novos clientes.'
+    ),
+    array(
+      'nome' => 'Ana Rodrigues',
+      'cargo' => ' Gestora de Operações, Empresa XYZ.',
+      'mensagem' => 'Com as soluções MPS da Dualinfor, conseguimos reduzir os custos de impressão em 30% e melhorar a eficiência na gestão documental. A equipa foi excelente durante toda a implementação.'
+    ),
+    array(
+      'nome' => 'João Carvalho',
+      'cargo' => ' Gerente de Loja, Empresa XYZ.',
+      'mensagem' => 'Com a solução de Gestão de Filas de Espera da Dualinfor, organizámos o atendimento na nossa loja e reduzimos o tempo de espera em 30%. A satisfação dos clientes aumentou significativamente.'
+    ),
+    array(
+      'nome' => 'Miguel Silva',
+      'cargo' => 'Organizador de Eventos, Empresa XYZ.',
+      'mensagem' => 'Graças ao software de bilhética da Dualinfor, conseguimos melhorar significativamente a gestão de entradas nos nossos eventos. A personalização de bilhetes e os relatórios detalhados foram uma mais-valia.'
+    ),
+    array(
+      'nome' => 'Ana Lopes',
+      'cargo' => 'Gestora de Marketing, Loja XYZ',
+      'mensagem' => 'Com o Xopvision, conseguimos melhorar a comunicação com os nossos clientes e aumentar as vendas em 25%. O sistema é intuitivo e a equipa da Dualinfor foi impecável no suporte técnico.'
+    ),
+    array(
+      'nome' => 'Joana Mendes',
+      'cargo' => ' Diretora de TI, Empresa XYZ',
+      'mensagem' => 'A Dualinfor ajudou-nos a implementar um sistema robusto de cibersegurança. Desde então, conseguimos evitar vários incidentes e operar com total confiança.'
+    ),
   ),
 ));
 ?>

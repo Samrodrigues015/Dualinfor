@@ -105,13 +105,134 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
     )
   ),
   'cta' => array(
-  'label' => 'Peça um Orçamento Personalizado',
-  'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-consultadoria/icone8.svg" alt="Ícone orçamento">'
-)
+    'label' => 'Peça um Orçamento Personalizado',
+    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-consultadoria/icone8.svg" alt="Ícone orçamento">'
+  )
 
 ));
 ?>
 
+<?php
+get_template_part('template-parts/consultadoria-solutions-section', null, array(
+  'title' => 'Consultoria que resolve os desafios dos negócios em diferentes setores',
+  'paragraph' => 'Desde pequenas empresas a grandes corporações, as nossas soluções de consultadoria são adaptáveis a qualquer setor ou desafio.',
+  'image' => get_template_directory_uri() . '/assets/img/img-consultadoria/grupo.png',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/icons/pmes.svg',
+      'title' => 'PMEs em Crescimento',
+      'text' => 'Diagnóstico de operações para identificar oportunidades de expansão e implementação de tecnologias que promovem o crescimento sustentável.'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/icons/industria.svg',
+      'title' => 'Indústria e Logística',
+      'text' => 'Automação de processos para reduzir custos operacionais e soluções de monitorização em tempo real para otimizar a gestão de stocks e logística.'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/icons/saude.svg',
+      'title' => 'Saúde e Instituições Públicas',
+      'text' => 'Apoio na digitalização de processos administrativos, gestão de dados sensíveis e implementação de soluções em conformidade com o RGPD.'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/icons/financeiro.svg',
+      'title' => 'Setor Financeiro',
+      'text' => 'Consultoria em cibersegurança para proteger transações e dados dos clientes, com análise de processos para aumentar a eficiência nos fluxos financeiros.'
+    )
+  )
+));
 
+?>
 
+<?php
+get_template_part('template-parts/produtos-features-section', null, array(
+  'title' => 'Consultadoria personalizada e baseada em resultados',
+  'description' => 'As nossas soluções de consultadoria foram desenhadas para responder às necessidades específicas do mercado empresarial português, garantindo resultados tangíveis.',
+  'col1_title' => 'Funcionalidade',
+  'col2_title' => 'Descrição',
+  'col1_items' => [
+    'Análise de Processos',
+    'Planeamento Estratégico',
+    'Transformação Digital',
+    'Segurança e Conformidade',
+    'Otimização de Recursos',
+    'Relatórios Detalhados'
+  ],
+  'col2_items' => [
+    'Avaliação detalhada das operações empresariais para identificar ineficiências.',
+    'Criação de planos personalizados para otimizar a gestão e os recursos.',
+    'Consultoria em modernização de sistemas, incluindo cloud e automação de tarefas.',
+    'Recomendações para melhorar a proteção de dados e cumprir regulamentos legais.',
+    'Estratégias para reduzir custos e melhorar o desempenho da equipa e sistemas.',
+    'Acompanhamento contínuo com métricas e relatórios para medir resultados.'
+  ]
+));
+?>
+
+<?php
+get_template_part('template-parts/testemunhos-section', null, array(
+  'title' => 'O que dizem os nossos clientes?',
+  'testemunhos' => array(
+    array(
+      'nome' => 'Ana Rodrigues',
+      'cargo' => 'Diretora de Operações, Thyssenkrupp',
+      'mensagem' => 'Graças à Dualinfor, reduzimos os custos operacionais em 30% com soluções de impressão personalizadas.'
+    ),
+    array(
+      'nome' => 'Inês Costa',
+      'cargo' => 'Diretora de Marketing, Empresa XYZ',
+      'mensagem' => 'Com as soluções Unibind Peleman da Dualinfor, melhorámos a apresentação das nossas propostas comerciais. O impacto visual fez toda a diferença para os nossos clientes.'
+    ),
+    array(
+      'nome' => 'Carlos Ferreira',
+      'cargo' => 'Diretor Técnico, Indústria Y',
+      'mensagem' => 'Investimento que valeu a pena! A poupança energética é notável e o acompanhamento pós-instalação é exemplar.'
+    ),
+    array(
+      'nome' => 'Joana Mendes',
+      'cargo' => 'Diretora de TI, Empresa XYZ',
+      'mensagem' => 'A Dualinfor ajudou-nos a implementar um sistema robusto de cibersegurança. Desde então, evitámos vários incidentes e operamos com total confiança.'
+    ),
+    array(
+      'nome' => 'Nome do Cliente',
+      'cargo' => 'Cargo da empresa',
+      'mensagem' => 'Com as soluções Lexmark da Dualinfor, conseguimos reduzir os custos de impressão em 30% e aumentar a segurança dos nossos documentos.'
+    ),
+    array(
+      'nome' => 'José Silva',
+      'cargo' => 'Diretor de Operações, Indústria X',
+      'mensagem' => 'Com a instalação de painéis solares pela Dualinfor, reduzimos a nossa fatura energética em 40%. A equipa foi excelente na implementação e acompanhamento do projeto.'
+    ),
+    array(
+      'nome' => 'Paulo Oliveira',
+      'cargo' => 'Gerente de Supermercado Fresco & Bom',
+      'mensagem' => 'Com as Gavetas Inteligentes de Dinheiro da Dualinfor, conseguimos reduzir os erros no fecho de caixa em 80%.'
+    ),
+    array(
+      'nome' => 'João Moreira',
+      'cargo' => 'Proprietário de Restaurante XYZ',
+      'mensagem' => 'Desde que implementámos o Software P.O.S da Dualinfor, a gestão do nosso restaurante tornou-se mais eficiente.'
+    ),
+    array(
+      'nome' => 'Maria Santos',
+      'cargo' => 'Gerente de Loja, XYZ Lda',
+      'mensagem' => 'Desde que implementámos o Software P.O.S da Dualinfor, a gestão do nosso restaurante tornou-se mais eficiente.'
+    ),
+    array(
+      'nome' => 'Rui Martins',
+      'cargo' => 'Diretor de TI, Empresa XYZ',
+      'mensagem' => 'Com as soluções de Redes Estruturadas da Dualinfor, conseguimos melhorar significativamente a conectividade entre os nossos escritórios.'
+    ),
+    array(
+      'nome' => 'Pedro Oliveira',
+      'cargo' => 'Gestor de Operações, Empresa XYZ',
+      'mensagem' => 'Desde que adquirimos os digitalizadores da Dualinfor, reduzimos o tempo de processamento de documentos em 50%.'
+    ),
+    array(
+      'nome' => 'Ana Costa',
+      'cargo' => 'Gerente de Escritório, XYZ Lda',
+      'mensagem' => 'Com as impressoras Epson da Dualinfor, reduzimos os custos em 30% e aumentámos a produtividade da nossa equipa.'
+    ),
+  ),
+));
+?>
 <?php get_footer(); ?>
