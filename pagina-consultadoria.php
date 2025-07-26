@@ -119,29 +119,29 @@ get_template_part('template-parts/consultadoria-solutions-section', null, array(
   'image' => get_template_directory_uri() . '/assets/img/img-consultadoria/grupo.png',
   'cards' => array(
     array(
-      'icon' => get_template_directory_uri() . '/assets/icons/pmes.svg',
+      'icon' => get_template_directory_uri() . '/assets/img/img-consultadoria/icone9.svg',
       'title' => 'PMEs em Crescimento',
-      'text' => 'Diagnóstico de operações para identificar oportunidades de expansão e implementação de tecnologias que promovem o crescimento sustentável.'
+      'description' => 'Diagnóstico de operações para identificar oportunidades de expansão e implementação de tecnologias que promovem o crescimento sustentável.'
     ),
     array(
-      'icon' => get_template_directory_uri() . '/assets/icons/industria.svg',
+      'icon' => get_template_directory_uri() . '/assets/img/img-consultadoria/icone10.svg',
       'title' => 'Indústria e Logística',
-      'text' => 'Automação de processos para reduzir custos operacionais e soluções de monitorização em tempo real para otimizar a gestão de stocks e logística.'
+      'description' => 'Automação de processos para reduzir custos operacionais e soluções de monitorização em tempo real para otimizar a gestão de stocks e logística.'
     ),
     array(
-      'icon' => get_template_directory_uri() . '/assets/icons/saude.svg',
+      'icon' => get_template_directory_uri() . '/assets/img/img-consultadoria/icone11.svg',
       'title' => 'Saúde e Instituições Públicas',
-      'text' => 'Apoio na digitalização de processos administrativos, gestão de dados sensíveis e implementação de soluções em conformidade com o RGPD.'
+      'description' => 'Apoio na digitalização de processos administrativos, gestão de dados sensíveis e implementação de soluções em conformidade com o RGPD.'
     ),
     array(
-      'icon' => get_template_directory_uri() . '/assets/icons/financeiro.svg',
+      'icon' => get_template_directory_uri() . '/assets/img/img-consultadoria/icone12.svg',
       'title' => 'Setor Financeiro',
-      'text' => 'Consultoria em cibersegurança para proteger transações e dados dos clientes, com análise de processos para aumentar a eficiência nos fluxos financeiros.'
+      'description' => 'Consultoria em cibersegurança para proteger transações e dados dos clientes, com análise de processos para aumentar a eficiência nos fluxos financeiros.'
     )
   )
 ));
-
 ?>
+
 
 <?php
 get_template_part('template-parts/produtos-features-section', null, array(

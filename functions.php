@@ -170,6 +170,9 @@ function dualinfor_enqueue_assets()
 // Estilo da seção de Hero Consultadoria parte 2
 wp_enqueue_style('dualinfor-hero-section-secundary-style', get_template_directory_uri() . '/assets/css/hero-section-secondary.css', array(), $theme_version);
 
+// Estilo da seção de Consultadoria Soluções
+wp_enqueue_style('dualinfor-consultadoria-solutions-section-style', get_template_directory_uri() . '/assets/css/consultadoria-solutions.css', array(), $theme_version);
+
 
 	// Estilo da seção de Formulário
 	wp_enqueue_style('dualinfor-formulario-style', get_template_directory_uri() . '/assets/css/formulario.css', array(), $theme_version);

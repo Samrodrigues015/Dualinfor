@@ -111,6 +111,37 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/consultadoria-solutions-section', null, array(
+  'title' => 'Soluções de Design que Transformam Negócios em Diferentes Setores',
+  'paragraph' => 'Seja para um novo negócio ou uma marca consolidada, criamos materiais visuais que ajudam a transmitir credibilidade e profissionalismo.',
+  'image' => get_template_directory_uri() . '/assets/img/img-design/notebook.png',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-design/icone9.svg',
+      'title' => 'Pequenas e Médias Empresas (PME)',
+      'description' => 'Criação de identidades visuais e materiais promocionais para negócios e campanhas.'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-design/icone10.svg',
+      'title' => 'Instituições Públicas e Educação',
+      'description' => 'Design de relatórios institucionais, materiais educativos e modernização de logótipos e documentos oficiais.'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-design/icone11.svg',
+      'title' => 'Eventos e Marketing',
+      'description' => 'Criação de materiais visuais para eventos promocionais, incluindo stands, banners e apresentações.'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-design/icone12.svg',
+      'title' => 'Setor Criativo e Cultural',
+      'description' => 'Criação de portfólios, catálogos e identidade visual para projetos artísticos e culturais.'
+    )
+  )
+));
+?>
+
+
 
 <?php
 get_template_part('template-parts/produtos-features-section', null, array(
