@@ -113,7 +113,7 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 
 <?php
 get_template_part('template-parts/consultadoria-solutions-section', null, array(
-  'title' => 'Soluções de Design que Transformam Negócios em Diferentes Setores',
+  'title' => 'Soluções de Design Estratégico que Transformam Negócios em Diversos Setores',
   'paragraph' => 'Seja para um novo negócio ou uma marca consolidada, criamos materiais visuais que ajudam a transmitir credibilidade e profissionalismo.',
   'image' => get_template_directory_uri() . '/assets/img/img-design/notebook.png',
   'cards' => array(

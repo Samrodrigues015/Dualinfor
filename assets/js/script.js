@@ -171,4 +171,73 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
+// ===== Script do Template parts do carrosel da pagina Xopvision =====
+document.addEventListener('DOMContentLoaded', function () {
+  const track = document.querySelector('.se-consultadoria-solutions-carousel__carousel-track');
+  const prevBtn = document.querySelector('.se-consultadoria-solutions-carousel__nav-btn--prev');
+  const nextBtn = document.querySelector('.se-consultadoria-solutions-carousel__nav-btn--next');
+  const cards = document.querySelectorAll('.se-consultadoria-solutions-carousel__card');
+  const cardWidth = 280 + 24; // Largura + gap
+  const visibleCards = window.innerWidth <= 768 ? 1 : 3;
+  const totalCards = cards.length;
 
+  // Clonar primeiros e últimos cards para efeito de loop
+  for (let i = 0; i < visibleCards; i++) {
+    const firstClone = cards[i].cloneNode(true);
+    const lastClone = cards[cards.length - 1 - i].cloneNode(true);
+    track.appendChild(firstClone);
+    track.insertBefore(lastClone, track.firstChild);
+  }
+
+  const allCards = track.querySelectorAll('.se-consultadoria-solutions-carousel__card');
+  let currentIndex = visibleCards;
+
+  function updateCarousel(animate = true) {
+    if (!animate) {
+      track.style.transition = 'none';
+    } else {
+      track.style.transition = 'transform 0.3s ease';
+    }
+
+    const translateX = -currentIndex * cardWidth;
+    track.style.transform = `translateX(${translateX}px)`;
+  }
+
+  function moveNext() {
+    currentIndex++;
+    updateCarousel();
+
+    // Reset para início real depois de último clone
+    if (currentIndex === allCards.length - visibleCards) {
+      setTimeout(() => {
+        currentIndex = visibleCards;
+        updateCarousel(false);
+      }, 310);
+    }
+  }
+
+  function movePrev() {
+    currentIndex--;
+    updateCarousel();
+
+    // Reset para final real depois de primeiro clone
+    if (currentIndex === 0) {
+      setTimeout(() => {
+        currentIndex = allCards.length - visibleCards * 2;
+        updateCarousel(false);
+      }, 310);
+    }
+  }
+
+  prevBtn.addEventListener('click', movePrev);
+  nextBtn.addEventListener('click', moveNext);
+
+  // Ajuste em redimensionamento
+  window.addEventListener('resize', () => {
+    // (Opcional: podes recalcular aqui se mudares o número de cartões visíveis)
+    updateCarousel(false);
+  });
+
+  // Inicializar posição
+  updateCarousel(false);
+});

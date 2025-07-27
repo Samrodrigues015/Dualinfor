@@ -35,7 +35,7 @@
               <img src="<?php echo esc_url($card['icon']); ?>" alt="<?php echo esc_attr($card['title']); ?>" width="48" height="48">
             </div>
             <h3 class="card-title-solutions"><?php echo esc_html($card['title']); ?></h3>
-            <p class="card-description-solutions"><?php echo esc_html($card['description']); ?></p>
+            <div class="card-description-solutions"><?php echo $card['description']; ?></div>
           </div>
         <?php endforeach; ?>
       </div>

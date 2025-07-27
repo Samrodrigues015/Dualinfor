@@ -112,6 +112,53 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ?>
 
 <?php
+get_template_part('template-parts/consultadoria-solutions-section', null, array(
+  'title' => "Como as soluções da Dualinfor garantem\nsegurança em diferentes setores",
+  'paragraph' => 'De pequenos negócios a grandes corporações, as nossas soluções adaptam-se a qualquer ambiente, garantindo tranquilidade e controlo total.',
+  'image' => get_template_directory_uri() . '/assets/img/img-videovigilancia/teclado-controlo-acessos.png',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-videovigilancia/icone8.svg',
+      'title' => 'Lojas e Retalho',
+      'description' => '
+        <ul>
+          <li>Monitorize áreas de venda e entradas para evitar perdas e melhorar a experiência do cliente.</li>
+          <li>Análise de comportamento dos consumidores para otimizar layouts.</li>
+        </ul>'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-videovigilancia/icone9.svg',
+      'title' => 'Armazéns e Logística',
+      'description' => '
+        <ul>
+          <li>Supervisione operações de carga e descarga para evitar erros e roubos.</li>
+          <li>Controlo de acesso a zonas restritas.</li>
+        </ul>'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-videovigilancia/icone10.svg',
+      'title' => 'Escritórios Corporativos',
+      'description' => '
+        <ul>
+          <li>Monitorização de acessos a áreas sensíveis, como salas de servidores.</li>
+          <li>Proteção de colaboradores e equipamentos.</li>
+        </ul>'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-videovigilancia/icone11.svg',
+      'title' => 'Instituições Públicas e Educação',
+      'description' => '
+        <ul>
+          <li>Segurança em escolas, hospitais e outras instituições para garantir a proteção de pessoas e bens.</li>
+          <li>Monitorização em larga escala para espaços públicos.</li>
+        </ul>'
+    )
+  )
+));
+?>
+
+
+<?php
 get_template_part('template-parts/produtos-features-section', null, array(
   'title' => 'Funcionalidades que elevam a segurança do seu negócio',
   'description' => 'As soluções de videovigilância da Dualinfor combinam inovação e confiabilidade para garantir proteção total em todas as áreas do seu negócio.',

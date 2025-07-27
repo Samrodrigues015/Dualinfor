@@ -114,6 +114,37 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ?>
 
 <?php
+get_template_part('template-parts/consultadoria-solutions-section', null, array(
+  'title' => "Como a Dualinfor assegura proteção e segurança em diferentes setores de negócios",
+  'paragraph' => 'As nossas soluções de cibersegurança adaptam-se a qualquer setor, protegendo dados sensíveis e garantindo operações contínuas.',
+  'image' => get_template_directory_uri() . '/assets/img/img-ciberseguranca/seguranca-tecnologia.png',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-ciberseguranca/icone8.svg',
+      'title' => 'Empresas de Tecnologia',
+      'description' => '• Proteção de dados confidenciais e sistemas críticos contra ciberataques.' . "\n" . '• Monitorização contínua para garantir conformidade com regulamentações de segurança.'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-ciberseguranca/icone9.svg',
+      'title' => 'Saúde e Instituições Públicas',
+      'description' => '• Segurança de registos médicos e dados de pacientes.' . "\n" . '• Soluções de backup para garantir acesso ininterrupto a informações críticas.'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-ciberseguranca/icone10.svg',
+      'title' => 'Indústria e Logística',
+      'description' => '• Proteção de redes e sistemas operacionais contra ataques que possam causar paralisações.' . "\n" . '• Garantia de segurança em dispositivos IoT (Internet das Coisas).'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-ciberseguranca/icone11.svg',
+      'title' => 'Setor Financeiro',
+      'description' => '• Prevenção de fraudes e proteção de transações financeiras.' . "\n" . '• Auditorias regulares para garantir conformidade com normas regulatórias.'
+    )
+  )
+));
+?>
+
+
+<?php
 get_template_part('template-parts/produtos-features-section', null, array(
   'title' => 'Funcionalidades de segurança que protegem cada aspeto do seu negócio',
   'description' => 'As nossas soluções de cibersegurança combinam inovação tecnológica e uma abordagem prática para proteger dados e sistemas críticos.',

@@ -111,6 +111,53 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/consultadoria-solutions-section', null, array(
+  'title' => "Como as soluções MPS Dualinfor\ntransformam empresas em diferentes setores",
+  'paragraph' => 'Desde pequenas empresas a grandes corporações, as nossas soluções adaptam-se a qualquer dimensão ou necessidade, garantindo eficiência e controlo total.',
+  'image' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/escritorio.png',
+  'cards' => array(
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/icone8.svg',
+      'title' => 'Escritórios Corporativos',
+      'description' => '
+        <ul>
+          <li>Gestão centralizada de equipamentos de impressão e digitalização.</li>
+          <li>Fluxos de trabalho simplificados para maior produtividade.</li>
+        </ul>'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/icone9.svg',
+      'title' => 'Educação',
+      'description' => '
+        <ul>
+          <li>Impressão e digitalização de materiais pedagógicos.</li>
+          <li>Redução de custos com papel e toner em escolas e universidades.</li>
+        </ul>'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/icone10.svg',
+      'title' => 'Saúde',
+      'description' => '
+        <ul>
+          <li>Proteção de dados sensíveis em registos médicos com sistemas de autenticação.</li>
+          <li>Digitalização de documentos para facilitar o acesso e partilha entre departamentos.</li>
+        </ul>'
+    ),
+    array(
+      'icon' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/icone11.svg',
+      'title' => 'Logística e Indústria',
+      'description' => '
+        <ul>
+          <li>Impressão eficiente de etiquetas, faturas e documentos operacionais.</li>
+          <li>Monitorização em tempo real para evitar paragens.</li>
+        </ul>'
+    )
+  )
+));
+?>
+
+
 
 <?php
 get_template_part('template-parts/produtos-features-section', null, array(

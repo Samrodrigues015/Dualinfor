@@ -113,6 +113,57 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
 ?>
 
 <?php
+get_template_part('template-parts/consultadoria-carousel', null, array(
+  'title'    => 'Como o Xopvision transforma negócios em diferentes setores',
+  'paragraph' => 'Desde lojas de retalho a restaurantes e grandes empresas, o Xopvision adapta-se a qualquer ambiente para oferecer uma comunicação visual eficaz e moderna.',
+  'cards'    => array(
+    array(
+      'icon'  => get_template_directory_uri() . '/assets/img/img-xopvision/icone8.svg',
+      'title' => 'Retalho e Comércio',
+      'items' => array(
+        'Destaque promoções em tempo real e capte a atenção dos clientes nas vitrinas.',
+        'Análise do impacto visual para melhorar as campanhas de marketing.'
+      )
+    ),
+    array(
+      'icon'  => get_template_directory_uri() . '/assets/img/img-xopvision/icone9.svg',
+      'title' => 'Restaurantes e Cafés',
+      'items' => array(
+        'Menus digitais dinâmicos que podem ser alterados instantaneamente.',
+        'Promoções e destaques de pratos diretamente nos ecrãs.'
+      )
+    ),
+    array(
+      'icon'  => get_template_directory_uri() . '/assets/img/img-xopvision/icone10.svg',
+      'title' => 'Hotéis e Turismo',
+      'items' => array(
+        'Partilhe informações sobre eventos, horários e atracções turísticas locais.',
+        'Torne a receção do seu hotel mais interativa e informativa.'
+      )
+    ),
+    array(
+      'icon'  => get_template_directory_uri() . '/assets/img/img-xopvision/icone11.svg',
+      'title' => 'Escritórios e Empresas',
+      'items' => array(
+        'Comunicação interna visual para colaboradores, como métricas de desempenho ou avisos.',
+        'Videowalls em salas de reuniões para apresentações dinâmicas.'
+      )
+    ),
+    array(
+      'icon'  => get_template_directory_uri() . '/assets/img/img-xopvision/icone12.svg',
+      'title' => 'Saúde e Instituições Públicas',
+      'items' => array(
+        'Gestão de filas e partilha de informações importantes em hospitais ou repartições públicas.',
+        'Redução de stress com conteúdos informativos e organizados.'
+      )
+    )
+  )
+));
+?>
+
+
+
+<?php
 get_template_part('template-parts/produtos-features-section', null, array(
   'title' => 'Funcionalidades que potenciam a Comunicação Visual do seu negócio',
   'description' => 'O Xopvision – Digital Signage combina tecnologia de ponta e uma interface simples para transformar a forma como comunica com clientes e colaboradores.',
