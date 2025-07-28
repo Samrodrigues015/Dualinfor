@@ -185,6 +185,41 @@ get_template_part('template-parts/produtos-features-section', null, array(
 ?>
 
 <?php
+get_template_part('template-parts/carousel-empresas', null, array(
+  'title' => 'Explore nossas soluções',
+  'cards' => array(
+    array(
+      'logo' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/PaperCut-Logotype.png',
+      'alt'  => 'PaperCut',
+      'link' => '#'
+    ),
+    array(
+      'logo' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/cctec_logotype.png',
+      'alt'  => 'CCTEC',
+      'link' => '#'
+    ),
+    array(
+      'logo' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/sharp-logotype.png',
+      'alt'  => 'SHARP',
+      'link' => '#'
+    ),
+    array(
+      'logo' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/logo-mxbox.png',
+      'alt'  => 'MyBox',
+      'link' => '#'
+    ),
+    array(
+      'logo' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/Lexmark-logotype.png',
+      'alt'  => 'Lexmark',
+      'link' => '#'
+    )
+  )
+));
+?>
+
+
+
+<?php
 get_template_part('template-parts/testemunhos-section', null, array(
   'title' => 'O que dizem os nossos clientes?',
   'testemunhos' => array(
@@ -250,6 +285,40 @@ get_template_part('template-parts/testemunhos-section', null, array(
     ),
   ),
 ));
+?>
+
+<?php
+get_template_part('template-parts/consultadoria-complementary-section', null, [
+    'title' => 'Soluções complementares que potenciam a Gestão Documental',
+    'services' => [
+        [
+            'title' => 'Redes Estruturadas & Computing',
+            'description' => 'Infraestruturas para suportar sistemas de gestão documental.'
+        ],
+        [
+            'title' => 'Impressoras e Multifunções',
+            'description' => 'Equipamentos de alta eficiência integrados às soluções MPS.'
+        ],
+        [
+            'title' => 'Software de Faturação e POS',
+            'description' => 'Integração com a gestão financeira da empresa.'
+        ]
+    ],
+    'images' => [
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/impressora.png',
+            'alt' => 'Circuit board technology'
+        ],
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/cabos.png',
+            'alt' => 'Pessoa a trabalhar com tecnologia'
+        ],
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/comercio.png',
+            'alt' => 'Documento digital'
+        ]
+    ]
+]);
 ?>
 
 <?php get_footer(); ?>

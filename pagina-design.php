@@ -237,4 +237,38 @@ get_template_part('template-parts/testemunhos-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/consultadoria-complementary-section', null, [
+    'title' => 'Soluções que complementam o Design e Imagem Corporativa',
+    'services' => [
+        [
+            'title' => 'Impressoras e Multifunções',
+            'description' => 'Produza materiais promocionais internamente com qualidade profissional.'
+        ],
+        [
+            'title' => 'Unibind – Encadernação e Personalização',
+            'description' => 'Dê um toque final profissional aos seus documentos.'
+        ],
+        [
+            'title' => 'Soluções de Sinalética Digital',
+            'description' => 'Reforce a sua marca com conteúdos dinâmicos.'
+        ]
+    ],
+    'images' => [
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-design/impressora.png',
+            'alt' => 'Circuit board technology'
+        ],
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-design/cardernos.png',
+            'alt' => 'Pessoa a trabalhar com tecnologia'
+        ],
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-design/comercio.png',
+            'alt' => 'Documento digital'
+        ]
+    ]
+]);
+?>
+
 <?php get_footer(); ?>

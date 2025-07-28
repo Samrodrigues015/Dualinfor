@@ -1,0 +1,147 @@
+.section-solutions-consultadoria {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+
+.section-solutions-consultadoria__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-solutions-consultadoria__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.section-solutions-consultadoria__left {
+  padding-right: 20px;
+}
+
+.section-solutions-consultadoria__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #333;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.section-solutions-consultadoria__services {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-solutions-consultadoria__service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1px solid #9a2686;
+}
+
+.section-solutions-consultadoria__service-item:last-child {
+  border-bottom: 1px solid #9a2686;
+}
+
+.section-solutions-consultadoria__service-content {
+  flex: 1;
+}
+
+.section-solutions-consultadoria__service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.section-solutions-consultadoria__service-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.section-solutions-consultadoria__service-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #1E1E1E;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1E1E1E;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.section-solutions-consultadoria__service-icon:hover {
+  background-color: #1E1E1E;
+  color: white;
+}
+
+.section-solutions-consultadoria__right {
+  position: relative;
+}
+
+.section-solutions-consultadoria__images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+.section-solutions-consultadoria__right {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.section-solutions-consultadoria__image-large {
+  grid-column: span 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-solutions-consultadoria__image-small {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.section-solutions-consultadoria__image-large img,
+.section-solutions-consultadoria__image-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-solutions-consultadoria__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .section-solutions-consultadoria__images-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-solutions-consultadoria__title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .section-solutions-consultadoria__image-small img {
+   display: none;
+  }
+
+  .section-solutions-consultadoria__image-large {
+    grid-column: auto;
+  }
+}

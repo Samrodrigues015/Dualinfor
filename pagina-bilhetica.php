@@ -235,4 +235,38 @@ get_template_part('template-parts/testemunhos-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/consultadoria-complementary-section', null, [
+    'title' => 'Soluções complementares para potenciar a Gestão de Bilhetes',
+    'services' => [
+        [
+            'title' => 'Software de Faturação e POS',
+            'description' => 'Integre as vendas de bilhetes com a gestão financeira.'
+        ],
+        [
+            'title' => 'Redes Estruturadas & Computing',
+            'description' => 'Conectividade segura para suportar o sistema de bilhética.'
+        ],
+        [
+            'title' => 'Controlo de Acessos',
+            'description' => 'Monitorize entradas com segurança adicional.'
+        ]
+    ],
+    'images' => [
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-consultadoria/image.png',
+            'alt' => 'Circuit board technology'
+        ],
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/comercio.png',
+            'alt' => 'Pessoa a trabalhar com tecnologia'
+        ],
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-bilhetica/aeroporto.png',
+            'alt' => 'Documento digital'
+        ]
+    ]
+]);
+?>
+
 <?php get_footer(); ?>

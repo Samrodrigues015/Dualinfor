@@ -251,4 +251,38 @@ get_template_part('template-parts/testemunhos-section', null, array(
 ));
 ?>
 
+<?php
+get_template_part('template-parts/consultadoria-complementary-section', null, [
+    'title' => 'Soluções que complementam a Videovigilância',
+    'services' => [
+        [
+            'title' => 'Controlo de Acessos',
+            'description' => 'Monitorize e registe entradas e saídas com precisão.'
+        ],
+        [
+            'title' => 'Redes Estruturadas & Computing',
+            'description' => 'Infraestruturas que garantem conectividade para os sistemas de segurança.'
+        ],
+        [
+            'title' => 'Soluções de Cibersegurança',
+            'description' => 'Proteja os dados captados pelos seus sistemas de videovigilância.'
+        ]
+    ],
+    'images' => [
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-videovigilancia/image1.png',
+            'alt' => 'Circuit board technology'
+        ],
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-solucoes-documentais/cabos.png',
+            'alt' => 'Pessoa a trabalhar com tecnologia'
+        ],
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-videovigilancia/image.png',
+            'alt' => 'Documento digital'
+        ]
+    ]
+]);
+?>
+
 <?php get_footer(); ?>

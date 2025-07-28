@@ -235,4 +235,39 @@ get_template_part('template-parts/testemunhos-section', null, array(
   ),
 ));
 ?>
+
+<?php
+get_template_part('template-parts/consultadoria-complementary-section', null, [
+    'title' => 'Soluções complementares que potenciam a Consultadoria',
+    'services' => [
+        [
+            'title' => 'Soluções de Cibersegurança',
+            'description' => 'Conectividade para suportar sistemas de monitorização de energia.'
+        ],
+        [
+            'title' => 'Redes Estruturadas & Computing',
+            'description' => 'Modernize a infraestrutura tecnológica da sua empresa.'
+        ],
+        [
+            'title' => 'Soluções Documentais MPS',
+            'description' => 'Simplifique a gestão documental e aumente a eficiência operacional.'
+        ]
+    ],
+    'images' => [
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-consultadoria/Image.png',
+            'alt' => 'Circuit board technology'
+        ],
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-consultadoria/Image2.png',
+            'alt' => 'Pessoa a trabalhar com tecnologia'
+        ],
+        [
+            'src' => get_template_directory_uri() . '/assets/img/img-consultadoria/Image3.png',
+            'alt' => 'Documento digital'
+        ]
+    ]
+]);
+?>
+
 <?php get_footer(); ?>

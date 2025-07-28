@@ -241,3 +241,42 @@ document.addEventListener('DOMContentLoaded', function () {
   // Inicializar posição
   updateCarousel(false);
 });
+
+// ===== Script do Template parts do carrosel das empresas página Soluções Documentais =====
+ let currentSlide = 0;
+  const wrapper = document.getElementById('carouselWrapper');
+  const cards = document.querySelectorAll('.section-carrosel-empresas-card');
+  const totalCards = cards.length;
+
+  function getVisibleCards() {
+    if (window.innerWidth >= 1024) return 5;
+    if (window.innerWidth >= 768) return 3;
+    if (window.innerWidth >= 480) return 2;
+    return 1;
+  }
+
+  function slideCarousel() {
+    const visibleCards = getVisibleCards();
+    const maxSlide = Math.max(0, totalCards - visibleCards);
+
+    currentSlide++;
+    if (currentSlide > maxSlide) {
+      currentSlide = 0;
+    }
+
+    const cardWidth = cards[0].offsetWidth + 20;
+    const translateX = -currentSlide * cardWidth;
+
+    wrapper.style.transform = `translateX(${translateX}px)`;
+  }
+
+  window.addEventListener('resize', () => {
+    currentSlide = 0;
+    wrapper.style.transform = 'translateX(0)';
+  });
+
+  setInterval(() => {
+    if (window.innerWidth < 1024) {
+      slideCarousel();
+    }
+  }, 4000);

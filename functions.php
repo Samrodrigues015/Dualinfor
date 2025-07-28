@@ -176,6 +176,12 @@ wp_enqueue_style('dualinfor-consultadoria-solutions-section-style', get_template
 // Estilo da seção de Consultadoria Carrosel
 wp_enqueue_style('dualinfor-consultadoria-carousel-style', get_template_directory_uri() . '/assets/css/consultadoria-carousel.css', array(), $theme_version);
 
+// Estilo da seção de Consultadoria Carrosel Empresas
+wp_enqueue_style('dualinfor-carousel-empresas-style', get_template_directory_uri() . '/assets/css/carousel-empresas.css', array(), $theme_version);
+
+// Estilo da seção de Consultadoria Carrosel Empresas
+wp_enqueue_style('dualinfor-consultadoria-complementary-section-style', get_template_directory_uri() . '/assets/css/consultadoria-complementary-section.css', array(), $theme_version);
+
 
 	// Estilo da seção de Formulário
 	wp_enqueue_style('dualinfor-formulario-style', get_template_directory_uri() . '/assets/css/formulario.css', array(), $theme_version);
