@@ -271,4 +271,47 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
 ]);
 ?>
 
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre as soluções de Cibersegurança',
+  'title_centered' => true,
+  'image' => get_template_directory_uri() . '/assets/img/img-ciberseguranca/notebook.png',
+  'faqs' => array(
+    array(
+      'question' => 'As soluções são adequadas para pequenas empresas?',
+      'answer' => 'Sim, as nossas soluções são personalizáveis para empresas de qualquer dimensão.',
+    ),
+    array(
+      'question' => 'É possível garantir a conformidade com o RGPD?',
+      'answer' => '',
+    ),
+    array(
+      'question' => 'A Dualinfor oferece suporte contínuo?',
+      'answer' => '',
+    ),
+    array(
+      'question' => 'Qual é o tempo necessário para implementar as soluções?',
+      'answer' => '',
+    ),
+  )
+));
+?>
+
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber como as soluções de cibersegurança da Dualinfor podem proteger a sua empresa? Preencha o formulário abaixo e receba uma análise personalizada.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Áreas de Interesse',
+      'placeholder' => 'Ex: POS, Impressão, Consultadoria, Cibersegurança',
+      'type' => 'number'
+    )
+  )
+));
+?>
+
 <?php get_footer(); ?>

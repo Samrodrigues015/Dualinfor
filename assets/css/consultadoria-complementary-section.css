@@ -67,18 +67,18 @@
 .section-solutions-consultadoria__service-icon {
   width: 40px;
   height: 40px;
-  border: 1px solid #1E1E1E;
+  border: 1px solid #666;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1E1E1E;
+  color: #666;
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
 
 .section-solutions-consultadoria__service-icon:hover {
-  background-color: #1E1E1E;
+  background-color: #666;
   color: white;
 }
 
@@ -137,11 +137,11 @@
     font-size: 2.5rem;
     text-align: center;
   }
-  .section-solutions-consultadoria__image-small img {
+  .section-solutions-consultadoria__image-small {
    display: none;
   }
 
   .section-solutions-consultadoria__image-large {
-    grid-column: auto;
+    display: none;
   }
 }

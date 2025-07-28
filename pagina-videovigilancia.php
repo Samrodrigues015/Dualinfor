@@ -285,4 +285,48 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
 ]);
 ?>
 
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre as soluções de Videovigilância',
+  'title_centered' => true,
+  'image' => get_template_directory_uri() . '/assets/img/img-videovigilancia/camera.png',
+  'faqs' => array(
+    array(
+      'question' => 'As câmaras são compatíveis com sistemas existentes?',
+      'answer' => 'Sim, as nossas soluções integram-se facilmente com sistemas de segurança já instalados.',
+    ),
+    array(
+      'question' => 'É possível aceder remotamente às gravações?',
+      'answer' => 'Sim, oferecemos gestão remota através de aplicações para dispositivos móveis e desktop.',
+    ),
+    array(
+      'question' => 'A instalação é demorada?',
+      'answer' => 'A instalação depende do tamanho do projeto, mas a nossa equipa assegura um processo rápido e eficiente.',
+    ),
+    array(
+      'question' => 'As soluções cumprem com o RGPD?',
+      'answer' => 'Sim, todas as nossas soluções são configuradas para garantir conformidade com o RGPD e outras legislações aplicáveis.',
+    ),
+  )
+));
+?>
+
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber como as soluções de videovigilância da Dualinfor podem garantir a segurança do seu negócio?
+Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Volume de Bilhetes Mensais',
+      'placeholder' => 'Ex: 150',
+      'type' => 'number'
+    )
+  )
+));
+?>
+
 <?php get_footer(); ?>

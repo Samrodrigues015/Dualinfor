@@ -33,7 +33,7 @@ $subtitle = $args['subtitle'] ?? '';
           <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
         </svg>
       </button>
-      <button class="section-testimonials-nav-button active" onclick="nextSlide()">
+      <button class="section-testimonials-nav-button">
         <svg viewBox="0 0 24 24">
           <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
         </svg>
@@ -71,32 +71,3 @@ $subtitle = $args['subtitle'] ?? '';
     </div>
   </div>
 </div>
-
-<!-- Certifica-te que este script JS está incluído (podes meter no footer do tema ou aqui mesmo) -->
-<script>
-  let currentSlide = 0;
-  const totalSlides = document.querySelectorAll('.section-testimonials-card').length;
-
-  function updateCarousel() {
-    const cards = document.getElementById('testimonialCards');
-    const translateX = -currentSlide * 100;
-    cards.style.transform = `translateX(${translateX}%)`;
-
-    const buttons = document.querySelectorAll('.section-testimonials-nav-button');
-    buttons.forEach(button => button.classList.remove('active'));
-    if (currentSlide === 0) buttons[0].classList.add('active');
-    else buttons[1].classList.add('active');
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateCarousel();
-  }
-
-  function previousSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    updateCarousel();
-  }
-
-  setInterval(nextSlide, 6000);
-</script>

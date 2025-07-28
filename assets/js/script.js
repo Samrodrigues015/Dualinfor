@@ -156,20 +156,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ===== Script do Template parts Doubt Soluçôes FAQ =====
-// Simple toggle functionality for FAQ items
-        document.querySelectorAll('.section-doubt-faq-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const item = header.parentElement;
-                const answer = item.querySelector('.section-doubt-faq-answer');
-                
-                // Toggle visibility
-                if (answer.style.display === 'none') {
-                    answer.style.display = 'block';
-                } else {
-                    answer.style.display = 'none';
-                }
-            });
-        });
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.section-doubt-faq-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      const answer = item.querySelector('.section-doubt-faq-answer');
+      if (answer) {
+        answer.style.display = (answer.style.display === 'none') ? 'block' : 'none';
+      }
+    });
+  });
+});
 
 // ===== Script do Template parts do carrosel da pagina Xopvision =====
 document.addEventListener('DOMContentLoaded', function () {
@@ -177,28 +174,27 @@ document.addEventListener('DOMContentLoaded', function () {
   const prevBtn = document.querySelector('.se-consultadoria-solutions-carousel__nav-btn--prev');
   const nextBtn = document.querySelector('.se-consultadoria-solutions-carousel__nav-btn--next');
   const cards = document.querySelectorAll('.se-consultadoria-solutions-carousel__card');
-  const cardWidth = 280 + 24; // Largura + gap
-  const visibleCards = window.innerWidth <= 768 ? 1 : 3;
-  const totalCards = cards.length;
 
-  // Clonar primeiros e últimos cards para efeito de loop
+  if (!track || !prevBtn || !nextBtn || cards.length === 0) return;
+
+  const cardWidth = 280 + 24;
+  const visibleCards = window.innerWidth <= 768 ? 1 : 3;
+
   for (let i = 0; i < visibleCards; i++) {
-    const firstClone = cards[i].cloneNode(true);
-    const lastClone = cards[cards.length - 1 - i].cloneNode(true);
-    track.appendChild(firstClone);
-    track.insertBefore(lastClone, track.firstChild);
+    if (cards[i] && cards[cards.length - 1 - i]) {
+      const firstClone = cards[i].cloneNode(true);
+      const lastClone = cards[cards.length - 1 - i].cloneNode(true);
+      track.appendChild(firstClone);
+      track.insertBefore(lastClone, track.firstChild);
+    }
   }
 
   const allCards = track.querySelectorAll('.se-consultadoria-solutions-carousel__card');
   let currentIndex = visibleCards;
 
   function updateCarousel(animate = true) {
-    if (!animate) {
-      track.style.transition = 'none';
-    } else {
-      track.style.transition = 'transform 0.3s ease';
-    }
-
+    if (!track) return;
+    track.style.transition = animate ? 'transform 0.3s ease' : 'none';
     const translateX = -currentIndex * cardWidth;
     track.style.transform = `translateX(${translateX}px)`;
   }
@@ -206,8 +202,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function moveNext() {
     currentIndex++;
     updateCarousel();
-
-    // Reset para início real depois de último clone
     if (currentIndex === allCards.length - visibleCards) {
       setTimeout(() => {
         currentIndex = visibleCards;
@@ -219,8 +213,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function movePrev() {
     currentIndex--;
     updateCarousel();
-
-    // Reset para final real depois de primeiro clone
     if (currentIndex === 0) {
       setTimeout(() => {
         currentIndex = allCards.length - visibleCards * 2;
@@ -232,20 +224,20 @@ document.addEventListener('DOMContentLoaded', function () {
   prevBtn.addEventListener('click', movePrev);
   nextBtn.addEventListener('click', moveNext);
 
-  // Ajuste em redimensionamento
   window.addEventListener('resize', () => {
-    // (Opcional: podes recalcular aqui se mudares o número de cartões visíveis)
     updateCarousel(false);
   });
 
-  // Inicializar posição
   updateCarousel(false);
 });
 
 // ===== Script do Template parts do carrosel das empresas página Soluções Documentais =====
- let currentSlide = 0;
+(function () {
   const wrapper = document.getElementById('carouselWrapper');
   const cards = document.querySelectorAll('.section-carrosel-empresas-card');
+  if (!wrapper || cards.length === 0) return;
+
+  let currentSlide = 0;
   const totalCards = cards.length;
 
   function getVisibleCards() {
@@ -264,15 +256,15 @@ document.addEventListener('DOMContentLoaded', function () {
       currentSlide = 0;
     }
 
+    if (!cards[0]) return;
     const cardWidth = cards[0].offsetWidth + 20;
     const translateX = -currentSlide * cardWidth;
-
     wrapper.style.transform = `translateX(${translateX}px)`;
   }
 
   window.addEventListener('resize', () => {
     currentSlide = 0;
-    wrapper.style.transform = 'translateX(0)';
+    if (wrapper) wrapper.style.transform = 'translateX(0)';
   });
 
   setInterval(() => {
@@ -280,3 +272,61 @@ document.addEventListener('DOMContentLoaded', function () {
       slideCarousel();
     }
   }, 4000);
+})();
+
+// ===== Script do Template parts do carrosel testemunhos =====
+document.addEventListener("DOMContentLoaded", function () {
+  let currentSlide = 0;
+  const cardsContainer = document.getElementById("testimonialCards");
+  const cards = document.querySelectorAll(".section-testimonials-card");
+  const totalSlides = cards.length;
+  const navButtons = document.querySelectorAll(".section-testimonials-nav-button");
+  let slideInterval;
+
+  if (!cardsContainer || totalSlides === 0) return;
+
+  function updateCarousel() {
+    const translateX = -currentSlide * 100;
+    cardsContainer.style.transform = `translateX(${translateX}%)`;
+
+    navButtons.forEach(btn => btn.classList.remove('active'));
+    if (navButtons[currentSlide % 2]) {
+      navButtons[currentSlide % 2].classList.add('active');
+    }
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function previousSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+
+  function startInterval() {
+    slideInterval = setInterval(nextSlide, 6000);
+  }
+
+  function resetInterval() {
+    clearInterval(slideInterval);
+    startInterval();
+  }
+
+  // Inicializar
+  updateCarousel();
+  startInterval();
+
+  // Substituir onclick por event listeners
+  if (navButtons.length >= 2) {
+    navButtons[0].addEventListener("click", () => {
+      previousSlide();
+      resetInterval();
+    });
+    navButtons[1].addEventListener("click", () => {
+      nextSlide();
+      resetInterval();
+    });
+  }
+});

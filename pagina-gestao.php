@@ -269,4 +269,48 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
 ]);
 ?>
 
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre o serviço de Design e Imagem Corporativa',
+  'title_centered' => true,
+  'image' => get_template_directory_uri() . '/assets/img/img-gestao/computadores.png',
+  'faqs' => array(
+    array(
+      'question' => 'O sistema é compatível com dispositivos móveis?',
+      'answer' => 'Sim, o sistema pode ser gerido remotamente a partir de dispositivos móveis.',
+    ),
+    array(
+      'question' => 'É possível integrar com sistemas de notificação por SMS?',
+      'answer' => '',
+    ),
+    array(
+      'question' => 'O sistema suporta diferentes tipos de filas?',
+      'answer' => '',
+    ),
+    array(
+      'question' => 'A instalação é demorada?',
+      'answer' => '',
+    ),
+  )
+));
+?>
+
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber como a Gestão de Filas de Espera da Dualinfor pode transformar o atendimento do seu negócio?
+Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Número de Pontos de Atendimento',
+      'placeholder' => 'Ex: 15',
+      'type' => 'number'
+    )
+  )
+));
+?>
+
 <?php get_footer(); ?>

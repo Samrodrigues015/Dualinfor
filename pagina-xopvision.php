@@ -292,4 +292,48 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
 ?>
 
 
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre o Xopvision Digital Signage',
+  'title_centered' => true,
+  'image' => get_template_directory_uri() . '/assets/img/img-xopvision/recepcionista.png',
+  'faqs' => array(
+    array(
+      'question' => 'É possível gerir múltiplos ecrãs em diferentes localizações?',
+      'answer' => 'Sim, o Xopvision permite gerir todos os dispositivos de forma centralizada.',
+    ),
+    array(
+      'question' => 'Posso agendar conteúdos para serem exibidos em horários específicos?',
+      'answer' => '',
+    ),
+    array(
+      'question' => 'O sistema é compatível com monitores já instalados?',
+      'answer' => '',
+    ),
+    array(
+      'question' => 'É necessária formação para utilizar o sistema?',
+      'answer' => '',
+    ),
+  )
+));
+?>
+
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber como o Xopvision – Digital Signage pode transformar a comunicação do seu negócio?
+Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Número de Monitores/Videowalls',
+      'placeholder' => 'Ex: 150',
+      'type' => 'number'
+    )
+  )
+));
+?>
+
 <?php get_footer(); ?>

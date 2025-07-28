@@ -270,4 +270,52 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
 ]);
 ?>
 
+
+
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre os serviços de Consultadoria',
+  'title_centered' => true,
+  'image' => get_template_directory_uri() . '/assets/img/img-consultadoria/homens.png',
+  'faqs' => array(
+    array(
+      'question' => 'O serviço de consultadoria é adaptável a empresas pequenas?',
+      'answer' => 'Sim, as nossas soluções são personalizadas para atender às necessidades de empresas de qualquer dimensão.',
+    ),
+    array(
+      'question' => 'É possível obter apoio contínuo após a consultoria inicial?',
+      'answer' => 'Sim, oferecemos acompanhamento regular para garantir a implementação e os ajustes necessários.',
+    ),
+    array(
+      'question' => 'Os serviços incluem conformidade com o RGPD?',
+      'answer' => 'Sim, as nossas soluções são desenhadas para cumprir todas as regulamentações legais aplicáveis.',
+    ),
+    array(
+      'question' => 'Os serviços incluem conformidade com o RGPD?',
+      'answer' => 'Sim, as nossas soluções são desenhadas para cumprir todas as regulamentações legais aplicáveis.',
+    ),
+  )
+));
+?>
+
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já a sua Consultadoria Personalizada',
+  'paragraphs' => array(
+    'Quer saber como os serviços de consultadoria da Dualinfor podem transformar o seu negócio?
+Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Áreas a Melhorar',
+      'placeholder' => 'Ex: produtividade, atendimento, processos internos',
+      'type' => 'text'
+    )
+  )
+));
+?>
+
+
+
 <?php get_footer(); ?>

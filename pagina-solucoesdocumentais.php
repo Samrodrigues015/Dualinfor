@@ -321,4 +321,48 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
 ]);
 ?>
 
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre as soluções MPS',
+  'title_centered' => true,
+  'image' => get_template_directory_uri() . '/assets/img/img-gestao/caneta.png',
+  'faqs' => array(
+    array(
+      'question' => 'É possível integrar as soluções MPS com os sistemas existentes?',
+      'answer' => 'Sim, as nossas soluções são compatíveis com a maioria dos sistemas de TI e plataformas cloud.',
+    ),
+    array(
+      'question' => 'Os relatórios de utilização são automáticos?',
+      'answer' => 'Sim, os relatórios são gerados automaticamente e podem ser personalizados de acordo com as suas necessidades.',
+    ),
+    array(
+      'question' => 'Qual o suporte técnico oferecido pela Dualinfor?',
+      'answer' => 'Oferecemos instalação, formação e suporte contínuo para garantir que as soluções MPS funcionem de forma eficiente.',
+    ),
+    array(
+      'question' => 'As soluções MPS são adequadas para empresas pequenas?',
+      'answer' => 'Oferecemos instalação, formação e suporte contínuo para garantir que as soluções MPS funcionem de forma eficiente.',
+    ),
+  )
+));
+?>
+
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber como as Soluções Documentais MPS da Dualinfor podem transformar a gestão de documentos e impressões na sua empresa?
+Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Número de Equipamentos de Impressão',
+      'placeholder' => 'Ex: 15',
+      'type' => 'number'
+    )
+  )
+));
+?>
+
 <?php get_footer(); ?>

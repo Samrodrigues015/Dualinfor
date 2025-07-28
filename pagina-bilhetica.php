@@ -269,4 +269,49 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
 ]);
 ?>
 
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre o Software de Bilhética',
+  'title_centered' => true,
+  'image' => get_template_directory_uri() . '/assets/img/img-bilhetica/casal.png',
+  'faqs' => array(
+    array(
+      'question' => 'O software suporta bilhetes digitais e impressos?',
+      'answer' => 'Sim, oferece suporte para ambos os formatos, permitindo flexibilidade total.',
+    ),
+    array(
+      'question' => 'É possível personalizar os bilhetes?',
+      'answer' => 'Sim, pode incluir logótipos, cores e informações específicas nos bilhetes.',
+    ),
+    array(
+      'question' => 'O sistema é compatível com dispositivos móveis?',
+      'answer' => 'Sim, permite validação através de dispositivos móveis, como smartphones e tablets.',
+    ),
+    array(
+      'question' => 'Qual o suporte técnico oferecido pela Dualinfor?',
+      'answer' => 'Oferecemos instalação, formação e suporte contínuo para garantir que o sistema opera de forma eficiente.',
+    ),
+  )
+));
+?>
+
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber como o Software de Bilhética da Dualinfor pode transformar a gestão de bilhetes no seu negócio? 
+Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Volume de Bilhetes Mensais',
+      'placeholder' => 'Ex: 150',
+      'type' => 'number'
+    )
+  )
+));
+?>
+
+
 <?php get_footer(); ?>

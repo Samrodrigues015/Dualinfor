@@ -239,36 +239,81 @@ get_template_part('template-parts/testemunhos-section', null, array(
 
 <?php
 get_template_part('template-parts/consultadoria-complementary-section', null, [
-    'title' => 'Soluções que complementam o Design e Imagem Corporativa',
-    'services' => [
-        [
-            'title' => 'Impressoras e Multifunções',
-            'description' => 'Produza materiais promocionais internamente com qualidade profissional.'
-        ],
-        [
-            'title' => 'Unibind – Encadernação e Personalização',
-            'description' => 'Dê um toque final profissional aos seus documentos.'
-        ],
-        [
-            'title' => 'Soluções de Sinalética Digital',
-            'description' => 'Reforce a sua marca com conteúdos dinâmicos.'
-        ]
+  'title' => 'Soluções que complementam o Design e Imagem Corporativa',
+  'services' => [
+    [
+      'title' => 'Impressoras e Multifunções',
+      'description' => 'Produza materiais promocionais internamente com qualidade profissional.'
     ],
-    'images' => [
-        [
-            'src' => get_template_directory_uri() . '/assets/img/img-design/impressora.png',
-            'alt' => 'Circuit board technology'
-        ],
-        [
-            'src' => get_template_directory_uri() . '/assets/img/img-design/cardernos.png',
-            'alt' => 'Pessoa a trabalhar com tecnologia'
-        ],
-        [
-            'src' => get_template_directory_uri() . '/assets/img/img-design/comercio.png',
-            'alt' => 'Documento digital'
-        ]
+    [
+      'title' => 'Unibind – Encadernação e Personalização',
+      'description' => 'Dê um toque final profissional aos seus documentos.'
+    ],
+    [
+      'title' => 'Soluções de Sinalética Digital',
+      'description' => 'Reforce a sua marca com conteúdos dinâmicos.'
     ]
+  ],
+  'images' => [
+    [
+      'src' => get_template_directory_uri() . '/assets/img/img-design/impressora.png',
+      'alt' => 'Circuit board technology'
+    ],
+    [
+      'src' => get_template_directory_uri() . '/assets/img/img-design/cardernos.png',
+      'alt' => 'Pessoa a trabalhar com tecnologia'
+    ],
+    [
+      'src' => get_template_directory_uri() . '/assets/img/img-design/comercio.png',
+      'alt' => 'Documento digital'
+    ]
+  ]
 ]);
 ?>
+
+<?php
+get_template_part('template-parts/produtos-doubt-section', null, array(
+  'title' => 'Esclareça as suas dúvidas sobre o serviço de Design e Imagem Corporativa',
+  'title_centered' => true,
+  'image' => get_template_directory_uri() . '/assets/img/img-design/cores.png',
+  'faqs' => array(
+    array(
+      'question' => 'A Dualinfor oferece rebranding para marcas já existentes?',
+      'answer' => 'Sim, podemos modernizar a identidade visual da sua marca mantendo os elementos essenciais.',
+    ),
+    array(
+      'question' => 'O serviço inclui materiais impressos e digitais?',
+      'answer' => '',
+    ),
+    array(
+      'question' => 'Quanto tempo demora o processo de criação de um logótipo?',
+      'answer' => '',
+    ),
+    array(
+      'question' => 'É possível criar um manual de identidade visual?',
+      'answer' => '',
+    ),
+  )
+));
+?>
+
+<?php
+get_template_part('template-parts/formulario-section', null, array(
+  'title' => 'Peça já o seu orçamento personalizado',
+  'paragraphs' => array(
+    'Quer saber como as soluções de Design e Imagem Corporativa da Dualinfor podem transformar a sua marca? 
+Preencha o formulário abaixo e receba uma proposta ajustada às suas necessidades.',
+    '<em>Garantimos total privacidade e uma resposta no prazo máximo de 24 horas úteis.</em>'
+  ),
+  'fields_overrides' => array(
+    'area' => array(
+      'label' => 'Tipo de Projeto',
+      'placeholder' => 'Ex: Instalação de sistema POS, consultoria informática.',
+      'type' => 'text'
+    )
+  )
+));
+?>
+
 
 <?php get_footer(); ?>

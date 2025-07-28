@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Part: Formulário de Orçamento Personalizado
  * Uso:
@@ -80,7 +81,12 @@ foreach ($args['fields_overrides'] as $field_key => $override) {
 
     <div>
       <label for="area"><?php echo esc_html($fields['area']['label']); ?></label>
-      <input type="number" id="area" name="area" placeholder="<?php echo esc_attr($fields['area']['placeholder']); ?>">
+      <input
+        type="<?php echo isset($fields['area']['type']) ? esc_attr($fields['area']['type']) : 'text'; ?>"
+        id="area"
+        name="area"
+        placeholder="<?php echo esc_attr($fields['area']['placeholder']); ?>">
+
     </div>
 
     <div>
