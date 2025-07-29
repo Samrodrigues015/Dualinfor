@@ -304,15 +304,15 @@ get_template_part('template-parts/produtos-doubt-section', null, array(
     ),
     array(
       'question' => 'Posso agendar conteúdos para serem exibidos em horários específicos?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
     array(
       'question' => 'O sistema é compatível com monitores já instalados?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
     array(
       'question' => 'É necessária formação para utilizar o sistema?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
   )
 ));

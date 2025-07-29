@@ -283,15 +283,15 @@ get_template_part('template-parts/produtos-doubt-section', null, array(
     ),
     array(
       'question' => 'O serviço inclui materiais impressos e digitais?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
     array(
       'question' => 'Quanto tempo demora o processo de criação de um logótipo?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
     array(
       'question' => 'É possível criar um manual de identidade visual?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
   )
 ));

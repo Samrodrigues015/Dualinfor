@@ -42,9 +42,7 @@ $faqs = $args['faqs'] ?? [];
           <div class="section-doubt-faq-header">
             <h3 class="section-doubt-faq-question"><?php echo esc_html($faq['question']); ?></h3>
             <div class="section-doubt-faq-toggle">
-              <svg viewBox="0 0 24 24">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-energiarenovaveis/setaabaixo.svg" alt="">
             </div>
           </div>
           <div class="section-doubt-faq-answer" style="display: none;">

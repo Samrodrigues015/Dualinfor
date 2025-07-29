@@ -283,15 +283,15 @@ get_template_part('template-parts/produtos-doubt-section', null, array(
     ),
     array(
       'question' => 'É possível garantir a conformidade com o RGPD?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
     array(
       'question' => 'A Dualinfor oferece suporte contínuo?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
     array(
       'question' => 'Qual é o tempo necessário para implementar as soluções?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
   )
 ));

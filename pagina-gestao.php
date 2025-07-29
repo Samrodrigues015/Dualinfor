@@ -281,15 +281,15 @@ get_template_part('template-parts/produtos-doubt-section', null, array(
     ),
     array(
       'question' => 'É possível integrar com sistemas de notificação por SMS?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
     array(
       'question' => 'O sistema suporta diferentes tipos de filas?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
     array(
       'question' => 'A instalação é demorada?',
-      'answer' => '',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     ),
   )
 ));

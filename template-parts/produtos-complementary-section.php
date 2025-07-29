@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Part: Secção de Soluções Complementares
  * Uso: get_template_part('template-parts/section-complementary', null, [...]);
@@ -20,6 +21,8 @@ $cta_color = $args['cta_color'] ?? '#293992';
 $services = $args['services'] ?? [];
 
 $reverse = $image_position === 'left' ? 'flex-row-reverse' : '';
+$svg_icon_path = get_template_directory() . '/assets/img/img-energiarenovaveis/setalateral.svg';
+$svg_icon_content = file_exists($svg_icon_path) ? file_get_contents($svg_icon_path) : '';
 ?>
 
 <div class="section-complementary-container">
@@ -35,7 +38,16 @@ $reverse = $image_position === 'left' ? 'flex-row-reverse' : '';
                 <h3 class="section-complementary-service-title"><?php echo esc_html($service['title'] ?? ''); ?></h3>
                 <p class="section-complementary-service-description"><?php echo esc_html($service['description'] ?? ''); ?></p>
               </div>
-              <div class="section-complementary-arrow"></div>
+              <div class="section-complementary-arrow">
+                <?php if (!empty($service['url'])): ?>
+                  <a href="<?php echo esc_url($service['url']); ?>">
+                    <?php echo $svg_icon_content; ?>
+                  </a>
+                <?php else: ?>
+                  <?php echo $svg_icon_content; ?>
+                <?php endif; ?>
+              </div>
+
             </div>
           </div>
         <?php endforeach; ?>
@@ -50,7 +62,9 @@ $reverse = $image_position === 'left' ? 'flex-row-reverse' : '';
       <?php if (!empty($cta_text)) : ?>
         <div class="section-complementary-cta" style="background-color: <?php echo esc_attr($cta_color); ?>;">
           <p class="section-complementary-cta-text"><?php echo esc_html($cta_text); ?></p>
-          <div class="section-complementary-cta-arrow"></div>
+          <div class="section-complementary-cta-arrow">
+            <?php echo $svg_icon_content; ?>
+          </div>
         </div>
       <?php endif; ?>
     </div>

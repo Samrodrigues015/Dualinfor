@@ -65,21 +65,7 @@
 }
 
 .section-solutions-consultadoria__service-icon {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #666;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  flex-shrink: 0;
-  transition: all 0.3s ease;
-}
-
-.section-solutions-consultadoria__service-icon:hover {
-  background-color: #666;
-  color: white;
+  cursor: pointer;
 }
 
 .section-solutions-consultadoria__right {

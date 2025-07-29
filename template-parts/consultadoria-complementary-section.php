@@ -37,9 +37,7 @@
                 </p>
               </div>
               <div class="section-solutions-consultadoria__service-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-energiarenovaveis/setalateral.svg" alt="seta lateral">
               </div>
             </div>
           <?php endforeach; ?>
