@@ -45,7 +45,7 @@ foreach ($args['fields_overrides'] as $field_key => $override) {
 }
 ?>
 
-<div class="form-wrapper">
+<div id="formulario" class="form-wrapper">
   <div class="form-left">
     <h2><?php echo esc_html($args['title']); ?></h2>
     <?php foreach ($args['paragraphs'] as $paragraph): ?>

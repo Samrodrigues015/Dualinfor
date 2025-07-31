@@ -15,13 +15,13 @@ get_header();
                 Conte com suporte técnico especializado e soluções à medida das suas necessidades.
             </p>
             <div class="dualinfor-hero-buttons">
-                <a href="#" class="dualinfor-button dualinfor-button-primary">
+                <a href="#formulario" class="dualinfor-button dualinfor-button-primary">
                     Peça Assistência Técnica Agora
                     <span class="dualinfor-button-icon-wrapper">
                         <i class="fa-solid fa-chevron-right"></i>
                     </span>
                 </a>
-                <a href="#" class="dualinfor-button dualinfor-button-secondary">Contacte-nos Já</a>
+                <a href="#formulario" class="dualinfor-button dualinfor-button-secondary">Contacte-nos Já</a>
             </div>
         </div>
     </section>
