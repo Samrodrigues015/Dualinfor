@@ -186,6 +186,9 @@ wp_enqueue_style('dualinfor-consultadoria-complementary-section-style', get_temp
 	// Estilo da seção de Formulário
 	wp_enqueue_style('dualinfor-formulario-style', get_template_directory_uri() . '/assets/css/formulario.css', array(), $theme_version);
 
+	// Estilo da página assistência técnica
+	wp_enqueue_style('dualinfor-pagina-assistenciatecnica-style', get_template_directory_uri() . '/assets/css/assistencia-tecnica.css', array(), $theme_version);
+
 	// JavaScript
 	wp_enqueue_script('dualinfor-main-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), $theme_version, true);
 
