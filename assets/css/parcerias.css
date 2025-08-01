@@ -1,0 +1,817 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section Lexmark */
+.parceria-hero {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  padding: 0;
+}
+
+.section-container-parcerias {
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+.section-top-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.section-top-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+.section-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 60px 80px 80px;
+  align-items: center;
+}
+
+.section-text-content {
+  max-width: 500px;
+}
+
+.section-main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.section-subtitle-parcerias {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.section-cta-button {
+  background-color: #9a2686;
+  color: white;
+  border: none;
+  padding: 18px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.section-cta-button:hover {
+  background-color: #7a1f6b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(154, 38, 134, 0.3);
+}
+
+.section-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.section-cta-button:hover .section-arrow {
+  transform: translateX(4px);
+}
+
+.section-printer-image {
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.section-printer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive adjustments for hero */
+@media (max-width: 1200px) {
+  .section-content-wrapper {
+    padding: 50px 60px 70px;
+    gap: 40px;
+  }
+
+  .section-main-title {
+    font-size: 3rem;
+  }
+
+  .section-subtitle-parcerias {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .section-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 40px 60px;
+    text-align: center;
+  }
+
+  .section-text-content {
+    max-width: 100%;
+  }
+
+  .section-main-title {
+    font-size: 2.5rem;
+  }
+
+  .section-subtitle-parcerias {
+    font-size: 1.8rem;
+  }
+
+  .section-printer-image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-top-image {
+    display: none;
+  }
+
+  .section-content-wrapper {
+    padding: 30px 30px 50px;
+    gap: 30px;
+  }
+
+  .section-main-title {
+    font-size: 2.2rem;
+  }
+
+  .section-subtitle-parcerias {
+    font-size: 1.6rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .section-cta-button {
+    padding: 16px 28px;
+    font-size: 0.95rem;
+  }
+
+  .section-printer-image {
+    height: 280px;
+    border-radius: 15px;
+  }
+  .section-container-parcerias {
+  padding: 0; 
+}
+}
+
+@media (max-width: 480px) {
+  .section-content-wrapper {
+    padding: 25px 20px 40px;
+  }
+
+  .section-main-title {
+    font-size: 1.9rem;
+  }
+
+  .section-subtitle-parcerias {
+    font-size: 1.4rem;
+  }
+
+  .section-cta-button {
+    padding: 14px 24px;
+    font-size: 0.9rem;
+    gap: 8px;
+  }
+
+  .section-printer-image {
+    height: 240px;
+  }
+}
+/* Partnership Section */
+.partnership-section {
+  padding: 4rem 0;
+  background: #2d2d2d;
+  color: white;
+}
+
+.partnership-content {
+  display: grid;
+  grid-template-columns: 445px 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partnership-image {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.partnership-image img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.partnership-text {
+  padding-top: 2rem;
+}
+
+.partnership-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  color: white;
+}
+
+.partnership-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b3b3b3;
+  margin-bottom: 1.5rem;
+}
+
+.partnership-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments for partnership */
+@media (max-width: 1024px) {
+  .partnership-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .partnership-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .partnership-image img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partnership-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .partnership-image img {
+    height: auto;
+  }
+
+  .partnership-text {
+    padding-top: 0;
+  }
+
+  .partnership-text h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partnership-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .partnership-text {
+    padding-top: 1rem;
+  }
+}
+
+/* Features Section */
+.features-section {
+  padding: 4rem 0;
+  background: #2d2d2d;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: #3d3d3d;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+}
+
+.feature-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.feature-content {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.feature-content h3 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Solutions Lexmark Section */
+.solutions-lexmark-section {
+  padding: 30px 30px;
+  background: #f2f2f2;
+}
+
+.solutions-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.solutions-text h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+  line-height: 1.2;
+}
+
+.solutions-text > p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+
+.solution-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #9a2686;
+}
+
+.solution-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.solution-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.solution-item p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.solutions-image-container {
+  position: relative;
+}
+
+.solutions-image {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.solutions-image img {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  object-fit: cover;
+}
+
+.cta-box-overlay {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  color: #9a2686;
+  padding: 1.2rem 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 8px 32px rgba(91, 108, 244, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 200px;
+}
+
+.cta-box-overlay .cta-arrow {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #9a2686;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.cta-box-overlay .cta-arrow:hover {
+  background: #9a2686;
+  transform: scale(1.05);
+}
+
+.cta-box-overlay .cta-arrow svg {
+  width: 16px;
+  height: 16px;
+}
+
+.cta-box-overlay p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #9a2686;
+  padding-right: 40px;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments for solutions */
+@media (max-width: 1024px) {
+  .solutions-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .solutions-text h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .solutions-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .solutions-image img {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .cta-box-overlay {
+    bottom: 15px;
+    right: 15px;
+    padding: 1rem;
+    max-width: 180px;
+  }
+
+  .cta-box-overlay p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .solutions-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .solution-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .cta-box-overlay {
+    position: static;
+    margin-top: 1rem;
+    max-width: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cta-box-overlay .cta-arrow {
+    position: static;
+    margin-left: 1rem;
+  }
+
+  .cta-box-overlay p {
+    padding-right: 0;
+    margin-top: 0;
+  }
+}
+
+/* Statistics Lexmark Section */
+.statistics-lexmark-section {
+  padding: 4rem 0;
+  background: #f2f2f2;
+}
+
+/* Statistics Content */
+.statistics-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.statistics-images-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.stat-image-top,
+.stat-image-bottom {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-image-top {
+  height: 200px;
+}
+
+.stat-image-bottom {
+  height: 280px;
+}
+
+.stat-image-top img,
+.stat-image-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stats-cards-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 495px; /* Total height to match images (200px + 15px gap + 280px) */
+}
+
+.stat-card {
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  color: white;
+  text-align: left;
+  position: relative;
+  flex: 1;
+}
+
+.stat-card.purple {
+  background: linear-gradient(135deg, #9a2686, #293992);
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.stat-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.stat-subtext {
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for statistics */
+@media (max-width: 1024px) {
+  .statistics-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .statistics-images-left {
+    flex-direction: row;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .stat-image-top,
+  .stat-image-bottom {
+    flex: 1;
+    height: 220px;
+  }
+
+  .stats-cards-right {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card-lexmark {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .testimonial-card-lexmark .testimonial-image {
+    flex: none;
+    height: 200px;
+  }
+
+  .statistics-images-left {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .stat-image-top,
+  .stat-image-bottom {
+    display: none;
+  }
+
+  .stats-cards-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .stat-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 1.5rem 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-cards-right {
+    flex-direction: column;
+  }
+
+  .stat-card {
+    min-width: auto;
+  }
+
+  .stat-image-top,
+  .stat-image-bottom {
+    height: 180px;
+  }
+}
+
+/* About Lexmark Section */
+.about-lexmark-section {
+  padding: 4rem 0;
+  background: #f2f2f2;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.about-text p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.btn-lexmark-secondary {
+  background: transparent;
+  color: #9a2686;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #9a2686;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.btn-lexmark-secondary:hover {
+  background: #9a2686;
+  color: white;
+}
+
+.about-image {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 400px;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Hero */
+
+  /* Sections */
+  .partnership-content,
+  .solutions-content,
+  .statistics-content,
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-cards-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .stat-card {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .stats-cards-right {
+    flex-direction: column;
+  }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partnership-content {
+    grid-template-columns: 1fr;
+  }
+
+  .solutions-content {
+    grid-template-columns: 1fr;
+  }
+
+  .statistics-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}

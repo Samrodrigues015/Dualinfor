@@ -201,6 +201,12 @@ wp_enqueue_style('dualinfor-consultadoria-complementary-section-style', get_temp
 	// Estilo da página assistência técnica
 	wp_enqueue_style('dualinfor-pagina-noticias-style', get_template_directory_uri() . '/assets/css/noticias.css', array(), $theme_version);
 
+	// Estilo da página assistência técnica
+	wp_enqueue_style('dualinfor-pagina-parcerias-style', get_template_directory_uri() . '/assets/css/parcerias.css', array(), $theme_version);
+
+	// Estilo da página assistência técnica
+	wp_enqueue_style('dualinfor-pagina-sobrenos-style', get_template_directory_uri() . '/assets/css/sobrenos.css', array(), $theme_version);
+
 	// JavaScript
 	wp_enqueue_script('dualinfor-main-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), $theme_version, true);
 
