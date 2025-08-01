@@ -356,10 +356,10 @@ get_header();
                         isso, estamos sempre disponíveis para intervir, remotamente ou no local, assegurando que os seus
                         sistemas permaneçam operacionais.</p>
                     <div class="final-cta-buttons">
-                        <button class="btn-primary-support">Peça Assistência Técnica Agora
+                        <a href="#formulario" class="btn-primary-support">Peça Assistência Técnica Agora
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-assistenciatecnica/iconebutton.svg" alt="">
-                        </button>
-                        <button class="btn-secondary-outline">Contacte-nos para Mais Informações</button>
+                        </a>
+                        <a href="#formulario" class="btn-secondary-outline">Contacte-nos para Mais Informações</a>
                     </div>
                 </div>
                 <div class="final-cta-image">

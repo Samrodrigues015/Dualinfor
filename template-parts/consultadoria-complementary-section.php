@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Part: Consultadoria - Soluções Complementares
  *
@@ -37,8 +38,15 @@
                 </p>
               </div>
               <div class="section-solutions-consultadoria__service-icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-energiarenovaveis/setalateral.svg" alt="seta lateral">
+                <?php if (!empty($service['url'])): ?>
+                  <a href="<?php echo esc_url($service['url']); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-energiarenovaveis/setalateral.svg" alt="seta lateral">
+                  </a>
+                <?php else: ?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-energiarenovaveis/setalateral.svg" alt="seta lateral">
+                <?php endif; ?>
               </div>
+
             </div>
           <?php endforeach; ?>
         </div>
