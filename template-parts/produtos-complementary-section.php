@@ -2,15 +2,6 @@
 
 /**
  * Template Part: Secção de Soluções Complementares
- * Uso: get_template_part('template-parts/section-complementary', null, [...]);
- *
- * Parâmetros esperados:
- * 'title' => (string) Título principal
- * 'image' => (string) URL da imagem
- * 'image_position' => 'left' ou 'right' (por defeito: 'right')
- * 'cta_text' => (string) Texto do CTA
- * 'cta_color' => (string) cor de fundo do CTA e do botão mobile
- * 'services' => array de arrays com 'title' e 'description'
  */
 
 $title = $args['title'] ?? '';
@@ -21,8 +12,14 @@ $cta_color = $args['cta_color'] ?? '#293992';
 $services = $args['services'] ?? [];
 
 $reverse = $image_position === 'left' ? 'flex-row-reverse' : '';
+
+// Ícone comum para os serviços
 $svg_icon_path = get_template_directory() . '/assets/img/img-energiarenovaveis/setalateral.svg';
 $svg_icon_content = file_exists($svg_icon_path) ? file_get_contents($svg_icon_path) : '';
+
+// Ícone específico para o CTA
+$cta_icon_path = get_template_directory() . '/assets/img/img-energiarenovaveis/setaexterna.svg';
+$cta_icon_content = file_exists($cta_icon_path) ? file_get_contents($cta_icon_path) : '';
 ?>
 
 <div class="section-complementary-container">
@@ -47,7 +44,6 @@ $svg_icon_content = file_exists($svg_icon_path) ? file_get_contents($svg_icon_pa
                   <?php echo $svg_icon_content; ?>
                 <?php endif; ?>
               </div>
-
             </div>
           </div>
         <?php endforeach; ?>
@@ -63,7 +59,7 @@ $svg_icon_content = file_exists($svg_icon_path) ? file_get_contents($svg_icon_pa
         <div class="section-complementary-cta" style="background-color: <?php echo esc_attr($cta_color); ?>;">
           <p class="section-complementary-cta-text"><?php echo esc_html($cta_text); ?></p>
           <div class="section-complementary-cta-arrow">
-            <?php echo $svg_icon_content; ?>
+            <?php echo $cta_icon_content; ?>
           </div>
         </div>
       <?php endif; ?>

@@ -15,12 +15,12 @@ get_template_part('template-parts/produtos-hero-section', null, array(
   'image_main' => get_template_directory_uri() . '/assets/img/img-impressoras/impressorasimage1.png',
   'image_secondary' => get_template_directory_uri() . '/assets/img/img-impressoras/impressorasimage2.png',
   'cta_primary' => [
-    'url' => '#',
+    'url' => '#formulario',
     'label' => 'Peça um Orçamento Personalizado',
     'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconesetabranca.svg',
   ],
   'cta_secondary' => [
-    'url' => '#',
+    'url' => '#formulario',
     'label' => 'Fale com um Especialista Agora',
   ],
   'reverse' => false,
@@ -200,18 +200,22 @@ get_template_part('template-parts/produtos-complementary-section', null, array(
     array(
       'title' => 'Gaveta Inteligente de Dinheiro',
       'description' => 'Segurança e eficiência na gestão de numerário',
+      'url' => '/pagina-gavetas-inteligentes/'
     ),
     array(
       'title' => 'Soluções de Videovigilância',
       'description' => 'Proteja o seu espaço e ativos.',
+      'url' => '/pagina-videvigilancia/'
     ),
     array(
       'title' => 'Software de Faturação e POS',
       'description' => 'Simplifique a gestão de vendas.',
+      'url' => '/pagina-faturacao/'
     ),
   )
 ));
 ?>
+
 
 
 <?php

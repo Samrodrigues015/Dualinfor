@@ -187,7 +187,7 @@
   background: #f2f2f2;
 }
 
-.section-header {
+.section-header-home{
   text-align: left;
   margin-bottom: 3rem;
   max-width: 1000px;
@@ -206,7 +206,7 @@
   letter-spacing: 0.5px;
 }
 
-.section-header h2 {
+.section-header-home h2 {
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -215,7 +215,7 @@
   max-width: 500px;
 }
 
-.section-header p {
+.section-header-home p {
   font-size: 1rem;
   color: #6b7280;
   max-width: 600px;
@@ -285,7 +285,7 @@
 }
 
 .solution-link:hover {
-  color: #8b5cf6;
+  color: #9A2686;
 }
 
 .solution-link::after {
@@ -905,7 +905,7 @@
   }
 
   .solutions-intro h2,
-  .section-header h2,
+  .section-header-home h2,
   .stats-right h3,
   .blog-header h2 {
     font-size: 1.75rem;
@@ -920,7 +920,7 @@
     grid-column: span 1;
   }
 
-  .section-header {
+  .section-header-home {
     text-align: center;
   }
 

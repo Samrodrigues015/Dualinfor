@@ -189,6 +189,9 @@ wp_enqueue_style('dualinfor-consultadoria-complementary-section-style', get_temp
 	// Estilo da página assistência técnica
 	wp_enqueue_style('dualinfor-pagina-assistenciatecnica-style', get_template_directory_uri() . '/assets/css/assistencia-tecnica.css', array(), $theme_version);
 
+	// Estilo da página produtos
+	wp_enqueue_style('dualinfor-pagina-produtos-style', get_template_directory_uri() . '/assets/css/produtos.css', array(), $theme_version);
+
 	// Estilo da página assistência técnica
 	wp_enqueue_style('dualinfor-pagina-home-style', get_template_directory_uri() . '/assets/css/home.css', array(), $theme_version);
 
