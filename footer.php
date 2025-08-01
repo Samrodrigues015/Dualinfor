@@ -66,10 +66,10 @@
     <!-- Navigation Sections -->
     <div class="nav-sections">
       <a href="<?php echo site_url('/pagina-produtos'); ?>" class="nav-section"><h3>Produtos</h3></a>
-      <a href="<?php echo site_url('/pagina-servico-e-solucoes'); ?>" class="nav-section"><h3>Serviços e Soluções</h3></a>
+      <a href="<?php echo site_url('/pagina-servicos-e-solucoes'); ?>" class="nav-section"><h3>Serviços e Soluções</h3></a>
       <a href="<?php echo site_url('/pagina-sobre-nos'); ?>" class="nav-section"><h3>Sobre Nós</h3></a>
       <a href="<?php echo site_url('/pagina-noticias'); ?>" class="nav-section"><h3>Notícias</h3></a>
-      <a href="<?php echo site_url('/pagina-suporte-tecnico'); ?>" class="nav-section"><h3>Suporte Técnico</h3></a>
+      <a href="<?php echo site_url('/pagina-assistencia-tecnica'); ?>" class="nav-section"><h3>Suporte Técnico</h3></a>
     </div>
 
     <!-- Divider (only visible on mobile) -->

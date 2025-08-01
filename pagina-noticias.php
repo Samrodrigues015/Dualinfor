@@ -12,7 +12,7 @@ get_header();
     <div class="container">
       <div class="hero-slide active">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-noticias/image1.png" alt="Sistema de videovigilância">
-        <div class="hero-content">
+        <div class="hero-content-noticias">
           <h1>Como a videovigilância reduz custos operacionais</h1>
         </div>
       </div>

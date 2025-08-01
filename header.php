@@ -55,21 +55,21 @@
 								<div class="mega-dropdown" role="menu">
 									<div class="mega-dropdown__grid">
 										<!-- Produtos listados -->
-										<a href="pagina-produtos" class="mega-dropdown__item"><i class="fa-solid fa-print mega-dropdown__icon"></i><span>Impressoras e Multifunções Sharp</span></a>
-										<a href="pagina-paineis" class="mega-dropdown__item"><i class="fa-solid fa-sun mega-dropdown__icon"></i><span>Energias Renováveis</span></a>
-										<a href="pagina-solucoes-visuais" class="mega-dropdown__item"><i class="fa-solid fa-eye mega-dropdown__icon"></i><span>Soluções Visuais Multimac</span></a>
-										<a href="pagina-video-vigilancia" class="mega-dropdown__item"><i class="fa-solid fa-video mega-dropdown__icon"></i><span>Videovigilância</span></a>
-										<a href="pagina-ti-e-computing" class="mega-dropdown__item"><i class="fa-solid fa-desktop mega-dropdown__icon"></i><span>TI & Computing Multimac</span></a>
+										<a href="/pagina-impressoras-e-multifuncoes/" class="mega-dropdown__item"><i class="fa-solid fa-print mega-dropdown__icon"></i><span>Impressoras e Multifunções Sharp</span></a>
+										<a href="/pagina-energia-renovaveis/" class="mega-dropdown__item"><i class="fa-solid fa-sun mega-dropdown__icon"></i><span>Energias Renováveis</span></a>
+										<a href="pagina-solucoes-visuais" class="mega-dropdown__item"><i class="fa-solid fa-eye mega-dropdown__icon"></i><span>Soluções Visuais</span></a>
+										<a href="/pagina-videvigilancia/" class="mega-dropdown__item"><i class="fa-solid fa-video mega-dropdown__icon"></i><span>Videovigilância</span></a>
+										<a href="/pagina-redes-e-computing/" class="mega-dropdown__item"><i class="fa-solid fa-desktop mega-dropdown__icon"></i><span>Redes & Computing</span></a>
 										<a href="pagina-controlo-de-acessos" class="mega-dropdown__item"><i class="fa-solid fa-id-card mega-dropdown__icon"></i><span>Controle de Acessos e Gestão de Assiduidades</span></a>
-										<a href="pagina-pos-software" class="mega-dropdown__item"><i class="fa-solid fa-cash-register mega-dropdown__icon"></i><span>POS - Software de Faturação Multimac</span></a>
-										<a href="#" class="mega-dropdown__item"><i class="fa-solid fa-shield-alt mega-dropdown__icon"></i><span>Intrusão</span></a>
-										<a href="pagina-gavetas-de-dinheiro" class="mega-dropdown__item"><i class="fa-solid fa-money-bill mega-dropdown__icon"></i><span>Gavetas Inteligentes de Dinheiro</span></a>
-										<a href="pagina-unibind" class="mega-dropdown__item"><i class="fa-solid fa-tag mega-dropdown__icon"></i><span>Peleman - Encadernação e Personalização</span></a>
+										<a href="/pagina-faturacao/" class="mega-dropdown__item"><i class="fa-solid fa-cash-register mega-dropdown__icon"></i><span>POS - Software de Faturação</span></a>
+										<a href="#formulario" class="mega-dropdown__item"><i class="fa-solid fa-shield-alt mega-dropdown__icon"></i><span>Intrusão</span></a>
+										<a href="/pagina-gavetas-inteligentes/" class="mega-dropdown__item"><i class="fa-solid fa-money-bill mega-dropdown__icon"></i><span>Gavetas Inteligentes de Dinheiro</span></a>
+										<a href="/pagina-produtos/" class="mega-dropdown__item"><i class="fa-solid fa-tag mega-dropdown__icon"></i><span>Peleman - Encadernação e Personalização</span></a>
 									</div>
 								</div>
 							</li>
 							<li class="nav__item">
-								<a href="<?php echo site_url('/pagina-servicos'); ?>" class="nav__link" aria-expanded="false" aria-haspopup="true">
+								<a href="<?php echo site_url('/pagina-servicos-e-solucoes/'); ?>" class="nav__link" aria-expanded="false" aria-haspopup="true">
 									Serviços
 									<i class="fa-solid fa-chevron-down nav__dropdown-icon" aria-hidden="true"></i>
 								</a>

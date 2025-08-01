@@ -298,7 +298,7 @@
   margin-top: 2rem; /* Ajusta a margem superior para alinhar com o título */
 }
 
-.solutions-grid {
+.solutions-grid-sobre {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -802,7 +802,7 @@
     padding: 0 30px;
   }
 
-  .solutions-grid {
+  .solutions-grid-sobre {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
@@ -943,7 +943,7 @@
     margin-top: 1rem;
   }
 
-  .solutions-grid {
+  .solutions-grid-sobre {
     grid-template-columns: 1fr;
   }
 

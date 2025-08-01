@@ -112,7 +112,7 @@ get_header();
         <h2>Soluções tecnológicas adaptadas às necessidades dos nossos clientes</h2>
         <p>A Dualinfor disponibiliza uma gama completa de produtos e serviços tecnológicos que se ajustam às necessidades das empresas, independentemente do setor ou dimensão.</p>
       </div>
-      <div class="solutions-grid">
+      <div class="solutions-grid-sobre">
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">

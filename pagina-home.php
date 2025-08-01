@@ -7,12 +7,12 @@ get_header();
     <!-- Hero Section -->
     <section class="hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/img-home/image1.png');">
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content-home">
                 <div class="hero-text">
                     <h1>A solução tecnológica de que o seu negócio precisa</h1>
                     <p>Desde 1998, oferecemos soluções personalizadas em impressão e gestão de numerário, cibersegurança e muito mais. Descubra como podemos ser a extensão tecnológica do seu sucesso.</p>
                     <div class="hero-buttons">
-                        <a href="#formulario" class="btn-primary">Explorar Soluções</a>
+                        <a href="/pagina-servicos-e-solucoes/" class="btn-primary">Explorar Soluções</a>
                         <a href="#formulario" class="btn-secondary">Fale com um Especialista</a>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ get_header();
                     <div class="solution-content">
                         <h3>Software e Faturação e P.O.S</h3>
                         <p>Gerencie vendas, relatórios e inventário numa plataforma intuitiva e fácil de usar.</p>
-                        <a href="#" class="solution-link">Explorar Software POS</a>
+                        <a href="/pagina-faturacao/" class="solution-link">Explorar Software POS</a>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@ get_header();
                     <div class="solution-content">
                         <h3>Gaveta Inteligente de Dinheiro</h3>
                         <p>Automatize e proteja a gestão de numerário com eficiência e segurança.</p>
-                        <a href="#" class="solution-link">Explorar Gaveta Inteligente de Dinheiro</a>
+                        <a href="/pagina-gavetas-inteligentes/" class="solution-link">Explorar Gaveta Inteligente de Dinheiro</a>
                     </div>
                 </div>
 
@@ -85,7 +85,7 @@ get_header();
                     <div class="solution-content">
                         <h3>Impressoras e Multifunções</h3>
                         <p>Equipamentos fiáveis e modernos para impressão de alta qualidade, redução de custos e integração com os seus sistemas.</p>
-                        <a href="#" class="solution-link">Explorar Soluções de Impressão</a>
+                        <a href="/pagina-impressoras-e-multifuncoes/" class="solution-link">Explorar Soluções de Impressão</a>
                     </div>
                 </div>
 
@@ -96,7 +96,7 @@ get_header();
                     <div class="solution-content">
                         <h3>Redes Estruturadas & Computing</h3>
                         <p>Infraestruturas de TI robustas que garantem conectividade segura e suportam o crescimento do seu negócio.</p>
-                        <a href="#" class="solution-link">Explorar Redes Estruturadas</a>
+                        <a href="/pagina-redes-e-computing/" class="solution-link">Explorar Redes Estruturadas</a>
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@ get_header();
                     <div class="solution-content">
                         <h3>Cibersegurança</h3>
                         <p>Proteja os seus sistemas e dados contra ciberameaças com soluções avançadas.</p>
-                        <a href="#" class="solution-link">Explorar Soluções de Cibersegurança</a>
+                        <a href="/pagina-ciberseguranca/" class="solution-link">Explorar Soluções de Cibersegurança</a>
                     </div>
                 </div>
 
@@ -118,7 +118,7 @@ get_header();
                     <div class="solution-content">
                         <h3>Videovigilância</h3>
                         <p>Soluções avançadas de monitorização e segurança para proteger o seu negócio.</p>
-                        <a href="#" class="solution-link">Explorar Videovigilância</a>
+                        <a href="/pagina-videovigilancia/" class="solution-link">Explorar Videovigilância</a>
                     </div>
                 </div>
 
@@ -129,7 +129,7 @@ get_header();
                     <div class="solution-content">
                         <h3>Soluções Documentais</h3>
                         <p>Gestão otimizada de documentos e impressão, com foco na produtividade e sustentabilidade.</p>
-                        <a href="#" class="solution-link">Explorar Soluções Documentais</a>
+                        <a href="/pagina-solucoes-documentais/" class="solution-link">Explorar Soluções Documentais</a>
                     </div>
                 </div>
 
@@ -140,10 +140,12 @@ get_header();
                     <div class="cta-content">
                         <h3>Solicite um Orçamento Personalizado</h3>
                         <div class="cta-arrow">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="7" y1="17" x2="17" y2="7"></line>
-                                <polyline points="7,7 17,7 17,17"></polyline>
-                            </svg>
+                            <a href="#formulario">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7,7 17,7 17,17"></polyline>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -320,9 +322,6 @@ get_header();
     <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
-            <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6Frnpeg4VmKVRIPUslEHh4QyoU6VAN.png" target="_blank" class="stats-image-link">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6Frnpeg4VmKVRIPUslEHh4QyoU6VAN.png" alt="Dualinfor Stats" class="stats-reference-image">
-            </a>
             <div class="stats-content">
                 <div class="stats-left">
                     <div class="stats-top-row">
@@ -350,7 +349,7 @@ get_header();
                 <div class="stats-right">
                     <h3>Dualinfor: +25 anos de experiência e inovação</h3>
                     <p>Desde 1998, ajudamos empresas a superar desafios tecnológicos com soluções fiáveis e personalizadas. Com uma equipa experiente e parcerias estratégicas, garantimos resultados que fazem a diferença.</p>
-                    <button href="/sobre-nos" class="btn-stats">Saiba Mais Sobre Nós</button>
+                    <a href="/pagina-sobre-nos/" class="btn-stats">Saiba Mais Sobre Nós</a>
                 </div>
             </div>
         </div>
