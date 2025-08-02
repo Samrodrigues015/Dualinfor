@@ -16,7 +16,7 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
   'btn_primary_text' => 'Solicite uma Reunião Personalizada',
   'btn_primary_link' => '#formulario',
   'btn_secondary_text' => 'Fale com um Especialista Agora',
-  'btn_secondary_link' => '#contacto',
+  'btn_secondary_link' => '#formulario',
   'align_left' => true,
   'layout_type' => 'titulo-botoes-paragrafo'
 ));
@@ -108,7 +108,8 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
   ),
   'cta' => array(
     'label' => 'Peça um Orçamento Personalizado',
-    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-consultadoria/icone8.svg" alt="Ícone orçamento">'
+    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-consultadoria/icone8.svg" alt="Ícone orçamento">',
+    'url' => 'formulario'
   )
 ));
 ?>
@@ -243,15 +244,18 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
     'services' => [
         [
             'title' => 'Redes Estruturadas & Computing',
-            'description' => 'Infraestruturas seguras para suportar soluções de cibersegurança.'
+            'description' => 'Infraestruturas seguras para suportar soluções de cibersegurança.',
+            'url' => '/pagina-redes-e-computing/'
         ],
         [
             'title' => 'Software de Backup e Recuperação',
-            'description' => 'Garantia de continuidade operacional em caso de incidentes.'
+            'description' => 'Garantia de continuidade operacional em caso de incidentes.',
+            'url' => '/pagina-faturacao/' // <- substitui por URL real se for diferente
         ],
         [
             'title' => 'Gestão de Filas de Espera',
-            'description' => 'Integração de segurança em sistemas de atendimento presencial.'
+            'description' => 'Integração de segurança em sistemas de atendimento presencial.',
+            'url' => '/pagina-gestao-fila-de-espera/'
         ]
     ],
     'images' => [
@@ -270,6 +274,7 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
     ]
 ]);
 ?>
+
 
 <?php
 get_template_part('template-parts/produtos-doubt-section', null, array(

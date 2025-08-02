@@ -15,7 +15,7 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
   'btn_primary_text' => 'Solicite uma Reunião Personalizada',
   'btn_primary_link' => '#formulario',
   'btn_secondary_text' => 'Fale com um Especialista Agora',
-  'btn_secondary_link' => '#contacto',
+  'btn_secondary_link' => '#formulario',
   'align_left' => true
 ));
 ?>
@@ -243,15 +243,18 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
     'services' => [
         [
             'title' => 'Soluções de Cibersegurança',
-            'description' => 'Conectividade para suportar sistemas de monitorização de energia.'
+            'description' => 'Conectividade para suportar sistemas de monitorização de energia.',
+            'url' => '/pagina-ciberseguranca/'
         ],
         [
             'title' => 'Redes Estruturadas & Computing',
-            'description' => 'Modernize a infraestrutura tecnológica da sua empresa.'
+            'description' => 'Modernize a infraestrutura tecnológica da sua empresa.',
+            'url' => '/pagina-redes-e-computing/'
         ],
         [
             'title' => 'Soluções Documentais MPS',
-            'description' => 'Simplifique a gestão documental e aumente a eficiência operacional.'
+            'description' => 'Simplifique a gestão documental e aumente a eficiência operacional.',
+            'url' => '/pagina-solucoes-documentais/'
         ]
     ],
     'images' => [
@@ -270,6 +273,7 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
     ]
 ]);
 ?>
+
 
 
 

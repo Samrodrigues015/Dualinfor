@@ -82,7 +82,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="nav__item"><a href="pagina-solucoes" class="nav__link">Soluções</a></li>
+							<li class="nav__item"><a href="/pagina-servicos-e-solucoes/" class="nav__link">Soluções</a></li>
 							<li class="nav__item"><a href="pagina-sobre-nos" class="nav__link">Sobre nós</a></li>
 							<li class="nav__item"><a href="pagina-noticias" class="nav__link">Notícias</a></li>
 							<li class="nav__item mobile-assistence"><a href="pagina-suporte" class="nav__link">Assistência Técnica</a></li>
@@ -91,7 +91,7 @@
 				</nav>
 
 				<button class="secondary-button main-button-styles botao-assistencia-tecnica">
-					<a href="pagina-suporte"><i class="fa-solid fa-headset"></i>
+					<a href="/pagina-assistencia-tecnica/"><i class="fa-solid fa-headset"></i>
 						<span>Assistência Técnica</span></a>
 				</button>
 

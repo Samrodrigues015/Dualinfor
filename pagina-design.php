@@ -16,7 +16,7 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
   'btn_primary_text' => 'Solicite uma Reunião Personalizada',
   'btn_primary_link' => '#formulario',
   'btn_secondary_text' => 'Fale com um Especialista Agora',
-  'btn_secondary_link' => '#contacto',
+  'btn_secondary_link' => '#formulario',
   'align_left' => true,
   'layout_type' => 'titulo-botoes-paragrafo'
 ));
@@ -243,15 +243,18 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
   'services' => [
     [
       'title' => 'Impressoras e Multifunções',
-      'description' => 'Produza materiais promocionais internamente com qualidade profissional.'
+      'description' => 'Produza materiais promocionais internamente com qualidade profissional.',
+      'url' => '/pagina-impressoras-e-multifuncoes/'
     ],
     [
       'title' => 'Unibind – Encadernação e Personalização',
-      'description' => 'Dê um toque final profissional aos seus documentos.'
+      'description' => 'Dê um toque final profissional aos seus documentos.',
+      'url' => '/pagina-produtos/' // presumindo que "produtos" cobre a Unibind
     ],
     [
       'title' => 'Soluções de Sinalética Digital',
-      'description' => 'Reforce a sua marca com conteúdos dinâmicos.'
+      'description' => 'Reforce a sua marca com conteúdos dinâmicos.',
+      'url' => '/pagina-solucoes-documentais/' // presumindo que a sinalética entra neste âmbito
     ]
   ],
   'images' => [

@@ -27,7 +27,7 @@ get_header();
                 <h2>Soluções tecnológicas que simplificam e impulsionam o seu negócio</h2>
                 <p>Facilitamos a gestão e impulsionamos o crescimento do seu negócio com soluções tecnológicas para todos, segurança, inovação e muito mais. Descubra como podemos ajudar.</p>
                 <div class="solutions-buttons">
-                    <a href="#formulario" class="btn-primary">Explorar Soluções</a>
+                    <a href="/pagina-assistencia-tecnica/" class="btn-primary">Explorar Soluções</a>
                     <a href="#formulario" class="btn-secondary">Fale com um Especialista</a>
                 </div>
             </div>

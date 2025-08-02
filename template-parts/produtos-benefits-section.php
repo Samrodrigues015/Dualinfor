@@ -130,12 +130,15 @@ $list_style = $list_color ? "color: $list_color;" : '';
       <?php endif; ?>
     </div>
 
-    <?php if ($has_cta && $total_cards >= 7) : ?>
+    <?php if ($has_cta) : ?>
       <div class="mobile-btn">
-        <button>
-          <a href="#"><?= esc_html($args['cta']['label']); ?></a>
-        </button>
+        <a href="#formulario">
+          <button>
+            <?= esc_html($args['cta']['label']); ?>
+          </button>
+        </a>
       </div>
     <?php endif; ?>
+
   </div>
 </div>
