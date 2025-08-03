@@ -75,17 +75,17 @@
 								</a>
 								<div class="mega-dropdown" role="menu">
 									<div class="mega-dropdown__grid">
-										<a href="pagina-infraestrutura" class="mega-dropdown__item"><i class="fa-solid fa-network-wired mega-dropdown__icon"></i><span>Infraestrutura e Redes</span></a>
-										<a href="pagina-suporte" class="mega-dropdown__item"><i class="fa-solid fa-cogs mega-dropdown__icon"></i><span>Suporte Técnico</span></a>
-										<a href="pagina-seguranca" class="mega-dropdown__item"><i class="fa-solid fa-lock mega-dropdown__icon"></i><span>Segurança Informática</span></a>
-										<a href="pagina-consultoria" class="mega-dropdown__item"><i class="fa-solid fa-clipboard-check mega-dropdown__icon"></i><span>Consultoria Tecnológica</span></a>
+										<a href="pagina-redes-e-computing" class="mega-dropdown__item"><i class="fa-solid fa-network-wired mega-dropdown__icon"></i><span>Infraestrutura e Redes</span></a>
+										<a href="/pagina-assistencia-tecnica/" class="mega-dropdown__item"><i class="fa-solid fa-cogs mega-dropdown__icon"></i><span>Suporte Técnico</span></a>
+										<a href="pagina-ciberseguranca" class="mega-dropdown__item"><i class="fa-solid fa-lock mega-dropdown__icon"></i><span>Segurança Informática</span></a>
+										<a href="pagina-consultadoria" class="mega-dropdown__item"><i class="fa-solid fa-clipboard-check mega-dropdown__icon"></i><span>Consultoria Tecnológica</span></a>
 									</div>
 								</div>
 							</li>
 							<li class="nav__item"><a href="/pagina-servicos-e-solucoes/" class="nav__link">Soluções</a></li>
 							<li class="nav__item"><a href="pagina-sobre-nos" class="nav__link">Sobre nós</a></li>
 							<li class="nav__item"><a href="pagina-noticias" class="nav__link">Notícias</a></li>
-							<li class="nav__item mobile-assistence"><a href="pagina-suporte" class="nav__link">Assistência Técnica</a></li>
+							<li class="nav__item mobile-assistence"><a href="/pagina-servicos-e-solucoes/" class="nav__link">Assistência Técnica</a></li>
 						</ul>
 					</div>
 				</nav>

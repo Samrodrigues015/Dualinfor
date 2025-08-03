@@ -219,7 +219,7 @@ a {
 .nav__container {
   height: 400px;
   background-color: var(--background-primary);
-  border-radius: 0 0 20px 20px;
+  border-radius: 25px;
   margin-top: -16px;
   background: #f2f2f2;
 }
@@ -238,7 +238,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
   font-weight: 500;
   transition: var(--transition);
   min-height: 56px;
