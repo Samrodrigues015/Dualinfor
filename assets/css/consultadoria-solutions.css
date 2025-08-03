@@ -1,8 +1,12 @@
-.section {
-  padding: 80px 20px;
-  margin: 0 auto;
-  max-width: 1200px;
+.section-dark-wrapper {
   background-color: #1c1c1c;
+  padding: 80px 0;
+}
+
+.section-dark-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   color: #ffffff;
   line-height: 1.6;
 }

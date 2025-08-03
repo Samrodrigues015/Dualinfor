@@ -119,7 +119,8 @@ get_header();
     ),
     'cta' => array(
       'label' => 'Peça um Orçamento Personalizado',
-      'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-consultadoria/icone8.svg" alt="Ícone orçamento">'
+      'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-consultadoria/icone8.svg" alt="Ícone orçamento">',
+      'url' => '#formulario'
     )
   ));
   ?>

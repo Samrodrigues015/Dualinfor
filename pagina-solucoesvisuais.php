@@ -15,12 +15,12 @@ get_template_part('template-parts/produtos-hero-section', null, array(
   'image_main' => get_template_directory_uri() . '/assets/img/img-solucoesvisuais/solucoesvisuais1.png',
   'image_secondary' => get_template_directory_uri() . '/assets/img/img-solucoesvisuais/solucoesvisuais2.png',
   'cta_primary' => [
-    'url' => '#',
+    'url' => '#formulario',
     'label' => 'Peça um Orçamento Personalizado',
     'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconesetabranca.svg',
   ],
   'cta_secondary' => [
-    'url' => '#',
+    'url' => '#formulario',
     'label' => 'Fale com um Especialista',
   ],
   'reverse' => true,
@@ -225,14 +225,17 @@ get_template_part('template-parts/produtos-complementary-section', null, array(
     array(
       'title' => 'Redes Estruturadas & Computing',
       'description' => 'Conectividade perfeita para suportar sistemas visuais.',
+      'url' => site_url('/pagina-redes-e-computing')
     ),
     array(
       'title' => 'Impressoras e Multifunções',
       'description' => 'Produção de materiais visuais complementares.',
+      'url' => site_url('/pagina-impressoras-e-multifuncoes')
     ),
     array(
       'title' => 'Sinalética Digital (Xopvision)',
       'description' => 'Gestão de conteúdos dinâmicos em tempo real.',
+      'url' => site_url('/pagina-xopvision')
     ),
   )
 ));

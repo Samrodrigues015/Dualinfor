@@ -23,10 +23,10 @@ get_header();
         <p class="section-description">
           Soluções avançadas de impressão e multifunções para otimizar os fluxos de trabalho e reduzir os custos operacionais.
         </p>
-        <button class="section-cta-button">
+        <a href="/pagina-servicos-e-solucoes/" class="section-cta-button">
           Explorar Soluções Lexmark com a Dualinfor
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-parcerias/iconeseta.svg" alt="">
-        </button>
+        </a>
       </div>
 
       <div class="section-printer-image">
@@ -61,7 +61,7 @@ get_header();
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-parcerias/image4.png" alt="High performance printer">
         </div>
         <div class="feature-content">
-          <h3>Impressoras e multifuncionais de alta performance</h3>
+          <a href="/pagina-impressoras-e-multifuncoes/">Impressoras e multifuncionais de alta performance</a>
         </div>
       </div>
       <div class="feature-card">
@@ -69,7 +69,7 @@ get_header();
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-parcerias/image5.png" alt="Office productivity equipment">
         </div>
         <div class="feature-content">
-          <h3>Redução de custos operacionais e aumento da produtividade</h3>
+          <a href="/pagina-gestao-fila-de-espera/">Redução de custos operacionais e aumento da produtividade</a>
         </div>
       </div>
       <div class="feature-card">
@@ -77,7 +77,7 @@ get_header();
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-parcerias/image6.png" alt="Technical support team">
         </div>
         <div class="feature-content">
-          <h3>Suporte técnico especializado e soluções empresariais personalizadas</h3>
+          <a href="/pagina-assistencia-tecnica/">Suporte técnico especializado e soluções empresariais personalizadas</a>
         </div>
       </div>
     </div>

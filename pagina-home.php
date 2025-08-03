@@ -428,7 +428,7 @@ get_header();
                 </article>
             </div>
             <div class="blog-cta">
-                <button class="btn-primary">Ver Mais no Blog</button>
+                <a  href="/pagina-noticias/" class="btn-primary">Ver Mais no Blog</a>
             </div>
         </div>
     </section>

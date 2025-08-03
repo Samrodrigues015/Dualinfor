@@ -116,7 +116,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="/pagina-solucoes-documentais/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lampada%20%282%29-hhLGhR7GV8qvru9Lf4GKsDzdhf0wkH.png" alt="Ícone de Lâmpada" style="width: 25px; height: 25px;">
               </a>
             </div>
@@ -128,7 +128,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="/pagina-impressoras-e-multifuncoes/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000004535-OpYKohmM4lqVwrteWeb6Wo8rzT42qr.png" alt="Ícone de Lâmpada" style="width: 24px; height: 24px;">
               </a>
             </div>
@@ -140,7 +140,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="/pagina-faturacao/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vendendo%20%281%29-16Dy9hOGTydyP0D52jL9oITpRL4l8A.png" alt="Ícone de Lâmpada" style="width: 25px; height: 24px;">
               </a>
             </div>
@@ -152,7 +152,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="/pagina-redes-e-computing/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%289%29-FPxMdLQnFZjPiAZdD3sBCIa78Mlgt7.png" alt="Ícone de Lâmpada" style="width: 25px; height: 24px;">
               </a>
             </div>
@@ -164,7 +164,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="/pagina-ciberseguranca/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seguranca-na-internet%201-WLtJUDXlUHikN13VBYsE0zSQw0SDbj.png" alt="Ícone de Lâmpada" style="width: 24px; height: 24px;">
               </a>
             </div>
@@ -176,7 +176,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="/pagina-gestao-fila-de-espera/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sinal-de-fila%201-uJbB0rrwQKa76vaAAaXHOg5oR4tdMV.png" alt="Ícone de Lâmpada" style="width: 23px; height: 23px;">
               </a>
             </div>
@@ -188,7 +188,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="/pagina-videvigilancia/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/camera-cftv%201-E8knn6aUxQJGjamLx3lYxuknLVRFIx.png" alt="Ícone de Lâmpada" style="width: 24px; height: 24px;">
               </a>
             </div>
@@ -200,7 +200,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="/pagina-produtos/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/caderno-alternativo%20%281%29%201-vX5PfqSx2TehtoGxVyUjxScXGmqHaq.png" alt="Ícone de Lâmpada" style="width: 25px; height: 25px;">
               </a>
             </div>
@@ -212,7 +212,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="/pagina-energias-renovaveis/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%2810%29-uvQCihUCZHnGR9TL02zmvuk6NZfMXn.png" alt="Ícone de Lâmpada" style="width: 24px; height: 23px;">
               </a>
             </div>
@@ -224,7 +224,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="pagina-bilhetica/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/recibo%201-PfukV3ZI8qRkzE1qlorwHV2jJLG36k.png" alt="Ícone de Lâmpada" style="width: 26px; height: 26px;">
               </a>
             </div>
@@ -236,7 +236,7 @@ get_header();
         <div class="solution-card">
           <div class="solution-icon">
             <div class="icon-circle">
-              <a href="#">
+              <a href="/pagina-consultadoria/">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%2812%29-PjPXS6VcYEnsTVcTDhzgyQVI1Sod1S.png" alt="Ícone de Lâmpada" style="width: 28px; height: 28px;">
               </a>
             </div>
@@ -248,12 +248,12 @@ get_header();
         <div class="solution-card cta-card-sobre">
           <div class="cta-content">
             <h3>Peça um Orçamento Personalizado</h3>
-            <button class="btn-primary">
+            <a href="/#formulario" class="btn-primary">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="7" y1="17" x2="17" y2="7"></line>
                 <polyline points="7 7 17 7 17 17"></polyline>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -123,8 +123,11 @@ $list_style = $list_color ? "color: $list_color;" : '';
           <h3 class="section-cta-title" <?php if ($title_style) echo 'style="' . $title_style . '"'; ?>>
             <?= esc_html($args['cta']['label']); ?>
           </h3>
+
           <div class="section-cta-icon">
-            <?= $args['cta']['icon']; ?>
+            <a href="<?= esc_url($args['cta']['url']); ?>" aria-label="<?= esc_attr($args['cta']['label']); ?>">
+              <?= $args['cta']['icon']; ?>
+            </a>
           </div>
         </div>
       <?php endif; ?>

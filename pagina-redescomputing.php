@@ -15,12 +15,12 @@ get_template_part('template-parts/produtos-hero-section', null, array(
   'image_main' => get_template_directory_uri() . '/assets/img/img-redes/redesimage1.png',
   'image_secondary' => get_template_directory_uri() . '/assets/img/img-redes/redesimage2.png',
   'cta_primary' => [
-    'url' => '#',
+    'url' => '#formulario',
     'label' => 'Peça um Orçamento Personalizado',
     'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconesetabranca.svg',
   ],
   'cta_secondary' => [
-    'url' => '#',
+    'url' => '#formulario',
     'label' => 'Fale com um Especialista',
   ],
   'reverse' => false,
@@ -235,14 +235,17 @@ get_template_part('template-parts/produtos-complementary-section', null, array(
     array(
       'title' => 'Gaveta Inteligente de Dinheiro',
       'description' => 'Otimize a gestão de numerário no ponto de venda.',
+      'url' => site_url ('/pagina-gavetas-inteligentes/')
     ),
     array(
       'title' => 'Redes Estruturadas & Computing',
       'description' => 'Conectividade robusta para suportar sistemas POS.',
+      'url' => site_url('/pagina-redes-e-computing/')
     ),
     array(
       'title' => 'Videovigilância',
       'description' => 'Garanta segurança nas transações e no ambiente de trabalho.',
+      'url' => site_url('/pagina-videvigilancia/'),
     ),
   )
 ));

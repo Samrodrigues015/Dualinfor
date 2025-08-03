@@ -373,20 +373,20 @@
 }
 
 .solution-card.cta-card-sobre .btn-primary {
-  background: white; /* Fundo branco para o botão */
-  color: #9a2686; /* Cor roxa para a seta */
+  background: white;
+  color: #9a2686;
   border: none;
-  width: 48px; /* Aumentado o tamanho do botão */
-  height: 48px; /* Aumentado o tamanho do botão */
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  position: absolute; /* Posicionamento absoluto */
-  top: 2rem; /* Distância do topo */
-  right: 2rem; /* Distância da direita */
-  transition: transform 0.2s ease-in-out; /* Adiciona transição para hover */
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.2s ease-in-out;
 }
 
 .solution-card.cta-card-sobre .btn-primary:hover {
@@ -944,9 +944,21 @@
   }
 
   .solutions-grid-sobre {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
 
+  .solution-card {
+    flex: 0 0 auto;
+    min-width: 280px;
+    scroll-snap-align: start;
+    max-width: 50px;
+  }
   .excellence-left-column {
     order: 1;
   }

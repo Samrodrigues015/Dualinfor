@@ -95,7 +95,8 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
   ),
   'cta' => array(
     'label' => 'Peça um Orçamento Personalizado',
-    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-energiarenovaveis/icone8.svg" alt="Ícone orçamento">'
+    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-energiarenovaveis/icone8.svg" alt="Ícone orçamento">',
+    'url' => '#formulario'
   )
 ));
 ?>

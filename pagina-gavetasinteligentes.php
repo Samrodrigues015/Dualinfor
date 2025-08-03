@@ -15,12 +15,12 @@ get_template_part('template-parts/produtos-hero-section', null, array(
   'image_main' => get_template_directory_uri() . '/assets/img/img-gavetasinteligentes/gavetasinteligenteshero.png',
   'image_secondary' => get_template_directory_uri() . '/assets/img/img-gavetasinteligentes/gavetasinteligentes2.png',
   'cta_primary' => [
-    'url' => '#',
+    'url' => '#formulario',
     'label' => 'Peça um Orçamento Personalizado',
     'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconesetabranca.svg',
   ],
   'cta_secondary' => [
-    'url' => '#',
+    'url' => '#formulario',
     'label' => 'Fale com um Especialista Agora',
   ],
   'reverse' => true,
@@ -92,7 +92,8 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
   ),
     'cta' => array(
     'label' => 'Peça um Orçamento Personalizado',
-    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-energiarenovaveis/icone8.svg" alt="Ícone orçamento">'
+    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-energiarenovaveis/icone8.svg" alt="Ícone orçamento">',
+    'url' => '#formulario'
   )
 ));
 ?>

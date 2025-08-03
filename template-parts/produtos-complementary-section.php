@@ -57,16 +57,22 @@ $cta_icon_content = file_exists($cta_icon_path) ? file_get_contents($cta_icon_pa
 
       <?php if (!empty($cta_text)) : ?>
         <div class="section-complementary-cta" style="background-color: <?php echo esc_attr($cta_color); ?>;">
-          <p class="section-complementary-cta-text"><?php echo esc_html($cta_text); ?></p>
-          <div class="section-complementary-cta-arrow">
-            <?php echo $cta_icon_content; ?>
-          </div>
+          <a href="#formulario" class="section-complementary-cta-text-link">
+            <p class="section-complementary-cta-text"><?php echo esc_html($cta_text); ?></p>
+            <div class="section-complementary-cta-arrow">
+              <?php echo $cta_icon_content; ?>
+            </div>
+          </a>
         </div>
       <?php endif; ?>
+
     </div>
   </div>
 
   <div class="btn-mobile" style="background-color: transparent;">
-    <button style="background-color: <?php echo esc_attr($cta_color); ?>;">Peça Orçamento Personalizado</button>
+    <a href="#formulario">
+      <button style="background-color: <?php echo esc_attr($cta_color); ?>;">Peça Orçamento Personalizado</button>
+    </a>
   </div>
+
 </div>

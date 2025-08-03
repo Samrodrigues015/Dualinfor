@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Página Digitalizadores
  * Description: Página personalizada para a página Digitalizadores da Dualinfor.
@@ -14,12 +15,12 @@ get_template_part('template-parts/produtos-hero-section', null, array(
   'image_main' => get_template_directory_uri() . '/assets/img/img-digitalizadores/digitalizadoresimage2.png',
   'image_secondary' => get_template_directory_uri() . '/assets/img/img-digitalizadores/digitalizadoresimage1.png',
   'cta_primary' => [
-    'url' => '#',
+    'url' => '#formulario',
     'label' => 'Peça um Orçamento Personalizado',
     'icon' => get_template_directory_uri() . '/assets/img/img-energiarenovaveis/iconesetabranca.svg',
   ],
   'cta_secondary' => [
-    'url' => '#',
+    'url' => '#formulario',
     'label' => 'Fale com um Especialista Agora',
   ],
   'reverse' => true,
@@ -73,7 +74,7 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
       'title' => 'Integração Total',
       'items' => 'Compatível com sistemas de gestão documental (DMS), cloud (Google Drive, OneDrive) e redes empresariais.'
     ),
-     array(
+    array(
       'icon' => get_template_directory_uri() . '/assets/img/img-digitalizadores/icone6.svg',
       'title' => 'Design Compacto e Versátil',
       'items' => array(
@@ -89,7 +90,8 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
   ),
   'cta' => array(
     'label' => 'Peça um Orçamento Personalizado',
-    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-energiarenovaveis/icone8.svg" alt="Ícone orçamento">'
+    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-energiarenovaveis/icone8.svg" alt="Ícone orçamento">',
+    'url' => '#formulario'
   )
 ));
 ?>
@@ -189,7 +191,7 @@ get_template_part('template-parts/testemunhos-section', null, array(
 get_template_part('template-parts/produtos-solutions-section', null, array(
   'title' => 'Digitalizadores adaptados a todas as necessidades empresariais',
   'subtitle' => 'Desde a digitalização de arquivos históricos até à organização de registos médicos, os digitalizadores da Dualinfor são ferramentas versáteis e essenciais para qualquer setor.',
-  'image' => get_template_directory_uri() . '/assets/img/img-digitalizadores/epson.png', 
+  'image' => get_template_directory_uri() . '/assets/img/img-digitalizadores/epson.png',
   'image_position' => 'left',
   'cards' => array(
     array(
@@ -232,23 +234,26 @@ get_template_part('template-parts/produtos-solutions-section', null, array(
 get_template_part('template-parts/produtos-complementary-section', null, array(
   'title' => 'Soluções complementares que potenciam a Gestão Documental',
   'image' => get_template_directory_uri() . '/assets/img/img-digitalizadores/impressora.png',
-  'image_position' => 'right', 
+  'image_position' => 'right',
   'cta_text' => 'Peça um Orçamento Personalizado',
-  'cta_color' => '#293992', 
+  'cta_color' => '#293992',
   'button_text' => 'Peça um Orçamento Personalizado',
   'services' => array(
     array(
       'title' => 'Soluções de Videovigilância',
       'description' => 'Segurança para documentos físicos e espaços de trabalho.',
+      'url' => site_url('/pagina-videvigilancia/')
     ),
     array(
       'title' => 'Impressoras e Multifunções',
       'description' => 'Complemento ideal para impressão e digitalização integrada.',
+      'url' => site_url('/pagina-impressoras-e-multifuncoes/')
     ),
     array(
       'title' => 'Soluções Documentais MPS',
       'description' => 'Gestão de impressão e fluxos de trabalho.',
-    ),
+      'url' => site_url('/pagina-solucoes-documentais/')
+    )
   )
 ));
 ?>
@@ -272,7 +277,7 @@ get_template_part('template-parts/formulario-section', null, array(
 <?php
 get_template_part('template-parts/produtos-doubt-section', null, array(
   'title' => 'Esclareça as suas dúvidas sobre Digitalizadores',
-  'title_centered' => false, 
+  'title_centered' => false,
   'image' => get_template_directory_uri() . '/assets/img/img-digitalizadores/imagefaq.png',
   'faqs' => array(
     array(

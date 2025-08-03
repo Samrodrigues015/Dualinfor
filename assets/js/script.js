@@ -330,3 +330,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// ===== Script scrool para o formulário =====
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hash = window.location.hash;
+    if (hash === "#formulario") {
+      const target = document.querySelector(hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth" });
+        }, 300); // atraso para garantir que a página carregou tudo
+      }
+    }
+  });

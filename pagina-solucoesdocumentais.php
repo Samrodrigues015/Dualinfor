@@ -16,7 +16,7 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
   'btn_primary_text' => 'Solicite uma Reunião Personalizada',
   'btn_primary_link' => '#formulario',
   'btn_secondary_text' => 'Fale com um Especialista Agora',
-  'btn_secondary_link' => '#contacto',
+  'btn_secondary_link' => '#formulario',
   'align_left' => true
 ));
 ?>
@@ -106,7 +106,8 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
   ),
   'cta' => array(
     'label' => 'Peça um Orçamento Personalizado',
-    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-consultadoria/icone8.svg" alt="Ícone orçamento">'
+    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-consultadoria/icone8.svg" alt="Ícone orçamento">',
+    'url' => '#formulario'
   )
 ));
 ?>
@@ -293,15 +294,18 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
     'services' => [
         [
             'title' => 'Redes Estruturadas & Computing',
-            'description' => 'Infraestruturas para suportar sistemas de gestão documental.'
+            'description' => 'Infraestruturas para suportar sistemas de gestão documental.',
+            'url' => site_url ('/pagina-redes-e-computing')
         ],
         [
             'title' => 'Impressoras e Multifunções',
-            'description' => 'Equipamentos de alta eficiência integrados às soluções MPS.'
+            'description' => 'Equipamentos de alta eficiência integrados às soluções MPS.',
+            'url' => site_url ('/pagina-impressoras-e-multifuncoes')
         ],
         [
             'title' => 'Software de Faturação e POS',
-            'description' => 'Integração com a gestão financeira da empresa.'
+            'description' => 'Integração com a gestão financeira da empresa.',
+            'url' => site_url ('/pagina-faturacao')
         ]
     ],
     'images' => [

@@ -15,7 +15,7 @@ get_template_part('template-parts/consultadoria-section-hero', null, array(
   'btn_primary_text' => 'Solicite uma Reunião Personalizada',
   'btn_primary_link' => '#formulario',
   'btn_secondary_text' => 'Fale com um Especialista Agora',
-  'btn_secondary_link' => '#contacto',
+  'btn_secondary_link' => '#formulario',
   'align_left' => true,
   'layout_type' => 'titulo-botoes-paragrafo'
 ));
@@ -106,7 +106,8 @@ get_template_part('template-parts/produtos-benefits-section', null, array(
   ),
   'cta' => array(
     'label' => 'Peça um Orçamento Personalizado',
-    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-consultadoria/icone8.svg" alt="Ícone orçamento">'
+    'icon' => '<img src="' . get_template_directory_uri() . '/assets/img/img-consultadoria/icone8.svg" alt="Ícone orçamento">',
+    'url' => '#formulario'
   )
 ));
 ?>
@@ -241,15 +242,18 @@ get_template_part('template-parts/consultadoria-complementary-section', null, [
     'services' => [
         [
             'title' => 'Software de Faturação e POS',
-            'description' => 'Integre o sistema de filas com a gestão de pagamentos.'
+            'description' => 'Integre o sistema de filas com a gestão de pagamentos.',
+            'url' => site_url('/pagina-faturacao/')
         ],
         [
             'title' => 'Soluções de Videovigilância',
-            'description' => 'Garanta a segurança em áreas de espera e atendimento.'
+            'description' => 'Garanta a segurança em áreas de espera e atendimento.',
+            'url' => site_url('/pagina-videvigilancia/')
         ],
         [
             'title' => 'Redes Estruturadas & Computing',
-            'description' => 'Conectividade robusta para suportar sistemas de gestão de filas.'
+            'description' => 'Conectividade robusta para suportar sistemas de gestão de filas.',
+            'url' => site_url('/pagina-redes-e-computing/')
         ]
     ],
     'images' => [
