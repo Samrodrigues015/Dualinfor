@@ -1,5 +1,5 @@
 .container {
-  max-width: 1400px;
+  max-width: 1518px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -7,10 +7,10 @@
 /* Background Overlay Images */
 .background-overlay {
   position: absolute;
-  top: 120px; /* aumentámos um pouco */
+  top: 120px;
   left: 0;
   width: 100%;
-  height: calc(100vh - 120px); /* ajustámos igual ao top */
+  height: calc(100vh - 120px);
   z-index: 1;
 }
 
@@ -61,24 +61,23 @@
   z-index: 10;
   min-height: 55vh;
 }
-.hero-content-sobre {
-}
-
 .hero-content-sobre h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 1.5rem;
   line-height: 1.2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  max-width: 69rem; /* Change width to max-width */
-  margin-left: auto; /* Add for centering */
-  margin-right: auto; /* Add for centering */
-  padding-left: 1rem; /* Adjust padding */
-  padding-right: 1rem; /* Add padding */
+  max-width: 55rem; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding-left: 1rem; 
+  padding-right: 1rem; 
 }
 
 .hero-content-sobre p {
-  font-size: 1.25rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
   opacity: 0.95;
   max-width: 800px;
   margin: 0 auto;
@@ -98,7 +97,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: flex-start; /* Alinha o conteúdo ao topo */
+  align-items: flex-start; 
 }
 
 .innovation-text {
@@ -112,7 +111,7 @@
   margin-bottom: 3rem;
   color: #1c1c1c;
   line-height: 1.2;
-  max-width: 30rem; /* Change width to max-width */
+  max-width: 30rem; 
   margin-top: 22px;
 }
 
@@ -121,8 +120,7 @@
   font-family: "Open Sans", sans-serif;
   color: #1c1c1c;
   line-height: 1.6;
-  margin-bottom: 3rem; /* Aumentado para mais espaço */
-  width: 31rem;
+  margin-bottom: 3rem; 
 }
 
 .innovation-text p:last-child {
@@ -140,8 +138,8 @@
 }
 
 .innovation-img {
-  width: 120%; /* Garante que a imagem se ajusta ao contêiner */
-  height: auto;
+  width: 100%; /* Garante que a imagem se ajusta ao contêiner */
+  min-height: 500px; /* Altura mínima para manter a proporção */
   display: block;
   border-radius: 0px; /* Arredondar cantos da imagem interna */
 }
@@ -149,7 +147,7 @@
 /* Mission Vision Values Section */
 .mvv-section {
   padding: 5rem 0;
-  background: #1a1a1a; /* Fundo mais escuro */
+  background: #1a1a1a; 
   color: white;
   position: relative;
   z-index: 10;
@@ -166,9 +164,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px; /* Arredondar cantos */
+  border-radius: 15px; 
   background-clip: padding-box;
-  border: 2px solid transparent; /* Borda transparente inicial */
+  border: 2px solid transparent; 
   background-origin: border-box;
 }
 
@@ -188,11 +186,10 @@
 
 .mvv-item {
   display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-  padding-bottom: 3rem; /* Espaço abaixo de cada item */
-  border-bottom: 1px solid #9a2686; /* Linha roxa */
-  margin-bottom: 3rem; /* Espaço entre a linha e o próximo item */
+  flex-direction: column; 
+  align-items: start; 
+  border-bottom: 1px solid #9a2686;
+  text-align: start; 
 }
 
 .mvv-item:last-child {
@@ -208,13 +205,12 @@
 .icon-circle {
   width: 50px;
   height: 50px;
-  background: transparent; /* Fundo transparente */
-  border: 2px solid #9a2686; /* Borda roxa */
+  background: #9a2686; 
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* Cor do ícone */
+  color: white; 
 }
 
 .mvv-custom-icon {
@@ -232,17 +228,19 @@
 }
 
 .mvv-content-text h3 {
-  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 0.75rem; /* Ajuste de margem */
+  margin-bottom: 10px; 
   color: white;
   margin-top: 30px;
 }
 
 .mvv-content-text p {
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   opacity: 0.9;
-  font-size: 18px; /* Ajuste de tamanho de fonte */
+  font-size: 20px; 
   margin-bottom: 30px;
   margin-top: 30px;
 }
@@ -255,7 +253,7 @@
 }
 
 .value-item {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -305,10 +303,10 @@
 }
 
 .solution-card {
-  background: rgba(154, 38, 134, 0.06); /* Fundo muito claro */
-  border-radius: 20px; /* Cantos mais arredondados */
-  box-shadow: 0 0 0 1px rgba(154, 38, 134, 0.6), 0 5px 15px rgba(0, 0, 0, 0.05); /* Sombra sutil com toque roxo */
-  text-align: left; /* Alinhar texto à esquerda */
+  background: rgba(154, 38, 134, 0.06);
+  border-radius: 20px; 
+  box-shadow: 0 0 0 1px rgba(154, 38, 134, 0.6), 0 5px 15px rgba(0, 0, 0, 0.05); 
+  text-align: left; 
   padding: 2rem;
 }
 
@@ -320,13 +318,14 @@
   width: 50px;
   height: 50px;
   background: linear-gradient(110deg, #9a2686, #293992);
-  border: 1px solid #e0e0e0; /* Borda cinza clara para o círculo */
+  border: 1px solid #e0e0e0; 
   border-radius: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem; /* Espaço abaixo do ícone */
-  margin-left: 0; /* Alinhar à esquerda */
+  margin-bottom: 1rem; 
+  margin-left: 0; 
 }
 
 .solution-icon .icon-circle svg {
@@ -351,21 +350,21 @@
 }
 
 .solution-card.solution-card.cta-card-sobre {
-  background: #9a2686; /* Fundo roxo sólido */
+  background: #9a2686; 
   color: white;
-  box-shadow: none; /* Remover sombra */
-  border: none; /* Remover borda */
+  box-shadow: none; 
+  border: none; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Alinha o conteúdo ao fundo */
-  align-items: flex-start; /* Alinhar conteúdo à esquerda */
-  padding: 2rem; /* Mantém o padding */
-  position: relative; /* Adicionado para posicionamento absoluto do botão */
+  justify-content: flex-end; 
+  align-items: flex-start; 
+  padding: 2rem; 
+  position: relative;
 }
 
 .cta-content h3 {
-  font-size: 1.8rem; /* Aumentado para corresponder à imagem */
-  line-height: 1.2; /* Ajustado para múltiplas linhas */
+  font-size: 1.8rem;
+  line-height: 1.2; 
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 0;
@@ -373,8 +372,7 @@
 }
 
 .solution-card.cta-card-sobre .btn-primary {
-  background: white;
-  color: #9a2686;
+  color: white;
   border: none;
   width: 48px;
   height: 48px;
@@ -408,7 +406,7 @@
 
 .excellence-content {
   display: grid;
-  grid-template-columns: auto 1fr; /* Coluna da esquerda (texto + imagem) adapta-se ao conteúdo, direita ocupa o resto */
+  grid-template-columns: auto 1fr;
   gap: 4rem;
   align-items: flex-start;
 }
@@ -427,17 +425,20 @@
 }
 
 .excellence-text h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 600;
   margin-bottom: 1rem;
   color: #1c1c1c;
   line-height: 1.2;
 }
 
 .excellence-text p {
-  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
   color: #1c1c1c;
   line-height: 1.6;
+  max-width: 550px;
 }
 
 .excellence-image {
@@ -468,13 +469,12 @@
 .excellence-steps {
   display: flex;
   flex-direction: column;
-  gap: 0; /* Remover gap padrão para controlar com padding/border */
+  gap: 0; 
 }
 
 .step-item {
-  border-bottom: 1px solid #9a2686; /* Linha roxa mais clara */
-  padding-bottom: 1.5rem; /* Espaço abaixo da linha */
-  margin-bottom: 1.5rem; /* Espaço entre a linha e o próximo item */
+  border-bottom: 1px solid #9a2686; 
+  margin-bottom: 1.5rem; 
 }
 
 .step-item h3 {
@@ -502,30 +502,30 @@
 .partnerships-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 2rem;
   align-items: center; /* Alinha o conteúdo verticalmente ao centro */
 }
 
 .partnerships-text h2 {
-  font-size: 48px; /* Título maior */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: #1c1c1c; /* Cor de texto mais escura */
-  line-height: 1.2;
+  color: #1c1c1c;
 }
 
 .partnerships-text p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  color: #1c1c1c; /* Cor de texto mais escura */
+  color: #1c1c1c; 
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 
 .partner-logos {
   display: flex;
-  gap: 2.5rem; /* Aumenta o espaçamento entre os logos */
+  gap: 2.5rem;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .partner-logo-img {
@@ -567,7 +567,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /* Duas colunas */
   gap: 2rem;
-  margin-bottom: 2rem; /* Adjust this value */
   align-items: flex-start; /* Alinhar ao topo */
 }
 
@@ -580,6 +579,7 @@
 .stat-card {
   padding: 2rem;
   border-radius: 20px;
+  padding: 40px;
   color: white;
   text-align: center; /* Centralizar o texto */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
@@ -590,23 +590,27 @@
     170deg,
     #293992,
     #9a2686
-  ); /* Gradiente roxo da imagem */
+  ); 
+  padding: 40px;
 }
 
 .stat-number {
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: -0.5rem;
+  margin-bottom: 5px;
 }
 
 .stat-text {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  opacity: 0.9;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 .statistics-img-top,
 .statistics-img-bottom {
-  width: 100%;
+  width: 90%;
   height: auto;
   display: block;
   border-radius: 20px;
@@ -621,21 +625,22 @@
 }
 
 .bottom-stat h3 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 1rem;
+  margin-top: 3rem;
   color: #1c1c1c;
   position: relative;
-  top: 11rem;
   margin-left: 20px;
 }
 
 .bottom-stat p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: #1c1c1c;
   line-height: 1.6;
   position: relative;
-  top: 11rem;
   max-width: 35rem; /* Change width to max-width */
   overflow-wrap: break-word;
   margin-left: 20px;
@@ -903,11 +908,11 @@
     width: auto;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .innovation-image,
   .mvv-image,
-  .partnerships-images,
   .excellence-image {
     order: -1;
   }
@@ -941,6 +946,7 @@
 
   .solutions-header p {
     margin-top: 1rem;
+    text-align: center;
   }
 
   .solutions-grid-sobre {
@@ -1002,20 +1008,6 @@
   }
 }
 
-@media (max-width: 576px) {
-  .partnerships-section {
-    padding: 3rem 0; /* Menos padding vertical em ecrãs muito pequenos */
-  }
-
-  .partnerships-text h2 {
-    font-size: 28px; /* Título ainda mais pequeno */
-  }
-
-  .partnerships-text p {
-    font-size: 16px; /* Parágrafo ainda mais pequeno */
-  }
-}
-
 @media (max-width: 480px) {
   .container {
     padding: 0 15px;
@@ -1038,5 +1030,44 @@
 
   .solutions-header h2 {
     font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partnerships-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .partnerships-text {
+    order: 1;
+    width: 100%;
+  }
+  
+  .partnerships-images {
+    order: 2;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+  
+  .partner-logos {
+    order: 3;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+  
+  .partnerships-text h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .partnerships-text p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .partner-logos {
+    gap: 1.5rem;
   }
 }

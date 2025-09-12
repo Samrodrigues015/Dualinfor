@@ -43,7 +43,7 @@ get_header();
         </div>
         <div class="solutions-intro-right">
           <h2>Soluções de Cibersegurança para máxima proteção e confiança</h2>
-          <p>Com o aumento das ameaças cibernéticas, proteger os dados e sistemas da sua empresa tornou-se mais essencial do que nunca. Na Dualinfor, oferecemos <strong>soluções avançadas de cibersegurança</strong> especializadas para reduzir riscos, proteger informações sensíveis e garantir a continuidade das suas operações.</p>
+          <p>Com o aumento das ameaças cibernéticas, proteger os dados e sistemas da sua empresa tornou-se mais essencial do que nunca. Na Dualinfor, oferecemos <strong>soluções de cibersegurança avançadas e personalizadas</strong> para reduzir riscos, proteger informações sensíveis e garantir a continuidade das suas operações.</p>
         </div>
       </div>
     </div>

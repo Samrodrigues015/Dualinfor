@@ -1,5 +1,5 @@
 .products-features-section {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 40px 16px;
 }
@@ -16,7 +16,8 @@
 }
 
 .section-description-features {
-  font-size: 1.2rem;
+  font-family: 'open sans', sans-serif;
+  font-size: 1.4rem;
   color: #666;
   max-width: 600px;
   margin: 0 auto;

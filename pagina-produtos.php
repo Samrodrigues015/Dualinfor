@@ -12,7 +12,8 @@ get_header();
     <div class="unibind-container">
       <div class="unibind-left-column">
         <div class="text-content">
-          <h1>Unibind Peleman:<br>Apresente os seus documentos com profissionalismo e elegância</h1>
+          <h1>Unibind Peleman:</h1>
+          <h2>Apresente os seus documentos com profissionalismo e elegância</h2>
           <p>Transforme relatórios, propostas e materiais promocionais em apresentações impactantes. A
             Dualinfor garante que a sua imagem corporativa se destaque.</p>
           <div class="button-group">
@@ -48,7 +49,7 @@ get_header();
 
   <!-- Professional Identity Section -->
   <section class="professional-identity">
-    <div class="container">
+    <div>
       <div class="professional-content">
         <h2>Encadernação personalizada: destaque a identidade da sua empresa com profissionalismo</h2>
         <p>Na Dualinfor, acreditamos que a apresentação faz a diferença. As soluções de encadernação e

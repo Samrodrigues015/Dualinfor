@@ -85,7 +85,7 @@ main {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0 0;
 }
 
 /* Grouping content
@@ -528,7 +528,7 @@ a {
 }
 
 a:visited {
-  color: #800080;
+  color: none;
 }
 
 a:hover,

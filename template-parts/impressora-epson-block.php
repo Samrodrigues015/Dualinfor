@@ -11,7 +11,7 @@
       margin: 0 auto;
       padding: 40px 16px;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f6f6f6;
+      background-color: #f2f2f2;
       color: #1c1c1c;
       line-height: 1.6;
     }

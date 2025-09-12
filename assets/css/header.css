@@ -15,7 +15,7 @@
   --border-radius: 8px;
   --border-radius-large: 12px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --container-max-width: 1200px;
+  --container-max-width: 1518px;
   --header-height: 80px;
   --header-height-mobile: 70px;
 }
@@ -37,16 +37,12 @@
     padding: 0px;
   }
 
-  main section {
-   
-  }
-
   /* Header */
   .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 0 20px;
   }

@@ -1,6 +1,6 @@
 /* Main section container */
 .section-doubt-container {
-  max-width: 1200px;
+  max-width: 1518px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -11,17 +11,18 @@
 }
 
 .section-doubt-title {
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: bold;
   color: #333;
-  max-width: 50%;
+  max-width: 54%;
   line-height: 1.2;
 }
 
 /* Content layout */
 .section-doubt-content {
   display: flex;
-  gap: 40px;
+  gap:100px;
 }
 
 /* Image container */

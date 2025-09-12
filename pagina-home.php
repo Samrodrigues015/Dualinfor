@@ -12,8 +12,10 @@ get_header();
                     <h1>A solução tecnológica de que o seu negócio precisa</h1>
                     <p>Desde 1998, oferecemos soluções personalizadas em impressão e gestão de numerário, cibersegurança e muito mais. Descubra como podemos ser a extensão tecnológica do seu sucesso.</p>
                     <div class="hero-buttons">
-                        <a href="/pagina-servicos-e-solucoes/" class="btn-primary">Explorar Soluções</a>
-                        <a href="#formulario" class="btn-secondary">Fale com um Especialista</a>
+                        <a href="/pagina-servicos-e-solucoes/" class="btn-primary-home">Explorar Soluções
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconebotao.svg" alt="icone seta">
+                        </a>
+                        <a href="#formulario" class="btn-secondary-home">Fale com um Especialista</a>
                     </div>
                 </div>
             </div>
@@ -23,34 +25,29 @@ get_header();
     <!-- Solutions Section with Video -->
     <section class="solutions-intro">
         <div class="container">
-            <div class="solutions-content">
+            <div class="solutions-content-home">
                 <h2>Soluções tecnológicas que simplificam e impulsionam o seu negócio</h2>
                 <p>Facilitamos a gestão e impulsionamos o crescimento do seu negócio com soluções tecnológicas para todos, segurança, inovação e muito mais. Descubra como podemos ajudar.</p>
                 <div class="solutions-buttons">
-                    <a href="/pagina-assistencia-tecnica/" class="btn-primary">Explorar Soluções</a>
-                    <a href="#formulario" class="btn-secondary">Fale com um Especialista</a>
+                    <a href="/pagina-assistencia-tecnica/" class="btn-primary">Explorar Soluções
+                    </a>
+                    <a href="#formulario" class="btn-secondary-home">Fale com um Especialista</a>
                 </div>
             </div>
 
             <!-- Video Container -->
             <div class="video-container">
-                <div class="video-placeholder">
-                    <div class="play-button">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="white">
-                            <polygon points="5,3 19,12 5,21"></polygon>
-                        </svg>
+                    <div class="video-placeholder"
+                        style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/img-home/imagemvideo.png');">
                     </div>
-                    <div class="video-overlay">DINAMISMO</div>
-                </div>
             </div>
-        </div>
     </section>
 
     <!-- Solutions Grid -->
     <section class="solutions-grid-section">
         <div class="container">
+             <span class="section-tag">SOLUÇÕES</span>
             <div class="section-header-home">
-                <span class="section-tag">SOLUÇÕES</span>
                 <h2>As soluções certas para superar os desafios do seu negócio</h2>
                 <p>Na Dualinfor, criamos soluções tecnológicas integradas que geram inovação, eficiência e segurança. Descubra aqui os nossos principais produtos e serviços.</p>
             </div>
@@ -428,7 +425,7 @@ get_header();
                 </article>
             </div>
             <div class="blog-cta">
-                <a  href="/pagina-noticias/" class="btn-primary">Ver Mais no Blog</a>
+                <a href="/pagina-noticias/" class="btn-stats">Ver Mais no Blog</a>
             </div>
         </div>
     </section>
