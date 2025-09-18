@@ -317,41 +317,53 @@ get_header();
     </section>
 
     <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-content">
-                <div class="stats-left">
-                    <div class="stats-top-row">
-                        <div class="stat-box blue">
-                            <div class="stat-number">+12.000</div>
-                            <div class="stat-label">equipamentos instalados</div>
+   <section class="section-statistics">
+        <div class="section-container">
+            <div class="section-content-wrapper-home">
+                <!-- Cards container (appears first/left on desktop) -->
+                <div class="section-cards-container">
+                    <div class="section-cards-grid">
+                        <!-- Top row cards -->
+                        <div class="section-card-home section-card-blue section-card-large">
+                            <span class="section-card-number">+12.000</span>
+                            <span class="section-card-text">equipamentos instalados</span>
                         </div>
-                        <div class="stat-box purple">
-                            <div class="stat-number">+25 anos</div>
-                            <div class="stat-label">de experiência</div>
+                        
+                        <div class="section-card-home section-card-purple section-card-large">
+                            <span class="section-card-number">+25 anos</span>
+                            <span class="section-card-text">de experiência</span>
                         </div>
-                    </div>
-                    <div class="iso-certifications">
-                        <div class="iso-badge">
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iso-9001-91aF9kuyd0Vmkia7F7325Fu8tm9Bqj.png" alt="ISO 9001" class="iso-logo">
-                        </div>
-                        <div class="iso-badge">
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iso-9001%20%281%29-2coPODjVQceEOajrC8pMcUNFOkWQqg.png" alt="ISO 14001" class="iso-logo">
-                        </div>
-                        <div class="iso-badge">
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20-XfQ9eWDIrm5uCbKXZweq3J8j7jeghJ.png" alt="ISO 27001" class="iso-logo">
+
+                        <!-- Bottom row - ISO cards -->
+                        <div class="section-iso-cards">
+                            <div class="section-iso-card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/iso-9001.png" alt="íso 9001">
+                            </div>
+                            
+                            <div class="section-iso-card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/iso-14001.png" alt="íso 14001">
+                            </div>
+                            
+                            <div class="section-iso-card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/iso-27001.png" alt="íso 27001">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="stats-right">
-                    <h3>Dualinfor: +25 anos de experiência e inovação</h3>
-                    <p>Desde 1998, ajudamos empresas a superar desafios tecnológicos com soluções fiáveis e personalizadas. Com uma equipa experiente e parcerias estratégicas, garantimos resultados que fazem a diferença.</p>
-                    <a href="/pagina-sobre-nos/" class="btn-stats">Saiba Mais Sobre Nós</a>
+
+                <!-- Text content (appears second/right on desktop) -->
+                <div class="section-text-content">
+                    <h2 class="section-main-title">Dualinfor: +25 anos de experiência e inovação</h2>
+                    <p class="section-description">
+                        Desde 1998, ajudamos empresas a superar desafios tecnológicos com soluções fiáveis e personalizadas. Com uma equipa experiente e parcerias estratégicas, garantimos resultados que fazem a diferença.
+                    </p>
+                    <button class="btn-stats">
+                        Saiba Mais Sobre Nós
+                    </button>
                 </div>
             </div>
         </div>
     </section>
-
     <?php
     get_template_part('template-parts/formulario-section', null, array(
         'title' => 'Pronto para transformar o seu negócio? Fale connosco!',

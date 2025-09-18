@@ -24,19 +24,25 @@ get_header();
 
   <!-- Innovation Section -->
   <section class="innovation-section">
-    <div class="container">
-      <div class="innovation-content">
-        <div class="innovation-text">
-          <h2>Inovação, Experiência e Compromisso com o Sucesso dos Nossos Clientes</h2>
-          <p>A Dualinfor é o parceiro de confiança das empresas que procuram eficiência, segurança e inovação tecnológica.</p>
-          <p>Desde a nossa fundação em 1998, o nosso objetivo tem sido claro: Desde a nossa fundação em 1998, temos um objetivo claro: fornecer soluções tecnológicas de excelência que impulsionam o crescimento das empresas em todos os setores e ajudam-nas a superar os desafios do mercado.</p>
-        </div>
-        <div class="innovation-image">
+  <div class="container">
+    <div class="innovation-content">
+      <div class="innovation-text">
+        <h2>Inovação, Experiência e Compromisso com o Sucesso dos Nossos Clientes</h2>
+        <p class="short-text">A Dualinfor é o parceiro de confiança das empresas que procuram eficiência, segurança e inovação tecnológica.</p>
+        
+        <div class="innovation-image-mobile">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-sobre/image1.png" alt="Reunião de Inovação" class="innovation-img">
         </div>
+        
+        <p class="long-text">Desde a nossa fundação em 1998, o nosso objetivo tem sido claro: Desde a nossa fundação em 1998, temos um objetivo claro: fornecer soluções tecnológicas de excelência que impulsionam o crescimento das empresas em todos os setores e ajudam-nas a superar os desafios do mercado.</p>
+      </div>
+      
+      <div class="innovation-image-desktop">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-sobre/image1.png" alt="Reunião de Inovação" class="innovation-img">
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Mission Vision Values Section -->
   <section class="mvv-section">
@@ -305,6 +311,14 @@ get_header();
       <div class="partnerships-content">
         <div class="partnerships-text">
           <h2>Parcerias estratégicas para soluções de excelência</h2>
+
+          <!-- Imagem para mobile -->
+          <div class="mobile-image">
+            <a href="#">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-sobre/hands.png" alt="Aperto de mão em parceria" class="partnerships-img">
+            </a>
+          </div>
+
           <p>Colaboramos com marcas líderes mundiais, como <strong>Epson</strong>, <strong>Lexmark</strong>, <strong>Sharp</strong> e muitas outras, garantindo que os nossos clientes têm sempre acesso à tecnologia mais avançada e fiável.</p>
 
           <div class="partner-logos">
@@ -313,7 +327,9 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-sobre/sharp.png" alt="Logótipo da Sharp" class="partner-logo-img">
           </div>
         </div>
-        <div class="partnerships-images">
+
+        <!-- Imagem para desktop -->
+        <div class="partnerships-images desktop-image">
           <a href="#">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-sobre/hands.png" alt="Aperto de mão em parceria" class="partnerships-img">
           </a>
