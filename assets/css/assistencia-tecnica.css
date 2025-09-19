@@ -18,7 +18,6 @@ html {
 .support-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
   align-items: center;
 }
 
@@ -28,15 +27,18 @@ html {
 }
 
 .support-text h2 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 550;
+  max-width: 580px;
   margin-bottom: 1.5rem;
   line-height: 1.2;
   color: #ffffff;
 }
 
 .support-text p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  max-width: 580px;
   line-height: 1.6;
   opacity: 0.9;
   color: #ffffff;
@@ -123,7 +125,7 @@ html {
 }
 
 /* Why Choose Section */
-.why-choose-section {
+.why-choose-section-assistencia-tecnica {
   padding: 5rem 0;
   background: #f2f2f2;
 }
@@ -136,8 +138,9 @@ html {
 }
 
 .why-choose-text h2 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 3.3rem;
+  font-weight: 600;
+  max-width: 450px;
   margin-bottom: 2rem;
   color: #1c1c1c;
 }
@@ -150,12 +153,11 @@ html {
 
 .benefit-item {
   position: relative;
-  padding-bottom: 1.5rem;
   border-bottom: 1px solid #9a2686;
 }
 
 .benefit-item h3 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 750;
   color: #1c1c1c;
   margin-bottom: 0.5rem;
@@ -455,6 +457,7 @@ html {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
 
 .btn-primary-support:hover {
@@ -475,6 +478,7 @@ html {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
 
 .btn-secondary-outline:hover {
@@ -921,14 +925,14 @@ html {
 }
 
 .dualinfor-hero-title {
-  font-size: 2.25rem;
-  font-weight: 500;
+  font-size: 2.8rem;
+  font-weight: 700;
   margin: 0;
   line-height: 1.3;
 }
 
 .dualinfor-hero-subtitle {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 700;
   display: block;
   margin-top: 0.25rem;
@@ -938,7 +942,7 @@ html {
 .dualinfor-hero-description {
   font-size: 1.125rem;
   line-height: 1.6;
-  max-width: 700px;
+  max-width: 550px;
   margin: 1.5rem auto 2.5rem;
   opacity: 0.9;
 }

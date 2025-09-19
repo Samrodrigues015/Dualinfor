@@ -176,7 +176,7 @@ get_header();
     </section>
 
     <!-- Why Choose Section -->
-    <section class="why-choose-section">
+    <section class="why-choose-section-assistencia-tecnica">
         <div class="container">
             <div class="why-choose-content">
                 <div class="why-choose-text">
