@@ -324,28 +324,38 @@ get_header();
     </section>
 
     <!-- Partnerships Section -->
-    <section class="partnerships-section-support">
-        <div class="container">
-            <div class="partnerships-content-support">
-                <div class="partnerships-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-assistenciatecnica/estrategias.png" alt="Business handshake">
-                </div>
-                <div class="partnerships-text">
-                    <h2>Parcerias estratégicas para soluções de excelência</h2>
-                    <p>Colaboramos com marcas líderes mundiais, como <strong>Epson</strong>, <strong>Lexmark</strong>,
-                        <strong>Sharp</strong> e muitas outras, garantindo que os nossos clientes têm sempre acesso à
-                        tecnologia mais avançada e fiável.
-                    </p>
-                    <div class="partner-logos-support">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-assistenciatecnica/espson.png" alt="Epson logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-assistenciatecnica/lexmark.png" alt="Lexmark logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-assistenciatecnica/sharp.png" alt="Sharp logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   <section class="partnerships-section">
+    <div class="container">
+      <div class="partnerships-content">
+        <div class="partnerships-text">
+          <h2>Parcerias estratégicas para soluções de excelência</h2>
 
+          <!-- Imagem para mobile -->
+          <div class="mobile-image">
+            <a href="#">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-sobre/hands.png" alt="Aperto de mão em parceria" class="partnerships-img">
+            </a>
+          </div>
+
+          <p>Colaboramos com marcas líderes mundiais, como <strong>Epson</strong>, <strong>Lexmark</strong>, <strong>Sharp</strong> e muitas outras, garantindo que os nossos clientes têm sempre acesso à tecnologia mais avançada e fiável.</p>
+
+          <div class="partner-logos">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-sobre/epson.png" alt="Logótipo da Epson" class="partner-logo-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-sobre/lexmark.png" alt="Logótipo da Lexmark" class="partner-logo-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-sobre/sharp.png" alt="Logótipo da Sharp" class="partner-logo-img">
+          </div>
+        </div>
+
+        <!-- Imagem para desktop -->
+        <div class="partnerships-images desktop-image">
+          <a href="#">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-sobre/hands.png" alt="Aperto de mão em parceria" class="partnerships-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
     <!-- Final CTA Section -->
     <section class="final-cta-section">
         <div class="container">

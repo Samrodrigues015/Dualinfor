@@ -357,56 +357,76 @@ html {
 }
 
 /* Partnerships Section Support */
-.partnerships-section-support {
-  padding: 5rem 0;
+.partnerships-section {
   background: #f2f2f2;
+  position: relative;
+  z-index: 10;
 }
 
-.partnerships-content-support {
+.container {
+  max-width: 1518px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.partnerships-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
-}
-
-.partnerships-image img {
-  width: 100%;
-  border-radius: 15px;
 }
 
 .partnerships-text h2 {
-  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #1c1c1c;
-  line-height: 1.2;
 }
 
 .partnerships-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
   color: #1c1c1c;
   line-height: 1.6;
-  margin-bottom: 3rem;
-  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
-.partner-logos-support {
+.partner-logos {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
-  justify-content: flex-start;
 }
 
-.partner-logos-support img {
-  height: 25px;
+.partner-logo-img {
+  height: 40px;
   width: auto;
-  opacity: 0.8;
-  transition: opacity 0.3s;
-  filter: grayscale(20%);
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
-.partner-logos-support img:hover {
-  opacity: 1;
+.partner-logo-img:hover {
   filter: grayscale(0%);
+  opacity: 1;
+}
+
+.partnerships-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnerships-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.mobile-image {
+  display: none;
 }
 
 /* Final CTA Section */
@@ -564,7 +584,6 @@ html {
   .why-choose-content,
   .contact-content,
   .equipment-content,
-  .partnerships-content-support,
   .final-cta-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -695,18 +714,48 @@ html {
   }
 
   /* Partnerships Section Extra Small */
+  .partnerships-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+    order: 2;
+  }
+
+  .partnerships-text {
+    order: 1;
+    width: 100%;
+  }
+
   .partnerships-text h2 {
-    font-size: 1.75rem;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
 
-  .partner-logos-support {
-    flex-wrap: wrap;
-    gap: 1.5rem;
+  .partnerships-text p {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    order: 3;
+    line-height: 1.4;
+  }
+
+  .partner-logos {
+    order: 4;
     justify-content: center;
-  }
-
-  .partner-logos-support img {
-    height: 20px;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
   }
 
   /* Final CTA Section Extra Small */
@@ -796,6 +845,49 @@ html {
   #next-arrow {
     right: -22px;
   }
+  .partnerships-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+    order: 2;
+  }
+
+  .partnerships-text {
+    order: 1;
+    width: 100%;
+  }
+
+  .partnerships-text h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .partnerships-text p {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    order: 3;
+    line-height: 1.4;
+  }
+
+  .partner-logos {
+    order: 4;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
 }
 /* Additional responsive adjustments */
 @media (max-width: 1024px) {
@@ -824,11 +916,6 @@ html {
   .why-choose-text h2 {
     font-size: 1.8rem;
   }
-
-  .partnerships-text h2 {
-    font-size: 2rem;
-  }
-
   .final-cta-text h2 {
     font-size: 2rem;
   }
@@ -963,7 +1050,7 @@ html {
   border-radius: 50px;
   font-weight: 600;
   font-size: 0.9rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid transparent;
   cursor: pointer;
 }
