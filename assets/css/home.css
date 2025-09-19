@@ -18,8 +18,8 @@
 
 .hero-content-home {
   display: flex;
-  justify-content: flex-start; /* Alinha horizontalmente à esquerda */
-  align-items: flex-start;
+  justify-content: flex-start; 
+  align-items: flex-center;
   min-height: 60vh;
 }
 

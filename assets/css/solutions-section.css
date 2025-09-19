@@ -132,6 +132,8 @@
 
   .section-solution-title {
     font-size: 36px;
+    max-width: 100%;
+    text-align: center;
   }
 
   .section-solution-cards {
@@ -155,6 +157,8 @@
 @media (max-width: 480px) {
   .section-solution-title {
     font-size: 28px;
+    max-width: 100%;
+    text-align: center;
   }
 
   .section-solution-subtitle {
